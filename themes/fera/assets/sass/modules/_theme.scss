@@ -1,0 +1,11 @@
+@each $key, $value in $themeColors {
+
+  .theme-bg-#{$key} {
+    background-color: $value;
+  }
+
+  .theme-color-#{$key} {
+    color: $value;
+  }
+
+}

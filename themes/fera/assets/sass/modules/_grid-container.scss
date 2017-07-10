@@ -1,0 +1,10 @@
+.grid-container {
+  width: 90%;
+  @include rem(max-width, 1200px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.grid-container.-full {
+  max-width: initial;
+}

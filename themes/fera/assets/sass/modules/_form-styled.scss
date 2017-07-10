@@ -1,0 +1,36 @@
+.wpcf7 {
+
+  ul {
+    list-style: none!important;
+  }
+
+  input[type=submit] {
+    @extend .btn;
+    @extend .btn.-medium;
+    background-color: color('blue');
+
+    &:hover {
+      color: white!important;
+    }
+
+  }
+
+
+  .wpcf7-not-valid-tip {
+    font-size: 13px;
+    margin: 5px 0;
+    color: black;
+    margin-bottom: 15px;
+  }
+
+  .wpcf7-response-output {
+    padding: 0;
+    margin: 0;
+    color: black;
+    @include rem(margin-top, 30px);
+    border: 0;
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+}

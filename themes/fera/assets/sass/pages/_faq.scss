@@ -1,0 +1,28 @@
+.page-faq {
+
+  .rich-content {
+
+    @media #{$tablet} {
+      column-count: 2;
+    }
+
+
+    h3 {
+      // @include rem(font-size, 16px);
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: color('blue');
+
+      &:not(:first-child) {
+        @include rem(margin-top, 50px);
+      }
+
+      &::before {
+        content: "- ";
+      }
+
+    }
+  }
+
+}

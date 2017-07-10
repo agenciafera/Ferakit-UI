@@ -1,0 +1,58 @@
+.wp-pagenavi {
+  border: 1px solid #c9c9c9;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  @include rem(font-size, 14px);
+
+  &, & * {
+    @include transition(background, color, border, opacity);
+  }
+
+  &:hover {
+    border-color: black;
+
+    span, a {
+      border-color: transparent!important;
+    }
+
+    .pages {
+      opacity: 0;
+    }
+
+    .current {
+      opacity: 0;
+    }
+
+  }
+
+  span, a {
+    display: inline-block;
+    @include rem(padding, 10px 20px);
+
+    &:not(:last-child) {
+      border-right: 1px solid #c9c9c9;
+    }
+
+  }
+
+  a {
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+  }
+
+  .pages {
+    @include rem(padding-right, 35px);
+    @include rem(padding-left, 35px);
+  }
+
+  .current {
+    background-color: #f4f4f4;
+  }
+
+}

@@ -1,0 +1,96 @@
+[class*="title-"] {
+  margin: 1em 0 0.5em;
+  line-height: 1.2;
+  word-break: break-all;
+  hyphens: auto;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+  br {
+
+    @media #{$only-smartphone} {
+      display: none !important;
+    }
+
+  }
+
+}
+
+.title-guide{
+  font-family: 'brandon', sans-serif;
+  @include rem(font-size, 26px);
+  @include rem(margin-bottom, 20px);
+  color: color('purple');
+  font-weight: 200;
+  text-transform: uppercase;
+  border-bottom: 1px solid color('purple');
+}
+
+.title-1 {
+  @include rem(font-size, 40px);
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @media #{$tablet} {
+    @include rem(font-size, 48px);
+  }
+
+}
+
+.title-2 {
+  @include rem(font-size, 40px);
+  text-transform: uppercase;
+  font-weight: normal;
+
+  @media #{$tablet} {
+    @include rem(font-size, 48px);
+  }
+}
+
+.title-3 {
+  font-family: 'Oswald', sans-serif;
+  @include rem(font-size, 30px);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title-4 {
+  @include rem(font-size, 24px);
+  font-weight: bold;
+}
+
+.title-5 {
+  font-family: 'Oswald', sans-serif;
+  @include rem(font-size, 19px);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title-6 {
+  font-family: 'Oswald', sans-serif;
+  @include rem(font-size, 17px);
+  font-weight: bold;
+}
+
+.title-7 {
+  font-size: 13px;
+  color: color('light-gray');
+}

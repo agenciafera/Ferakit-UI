@@ -1,0 +1,140 @@
+.lightbox-grid {
+
+  .grid {
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row wrap;
+
+    @media #{$tablet} {
+      // @include rem(width, 1200px);
+    }
+
+
+    .link {
+      flex: 0 0 33%;
+      // @include rem(height, 150px);
+      @include viewport-unit(height, 123, 414, "vw");
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+      flex-flow: row wrap;
+
+      @media #{$tablet} {
+        @include rem(flex, 0 0 300px);
+        @include rem(height, 300px);
+      }
+
+      > .image {
+        width: inherit;
+        height: inherit;
+        position: relative;
+        z-index: 5;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      > .action {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: rgba(color('blue'), 0.90);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        @include transition(opacity);
+
+        i {
+          @include rem(font-size, 40px);
+          display: block;
+          text-align: center;
+          @include rem(margin-bottom, 10px);
+        }
+
+        > .label {
+          color: white;
+          @include align;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.lightbox-grid.-small {
+
+  .link {
+    flex: 0 0 33%;
+    // @include rem(height, 150px);
+    @include viewport-unit(height, 123, 414, "vw");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    flex-flow: row wrap;
+
+    @media #{$tablet} {
+      // @include rem(flex, 0 0 300px);
+      @include rem(height, 230px);
+    }
+
+  }
+
+}
+
+/*==============================
+=            Motion            =
+==============================*/
+
+
+@media #{$desktop} {
+
+  .lightbox-grid .link {
+    @include transition(transform);
+  }
+
+  .lightbox-grid .grid:hover {
+
+    .link {
+      transform: scale(0.9);
+    }
+
+  }
+
+  .lightbox-grid .image {
+    transform: scale(1);
+    @include transition(transform);
+  }
+
+  .lightbox-grid .action {
+
+    .label {
+      transform: translate(-50%, 0%)!important;
+      @include transition(transform);
+    }
+
+  }
+
+  .lightbox-grid .link:hover {
+
+    .action {
+      opacity: 1;
+
+      .label {
+        transform: translate(-50%, -50%)!important;
+      }
+
+    }
+
+    .image {
+      transform: scale(1.1);
+    }
+
+  }
+
+}
+
+
+/*=====  End of Motion  ======*/

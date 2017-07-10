@@ -1,0 +1,27 @@
+$displays: block inline-block none;
+
+@each $display in $displays {
+
+  .d-#{$display} {
+    display: $display;
+  }
+
+  @media #{$only-smartphone} {
+    .d-#{$display}\@smartphone {
+      display: $display;
+    }
+  }
+
+  @media #{$only-tablet} {
+    .d-#{$display}\@tablet {
+      display: $display;
+    }
+  }
+
+  @media #{$desktop} {
+    .d-#{$display}\@desktop {
+      display: $display;
+    }
+  }
+
+}

@@ -1,0 +1,45 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.table-price {
+  width: 100%;
+  font-size: 13px;
+
+
+  tr {
+    border-bottom: 1px solid white;
+  }
+
+  td, th {
+
+    &:last-child {
+      background-color: #2992c3;
+      color: white;
+    }
+
+  }
+
+  thead {
+
+    th {
+      background-color: #e9f4f9;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include rem(padding, 20px 25px);
+      white-space: nowrap;
+      color: black;
+    }
+
+  }
+
+  tbody {
+
+    td {
+      @include rem(padding, 14px 25px);
+      background-color: lighten(#e5e5e5, 5%);
+    }
+
+  }
+
+}

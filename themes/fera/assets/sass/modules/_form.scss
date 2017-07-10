@@ -1,0 +1,117 @@
+.input-1 {
+  display: inline-block;
+  padding: 17px 25px;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #9e9e9e;
+  color: #9e9e9e;
+  font-size: 20px;
+  font-family: inherit;
+  @include transition(border, color);
+
+  &:focus {
+    border-color: black;
+    color: black;
+
+    @include input-placeholder {
+      color: black;
+      @include transition(color);
+    }
+
+  }
+
+  @include input-placeholder {
+    font-family: inherit;
+    color: #9e9e9e;
+    font-size: 20px;
+  }
+
+}
+
+.input-with-icon {
+  position: relative;
+
+  input, select {
+    padding-right: 70px;
+
+    &:focus {
+
+      & + i {
+        color: black;
+      }
+
+    }
+
+  }
+
+  i {
+    position: absolute;
+    @include align('vertical');
+    @include rem(right, 20px);
+    color: #9e9e9e;
+    @include transition(color);
+    font-size: 20px;
+  }
+
+}
+
+.form-styled {
+
+  .wpcf7-not-valid-tip {
+    font-size: 14px;
+    @include rem(margin-top, 10px);
+    @include rem(margin-bottom, 10px);
+    @include rem(margin-left, 5px);
+    // text-align: right;
+    // display: block;
+  }
+
+  .wpcf7-not-valid {
+    border: 1px solid color('red')!important;
+  }
+
+  .wpcf7-response-output {
+    margin: 0;
+    padding: 15px;
+    @include rem(margin-top, 30px);
+    @include rem(font-size, 16px);
+  }
+
+  label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .field {
+    padding: 13px 20px;
+    border: 1px solid darken(white, 7%);
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #fff;
+    appearance: none;
+    border-radius: 0;
+    color: black;
+    @include transition(background, color);
+    display: inline-block;
+    vertical-align: middle;
+
+    &:active, &:focus {
+      background-color: darken(white, 2%);
+      border: 1px solid darken(white, 14%);
+    }
+
+    option[value=""] {
+      color: black;
+    }
+
+    @include input-placeholder {
+      font-size: 16px;
+      font-family: inherit;
+      color: black;
+    }
+
+  }
+
+}

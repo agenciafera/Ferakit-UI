@@ -1,0 +1,21 @@
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.000, 0.810, 0.000, 0.980);
+
+  @if $properties != "all" {
+    will-change: $properties;
+  }
+
+}
+
+@mixin transition2($properties...) {
+  transition-property: $properties;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+  @if $properties != "all" {
+    will-change: $properties;
+  }
+
+}
