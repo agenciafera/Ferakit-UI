@@ -1,0 +1,59 @@
+.colors{
+  .title-7{
+    @include rem(margin-bottom, 30px);
+  }
+}
+
+.square{
+  display: inline-block;
+  @include rem(width, 70px);
+  @include rem(height, 70px);
+  @include rem(margin-right, 20px);
+
+  &.purple{
+    background: color('purple');
+  }
+  &.blue{
+    background: color('blue');
+  }
+  &.yellow{
+    background: color('yellow');
+  }
+  &.rose{
+    background: color('rose');
+  }
+  &.purple-light{
+    background: color('purple-light');
+  }
+  &.blue-light{
+    background: color('blue-light');
+  }
+  &.pink{
+    background: color('pink');
+  }
+  &.dark-gray{
+    background: color('dark-gray');
+  }
+  &.gray{
+    background: color('gray');
+  }
+  &.green{
+    background: color('green');
+  }
+  &.light-gray{
+    background: color('light-gray');
+  }
+  &.super-blue{
+    background: color('super-blue');
+  }
+}
+
+.hex{
+  display: inline-block;
+  vertical-align: top;
+  @include rem(padding-top, 30px);
+  @include rem(font-size, 16px);
+  color: color('dark-gray');
+  text-transform: uppercase;
+  font-weight: 100;
+}
