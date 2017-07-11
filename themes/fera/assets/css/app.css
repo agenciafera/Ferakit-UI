@@ -4377,6 +4377,12 @@ html {
     font-family: inherit;
     border: 0; }
 
+.fera-list {
+  list-style: square; }
+  .fera-list > li {
+    font-size: 1.3125rem;
+    margin-bottom: 0.9375rem; }
+
 .main-nav ul {
   display: flex;
   flex-flow: row wrap; }
