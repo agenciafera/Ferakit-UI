@@ -1314,150 +1314,194 @@ html {
     color: #315aa9;
     font-weight: bold; }
 
-.btn, .wpcf7 input[type=submit] {
+.fera-btn {
+  font-size: 18px;
+  padding: 20px 60px;
+  text-transform: uppercase;
+  background-color: #2b86cb;
+  border-radius: 4px;
+  background-color: #3186c7;
   display: inline-block;
-  padding: 17px 41px;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  font-size: 22px;
-  position: relative;
-  border: 0;
-  background-color: transparent;
-  font-family: inherit;
-  transition-property: transform, opacity, color;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-  will-change: transform, opacity, color; }
-  .btn i, .wpcf7 input[type=submit] i {
-    vertical-align: sub;
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+  transition: all 100ms ease;
+  will-change: background, transform, color; }
+  .fera-btn:hover {
+    background-color: #569ed5; }
+  .fera-btn:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 10px 0px rgba(0, 0, 0, 0.1); }
+  .fera-btn i {
     font-size: 150%;
-    display: inline-block;
-    margin-left: 10px; }
-  .btn::before, .wpcf7 input[type=submit]::before, .btn::after, .wpcf7 input[type=submit]::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    transition-property: transform, opacity, color;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: transform, opacity, color; }
-  .btn::before, .wpcf7 input[type=submit]::before {
-    background-color: #315aa9;
-    z-index: 0; }
-  .btn .label, .wpcf7 input[type=submit] .label {
-    position: relative;
-    z-index: 1; }
-  .btn::after, .wpcf7 input[type=submit]::after {
-    box-shadow: 0px 0px 0px 3px #315aa9 inset;
-    transform: scale(1.1);
-    opacity: 0; }
-  .btn:hover, .wpcf7 input[type=submit]:hover {
-    color: #315aa9; }
-    .btn:hover::before, .wpcf7 input[type=submit]:hover::before {
-      transform: scale(0);
-      opacity: 0; }
-    .btn:hover::after, .wpcf7 input[type=submit]:hover::after {
-      transform: scale(1);
-      opacity: 1; }
+    vertical-align: sub; }
 
 /*=============================
 =            Sizes            =
 =============================*/
 @media (min-width: 700px) {
-  .btn.-small, .wpcf7 input.-small[type=submit] {
-    padding: 11px 22px;
-    font-size: 13px; } }
+  .fera-btn.-small {
+    font-size: 14px;
+    padding: 10px 50px; } }
 
-.btn.-medium, .wpcf7 input[type=submit] {
-  padding: 16px 27px;
-  font-size: 16px; }
+.fera-btn.-big {
+  font-size: 24px;
+  padding: 23px 100px; }
 
 /*=====  End of Sizes  ======*/
+/*==================================
+=            Variations            =
+==================================*/
+.fera-btn.-pill {
+  font-size: 16px;
+  padding: 9.5px 20px;
+  border-radius: 999px; }
+
+.fera-btn.-action {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 26px 90px; }
+
+/*=====  End of Variations  ======*/
+/*=============================
+=            Icons            =
+=============================*/
+.fera-btn.-icon-left i {
+  margin-right: 1.25rem; }
+
+.fera-btn.-icon-right i {
+  margin-left: 1.25rem; }
+
+.fera-btn.-icon-top i {
+  display: block;
+  text-align: center;
+  margin-bottom: 1.25rem; }
+
+/*=====  End of Icons  ======*/
 /*==============================
 =            Colors            =
 ==============================*/
-.btn.-blue, .wpcf7 input.-blue[type=submit] {
-  color: #fff; }
-  .btn.-blue:hover, .wpcf7 input.-blue[type=submit]:hover {
-    color: #315aa9; }
-  .btn.-blue::before, .wpcf7 input.-blue[type=submit]::before {
-    background-color: #315aa9; }
-  .btn.-blue::after, .wpcf7 input.-blue[type=submit]::after {
-    box-shadow: 0px 0px 0px 3px #315aa9 inset; }
+.fera-btn.-halloween {
+  background-color: #54246a;
+  color: #ffffff; }
+  .fera-btn.-halloween.-action {
+    border-bottom: 6px solid #180a1e; }
+    .fera-btn.-halloween.-action:hover {
+      background-color: #632a7d; }
+  .fera-btn.-halloween:hover {
+    background-color: #723190; }
 
-.btn.-blue-hover:hover, .wpcf7 input.-blue-hover[type=submit]:hover {
-  color: #315aa9; }
-  .btn.-blue-hover:hover::after, .wpcf7 input.-blue-hover[type=submit]:hover::after {
-    box-shadow: 0px 0px 0px 3px #315aa9 inset; }
+.fera-btn.-andromeda {
+  background-color: #733e97;
+  color: #ffffff; }
+  .fera-btn.-andromeda.-action {
+    border-bottom: 6px solid #3c204f; }
+    .fera-btn.-andromeda.-action:hover {
+      background-color: #8145a9; }
+  .fera-btn.-andromeda:hover {
+    background-color: #8e51b7; }
 
-.btn.-blue-front, .wpcf7 input.-blue-front[type=submit] {
-  color: #fff; }
-  .btn.-blue-front::before, .wpcf7 input.-blue-front[type=submit]::before {
-    background-color: #315aa9; }
+.fera-btn.-night {
+  background-color: #315aa9;
+  color: #ffffff; }
+  .fera-btn.-night.-action {
+    border-bottom: 6px solid #1a305a; }
+    .fera-btn.-night.-action:hover {
+      background-color: #3765bd; }
+  .fera-btn.-night:hover {
+    background-color: #4471c9; }
 
-.btn.-white, .wpcf7 input.-white[type=submit] {
-  color: #315aa9; }
-  .btn.-white:hover, .wpcf7 input.-white[type=submit]:hover {
-    color: #fff; }
-  .btn.-white::before, .wpcf7 input.-white[type=submit]::before {
-    background-color: #fff; }
-  .btn.-white::after, .wpcf7 input.-white[type=submit]::after {
-    box-shadow: 0px 0px 0px 3px #fff inset; }
+.fera-btn.-sky {
+  background-color: #3186c7;
+  color: #ffffff; }
+  .fera-btn.-sky.-action {
+    border-bottom: 6px solid #1d4f75; }
+    .fera-btn.-sky.-action:hover {
+      background-color: #4192d0; }
+  .fera-btn.-sky:hover {
+    background-color: #569ed5; }
 
-.btn.-white-hover:hover, .wpcf7 input.-white-hover[type=submit]:hover {
-  color: #fff; }
-  .btn.-white-hover:hover::after, .wpcf7 input.-white-hover[type=submit]:hover::after {
-    box-shadow: 0px 0px 0px 3px #fff inset; }
+.fera-btn.-sunshine {
+  background-color: #f3ac47;
+  color: #ffffff; }
+  .fera-btn.-sunshine.-action {
+    border-bottom: 6px solid #c77a0d; }
+    .fera-btn.-sunshine.-action:hover {
+      background-color: #f5b75f; }
+  .fera-btn.-sunshine:hover {
+    background-color: #f6c277; }
 
-.btn.-white-front, .wpcf7 input.-white-front[type=submit] {
-  color: #315aa9; }
-  .btn.-white-front::before, .wpcf7 input.-white-front[type=submit]::before {
-    background-color: #fff; }
+.fera-btn.-pink {
+  background-color: #da1e77;
+  color: #ffffff; }
+  .fera-btn.-pink.-action {
+    border-bottom: 6px solid #801246; }
+    .fera-btn.-pink.-action:hover {
+      background-color: #e22f84; }
+  .fera-btn.-pink:hover {
+    background-color: #e54691; }
 
-.btn.-black, .wpcf7 input.-black[type=submit] {
-  color: white; }
-  .btn.-black:hover, .wpcf7 input.-black[type=submit]:hover {
-    color: #000; }
-  .btn.-black::before, .wpcf7 input.-black[type=submit]::before {
-    background-color: #000; }
-  .btn.-black::after, .wpcf7 input.-black[type=submit]::after {
-    box-shadow: 0px 0px 0px 3px #000 inset; }
+.fera-btn.-salmon {
+  background-color: #e75a6a;
+  color: #ffffff; }
+  .fera-btn.-salmon.-action {
+    border-bottom: 6px solid #bf1c2e; }
+    .fera-btn.-salmon.-action:hover {
+      background-color: #ea707e; }
+  .fera-btn.-salmon:hover {
+    background-color: #ed8792; }
 
-.btn.-black-hover:hover, .wpcf7 input.-black-hover[type=submit]:hover {
-  color: #000; }
-  .btn.-black-hover:hover::after, .wpcf7 input.-black-hover[type=submit]:hover::after {
-    box-shadow: 0px 0px 0px 3px #000 inset; }
+.fera-btn.-darkness {
+  background-color: #333333;
+  color: #ffffff; }
+  .fera-btn.-darkness.-action {
+    border-bottom: 6px solid black; }
+    .fera-btn.-darkness.-action:hover {
+      background-color: #404040; }
+  .fera-btn.-darkness:hover {
+    background-color: #4d4d4d; }
 
-.btn.-black-front, .wpcf7 input.-black-front[type=submit] {
-  color: white; }
-  .btn.-black-front::before, .wpcf7 input.-black-front[type=submit]::before {
-    background-color: #000; }
+.fera-btn.-mellow {
+  background-color: #9e9e9e;
+  color: #ffffff; }
+  .fera-btn.-mellow.-action {
+    border-bottom: 6px solid #6b6b6b; }
+    .fera-btn.-mellow.-action:hover {
+      background-color: #ababab; }
+  .fera-btn.-mellow:hover {
+    background-color: #b8b8b8; }
 
-.btn.-dark-blue, .wpcf7 input.-dark-blue[type=submit] {
-  color: white; }
-  .btn.-dark-blue:hover, .wpcf7 input.-dark-blue[type=submit]:hover {
-    color: #172e3e; }
-  .btn.-dark-blue::before, .wpcf7 input.-dark-blue[type=submit]::before {
-    background-color: #172e3e; }
-  .btn.-dark-blue::after, .wpcf7 input.-dark-blue[type=submit]::after {
-    box-shadow: 0px 0px 0px 3px #172e3e inset; }
+.fera-btn.-nature {
+  background-color: #06d25a;
+  color: #ffffff; }
+  .fera-btn.-nature.-action {
+    border-bottom: 6px solid #036f30; }
+    .fera-btn.-nature.-action:hover {
+      background-color: #07eb65; }
+  .fera-btn.-nature:hover {
+    background-color: #13f871; }
 
-.btn.-dark-blue-hover:hover, .wpcf7 input.-dark-blue-hover[type=submit]:hover {
-  color: #172e3e; }
-  .btn.-dark-blue-hover:hover::after, .wpcf7 input.-dark-blue-hover[type=submit]:hover::after {
-    box-shadow: 0px 0px 0px 3px #172e3e inset; }
+.fera-btn.-void {
+  background-color: #eeeeee;
+  color: #000000; }
+  .fera-btn.-void.-action {
+    border-bottom: 6px solid #bbbbbb; }
+    .fera-btn.-void.-action:hover {
+      background-color: #fbfbfb; }
+  .fera-btn.-void:hover {
+    background-color: white; }
 
-.btn.-dark-blue-front, .wpcf7 input.-dark-blue-front[type=submit] {
-  color: white; }
-  .btn.-dark-blue-front::before, .wpcf7 input.-dark-blue-front[type=submit]::before {
-    background-color: #172e3e; }
+.fera-btn.-baby {
+  background-color: #27b9f5;
+  color: #ffffff; }
+  .fera-btn.-baby.-action {
+    border-bottom: 6px solid #087eae; }
+    .fera-btn.-baby.-action:hover {
+      background-color: #3fc1f6; }
+  .fera-btn.-baby:hover {
+    background-color: #58c9f7; }
 
-/*=====  End of Colors  ======*/
 .colors .title-7 {
   margin-bottom: 1.875rem; }
 
@@ -1589,157 +1633,6 @@ html {
   .secondary-font p .extrabold {
     font-weight: 900; }
 
-.wpcf7 ul {
-  list-style: none !important; }
-.wpcf7 input[type=submit] {
-  background-color: #315aa9; }
-  .wpcf7 input[type=submit]:hover {
-    color: white !important; }
-.wpcf7 .wpcf7-not-valid-tip {
-  font-size: 13px;
-  margin: 5px 0;
-  color: black;
-  margin-bottom: 15px; }
-.wpcf7 .wpcf7-response-output {
-  padding: 0;
-  margin: 0;
-  color: black;
-  margin-top: 1.875rem;
-  border: 0;
-  font-size: 15px;
-  font-weight: 800; }
-
-.input-1 {
-  display: inline-block;
-  padding: 17px 25px;
-  width: 100%;
-  background-color: #fff;
-  border: 2px solid #9e9e9e;
-  color: #9e9e9e;
-  font-size: 20px;
-  font-family: inherit;
-  transition-property: border, color;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-  will-change: border, color; }
-  .input-1:focus {
-    border-color: black;
-    color: black; }
-    .input-1:focus:-moz-placeholder {
-      color: black;
-      transition-property: color;
-      transition-duration: 700ms;
-      transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-      will-change: color; }
-    .input-1:focus::-moz-placeholder {
-      color: black;
-      transition-property: color;
-      transition-duration: 700ms;
-      transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-      will-change: color; }
-    .input-1:focus:-ms-input-placeholder {
-      color: black;
-      transition-property: color;
-      transition-duration: 700ms;
-      transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-      will-change: color; }
-    .input-1:focus::-webkit-input-placeholder {
-      color: black;
-      transition-property: color;
-      transition-duration: 700ms;
-      transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-      will-change: color; }
-  .input-1:-moz-placeholder {
-    font-family: inherit;
-    color: #9e9e9e;
-    font-size: 20px; }
-  .input-1::-moz-placeholder {
-    font-family: inherit;
-    color: #9e9e9e;
-    font-size: 20px; }
-  .input-1:-ms-input-placeholder {
-    font-family: inherit;
-    color: #9e9e9e;
-    font-size: 20px; }
-  .input-1::-webkit-input-placeholder {
-    font-family: inherit;
-    color: #9e9e9e;
-    font-size: 20px; }
-
-.input-with-icon {
-  position: relative; }
-  .input-with-icon input, .input-with-icon select {
-    padding-right: 70px; }
-    .input-with-icon input:focus + i, .input-with-icon select:focus + i {
-      color: black; }
-  .input-with-icon i {
-    position: absolute;
-    position: absolute;
-    transform-style: preserve-3d;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 1.25rem;
-    color: #9e9e9e;
-    transition-property: color;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: color;
-    font-size: 20px; }
-
-.form-styled .wpcf7-not-valid-tip {
-  font-size: 14px;
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
-  margin-left: 0.3125rem; }
-.form-styled .wpcf7-not-valid {
-  border: 1px solid !important; }
-.form-styled .wpcf7-response-output {
-  margin: 0;
-  padding: 15px;
-  margin-top: 1.875rem;
-  font-size: 1rem; }
-.form-styled label {
-  display: inline-block;
-  vertical-align: middle; }
-.form-styled .field {
-  padding: 13px 20px;
-  border: 1px solid #ededed;
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  font-family: inherit;
-  background-color: #fff;
-  appearance: none;
-  border-radius: 0;
-  color: black;
-  transition-property: background, color;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-  will-change: background, color;
-  display: inline-block;
-  vertical-align: middle; }
-  .form-styled .field:active, .form-styled .field:focus {
-    background-color: #fafafa;
-    border: 1px solid #dbdbdb; }
-  .form-styled .field option[value=""] {
-    color: black; }
-  .form-styled .field:-moz-placeholder {
-    font-size: 16px;
-    font-family: inherit;
-    color: black; }
-  .form-styled .field::-moz-placeholder {
-    font-size: 16px;
-    font-family: inherit;
-    color: black; }
-  .form-styled .field:-ms-input-placeholder {
-    font-size: 16px;
-    font-family: inherit;
-    color: black; }
-  .form-styled .field::-webkit-input-placeholder {
-    font-size: 16px;
-    font-family: inherit;
-    color: black; }
-
 .grid-container {
   width: 90%;
   max-width: 75rem;
@@ -1751,7 +1644,7 @@ html {
 
 @font-face {
   font-family: 'icons';
-  src: url('../fonts/fonts/icons.ttf?djr4sl&1499710940') format("truetype"), url('../fonts/fonts/icons.woff?djr4sl&1499710940') format("woff"), url('../fonts/fonts/icons.svg?djr4sl&1499710940#icons') format("svg");
+  src: url('../fonts/fonts/icons.ttf?djr4sl&1499782533') format("truetype"), url('../fonts/fonts/icons.woff?djr4sl&1499782533') format("woff"), url('../fonts/fonts/icons.svg?djr4sl&1499782533#icons') format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
