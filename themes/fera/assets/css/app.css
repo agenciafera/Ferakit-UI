@@ -1232,6 +1232,8 @@ body {
 .fera-module {
   padding: 3.125rem;
   margin-bottom: 6.25rem; }
+  .fera-module .content {
+    max-width: 50%; }
 
 html {
   font-family: "Open Sans", sans-serif; }
@@ -1299,21 +1301,6 @@ html {
 /*===============================
 =            Modules            =
 ===============================*/
-.box-add-on {
-  background-color: #fafafa;
-  padding: 2.5rem 3.125rem; }
-
-.breadcrumbs {
-  padding-bottom: 0.625rem;
-  border-bottom: 1px solid #e6e6e6;
-  margin: 5rem 0 6.25rem;
-  font-size: 13px; }
-  .breadcrumbs span, .breadcrumbs a {
-    text-transform: uppercase; }
-  .breadcrumbs .breadcrumb_last {
-    color: #315aa9;
-    font-weight: bold; }
-
 .fera-btn {
   font-size: 18px;
   padding: 20px 60px;
@@ -3133,11 +3120,6 @@ html {
 .icon-IcoMoon:before {
   content: "\eaea"; }
 
-.image-full {
-  width: 100%;
-  height: auto;
-  max-width: initial; }
-
 /*==================================
 =            Variations            =
 ==================================*/
@@ -4266,117 +4248,6 @@ html {
       flex: none;
       width: 100%; } }
 
-.lightbox-grid .grid {
-  display: flex;
-  margin: 0 auto;
-  flex-flow: row wrap; }
-  .lightbox-grid .grid .link {
-    flex: 0 0 33%;
-    height: 123px;
-    height: 29.71014vw;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    flex-flow: row wrap; }
-    @media (min-width: 700px) {
-      .lightbox-grid .grid .link {
-        flex: 0 0 18.75rem;
-        height: 18.75rem; } }
-    .lightbox-grid .grid .link > .image {
-      width: inherit;
-      height: inherit;
-      position: relative;
-      z-index: 5;
-      background-size: cover;
-      background-position: center center; }
-    .lightbox-grid .grid .link > .action {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      background-color: rgba(49, 90, 169, 0.9);
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition-property: opacity;
-      transition-duration: 700ms;
-      transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-      will-change: opacity; }
-      .lightbox-grid .grid .link > .action i {
-        font-size: 2.5rem;
-        display: block;
-        text-align: center;
-        margin-bottom: 0.625rem; }
-      .lightbox-grid .grid .link > .action > .label {
-        color: white;
-        position: absolute;
-        transform-style: preserve-3d;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-
-.lightbox-grid.-small .link {
-  flex: 0 0 33%;
-  height: 123px;
-  height: 29.71014vw;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  flex-flow: row wrap; }
-  @media (min-width: 700px) {
-    .lightbox-grid.-small .link {
-      height: 14.375rem; } }
-
-/*==============================
-=            Motion            =
-==============================*/
-@media (min-width: 1025px) {
-  .lightbox-grid .link {
-    transition-property: transform;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: transform; }
-
-  .lightbox-grid .grid:hover .link {
-    transform: scale(0.9); }
-
-  .lightbox-grid .image {
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: transform; }
-
-  .lightbox-grid .action .label {
-    transform: translate(-50%, 0%) !important;
-    transition-property: transform;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: transform; }
-
-  .lightbox-grid .link:hover .action {
-    opacity: 1; }
-    .lightbox-grid .link:hover .action .label {
-      transform: translate(-50%, -50%) !important; }
-  .lightbox-grid .link:hover .image {
-    transform: scale(1.1); } }
-/*=====  End of Motion  ======*/
-.fancybox-bg {
-  background: white; }
-
-.fancybox-container--ready .fancybox-bg {
-  opacity: 1; }
-
-.fancybox-caption-wrap {
-  background: transparent;
-  color: black; }
-  .fancybox-caption-wrap .fancybox-caption {
-    color: inherit;
-    text-align: center;
-    font-size: 1.125rem;
-    font-family: inherit;
-    border: 0; }
-
 .fera-list {
   list-style: square; }
   .fera-list > li {
@@ -4528,96 +4399,6 @@ html {
   .news-card .card:hover .infos .content {
     max-height: 18.75rem;
     opacity: 1; } }
-/*=====  End of Motion  ======*/
-.wp-pagenavi {
-  border: 1px solid #c9c9c9;
-  color: black;
-  text-transform: uppercase;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 0.875rem; }
-  .wp-pagenavi, .wp-pagenavi * {
-    transition-property: background, color, border, opacity;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: background, color, border, opacity; }
-  .wp-pagenavi:hover {
-    border-color: black; }
-    .wp-pagenavi:hover span, .wp-pagenavi:hover a {
-      border-color: transparent !important; }
-    .wp-pagenavi:hover .pages {
-      opacity: 0; }
-    .wp-pagenavi:hover .current {
-      opacity: 0; }
-  .wp-pagenavi span, .wp-pagenavi a {
-    display: inline-block;
-    padding: 0.625rem 1.25rem; }
-    .wp-pagenavi span:not(:last-child), .wp-pagenavi a:not(:last-child) {
-      border-right: 1px solid #c9c9c9; }
-  .wp-pagenavi a:hover {
-    background-color: black;
-    color: white; }
-  .wp-pagenavi .pages {
-    padding-right: 2.1875rem;
-    padding-left: 2.1875rem; }
-  .wp-pagenavi .current {
-    background-color: #f4f4f4; }
-
-.prices-list {
-  display: flex;
-  flex-flow: row wrap; }
-  .prices-list .price-box {
-    border: 1px solid #ebebeb;
-    border-top: 10px solid #ebebeb;
-    padding: 1.5625rem;
-    flex: none;
-    width: 100%;
-    margin-bottom: 1.25rem;
-    text-align: center; }
-    @media (min-width: 700px) {
-      .prices-list .price-box {
-        width: calc(33% - 1.25rem);
-        margin-right: 1.25rem; } }
-    .prices-list .price-box > .title {
-      font-size: 1rem; }
-    .prices-list .price-box > .price {
-      font-size: 1.5rem;
-      margin: 1.875rem 0; }
-      .prices-list .price-box > .price > .currency-symbol {
-        font-size: 1rem;
-        top: -1.5625rem;
-        position: relative; }
-      .prices-list .price-box > .price > .big-value {
-        font-size: 3.75rem;
-        font-weight: 800; }
-    .prices-list .price-box ul {
-      text-align: left;
-      list-style: disc inside;
-      padding-top: 1.875rem;
-      margin-top: 1.875rem;
-      border-top: 1px solid #ebebeb; }
-      .prices-list .price-box ul li {
-        margin: 0;
-        line-height: 1;
-        margin-bottom: 0.625rem; }
-
-/*==============================
-=            Motion            =
-==============================*/
-.price-box {
-  transition-property: transform, opacity, border;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-  will-change: transform, opacity, border; }
-
-.prices-list:hover .price-box {
-  opacity: 0.75; }
-
-.prices-list .price-box:hover {
-  border-top-color: #315aa9;
-  transform: translateY(1.56rem);
-  opacity: 1; }
-
 /*=====  End of Motion  ======*/
 .rich-content {
   /**
@@ -5453,87 +5234,6 @@ html {
     padding: 0.875rem 1.5625rem;
     background-color: #f2f2f2; }
 
-.tabs .tabs-nav {
-  border-bottom: 1px solid #cacaca;
-  margin-bottom: 4.375rem; }
-  .tabs .tabs-nav .nav {
-    justify-content: center;
-    font-size: 1rem;
-    padding: 0% 2.5%;
-    display: none; }
-    @media (min-width: 700px) {
-      .tabs .tabs-nav .nav {
-        display: flex; } }
-  .tabs .tabs-nav button {
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    color: #cacaca;
-    padding: 1rem 0rem;
-    background-color: #fff;
-    border: 0;
-    flex: 0 1 auto;
-    font-weight: bold;
-    transition-property: background, color, border;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: background, color, border;
-    border-bottom: 4px solid transparent; }
-    .tabs .tabs-nav button.-active {
-      color: #315aa9;
-      border-bottom: 4px solid #315aa9; }
-    .tabs .tabs-nav button:not(:last-child) {
-      margin-right: 3.75rem; }
-    .tabs .tabs-nav button:hover:not(.-active) {
-      color: gray; }
-.tabs .tabs-content .group {
-  margin-bottom: 2.5rem; }
-  @media (min-width: 700px) {
-    .tabs .tabs-content .group {
-      margin-bottom: 0; } }
-  @media (max-width: 699px) {
-    .tabs .tabs-content .group .division:nth-child(1) {
-      float: left; }
-      .tabs .tabs-content .group .division:nth-child(1) img {
-        width: 25vw;
-        height: 25vw;
-        object-fit: cover;
-        object-position: center center; } }
-
-/*==============================
-=            Motion            =
-==============================*/
-.tabs .tabs-content .owl-item {
-  overflow: hidden;
-  transform: translateZ(0%); }
-  .tabs .tabs-content .owl-item img {
-    transform: translateX(-200%);
-    opacity: 0;
-    filter: grayscale(100%);
-    transition-property: transform, opacity, filter;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    will-change: transform, opacity, filter; }
-  .tabs .tabs-content .owl-item h2, .tabs .tabs-content .owl-item p, .tabs .tabs-content .owl-item .cta {
-    opacity: 0;
-    transform: translateX(200%);
-    transition-property: transform, opacity;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    will-change: transform, opacity; }
-  .tabs .tabs-content .owl-item p {
-    transition-delay: 100ms; }
-  .tabs .tabs-content .owl-item .cta {
-    transition-delay: 200ms; }
-
-.tabs .tabs-content .owl-item.active img {
-  transform: translateX(0%);
-  opacity: 1;
-  filter: grayscale(0%); }
-.tabs .tabs-content .owl-item.active h2, .tabs .tabs-content .owl-item.active p, .tabs .tabs-content .owl-item.active .cta {
-  opacity: 1;
-  transform: translateY(0%); }
-
-/*=====  End of Motion  ======*/
 [class*="text-"]:not(.text-center) {
   line-height: 1.7;
   margin: 1em 0 0.5em;
@@ -5734,6 +5434,27 @@ html {
 .title-7 {
   font-size: 13px;
   color: #9e9e9e; }
+
+.fera-topics {
+  counter-reset: topics; }
+  .fera-topics .topic::before {
+    counter-increment: topics;
+    content: counter(topics,decimal-leading-zero);
+    color: #bbbbbb;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 300; }
+  .fera-topics .topic-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 1.5625rem; }
+  .fera-topics .topic-content {
+    font-size: 15px;
+    color: #9e9e9e;
+    line-height: 1.6; }
 
 /*===============================
 =            Layouts            =

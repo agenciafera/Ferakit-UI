@@ -28,4 +28,9 @@ body {
 .fera-module{
   @include rem(padding, 50px);
   @include rem(margin-bottom, 100px);
+
+  .content {
+    max-width: 50%;
+  }
+
 }
