@@ -1,0 +1,22 @@
+.fera-horizontal-list {
+
+  > .item {
+
+    > .item-title {
+      font-size: 16px;
+      font-family: "Open Sans";
+      font-weight: 700;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        display: block;
+        @include rem(margin-bottom, 20px);
+        background: linear-gradient(to right,#f6ad49 0,#e85b6b 16%,#dc1c78 32%,#743f98 50%,#56246b 69%,#305baa 85%,#3187c8 99%);
+      }
+    }
+
+  }
+
+}

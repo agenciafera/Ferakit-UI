@@ -1,0 +1,54 @@
+.fera-form {
+
+  .form-input, .form-select {
+    width: 100%;
+    display: block;
+    @include transition(box-shadow);
+    box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0);
+
+    &:hover {
+      box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.15);
+    }
+
+  }
+
+  .form-label {
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    @include rem(margin-bottom, 15px);
+    display: block;
+  }
+
+  .form-input {
+    padding: 20px 15px;
+    border: 1px solid map-get($colors, darkness);
+    font-size: 18px;
+    color: map-get($colors, darkness);
+    width: 100%;
+    font-weight: 300;
+
+    @include input-placeholder {
+      font-size: 18px;
+      color: map-get($colors, mellow);
+    }
+
+  }
+
+  .form-select {
+    padding: 17px 15px;
+    padding-right: 100px;
+    color: white;
+    background-color: map-get($colors, baby);
+    font-family: "Open Sans";
+    appearance: none;
+    font-size: 18px;
+    font-weight: 300;
+    border: 0;
+  }
+
+  textarea.form-input {
+    height: 100px;
+  }
+
+}
