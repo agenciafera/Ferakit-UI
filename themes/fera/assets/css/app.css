@@ -1239,7 +1239,8 @@ body {
 .fera-module {
   margin-bottom: 3.75rem;
   padding: 1.25rem;
-  background-color: white; }
+  background-color: white;
+  border-radius: 5px; }
   @media (min-width: 700px) {
     .fera-module {
       padding: 2.5rem; } }
@@ -4910,11 +4911,17 @@ html {
 
 .fera-table {
   width: 100%;
-  font-size: 13px;
+  font-size: 0.75rem;
   /*=============================
   =            Theme            =
   =============================*/
   /*=====  End of Theme  ======*/ }
+  @media (min-width: 700px) {
+    .fera-table {
+      font-size: 0.8125rem; } }
+  @media (min-width: 1025px) {
+    .fera-table {
+      font-size: 0.875rem; } }
   .fera-table tr {
     border-bottom: 1px solid #ededed; }
   .fera-table .table-highlight {
@@ -5183,6 +5190,31 @@ html {
 .fera-title.-title-7 {
   font-size: 13px;
   color: #9e9e9e; }
+
+.fera-top-article {
+  max-width: 50rem;
+  font-family: "Open Sans";
+  color: #333333; }
+  .fera-top-article .article-intro {
+    font-size: 19px;
+    font-weight: 500;
+    color: #9e9e9e;
+    line-height: 1.3; }
+  .fera-top-article .article-author {
+    margin-top: 3.75rem;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400; }
+    .fera-top-article .article-author img {
+      width: 5.625rem;
+      height: 5.625rem; }
+    .fera-top-article .article-author span.date {
+      color: #9e9e9e; }
+  .fera-top-article .article-title {
+    font-size: 3rem;
+    line-height: 1.50;
+    font-weight: 600;
+    margin-bottom: 2.1875rem; }
 
 .fera-topics {
   counter-reset: topics;

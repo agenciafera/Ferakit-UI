@@ -4,7 +4,7 @@
 
 .fera-table {
   width: 100%;
-  font-size: 13px;
+  @include responsive-property(font-size, $s: 12, $t: 13, $d: 14);
   @extend .-darkness;
 
   tr {
