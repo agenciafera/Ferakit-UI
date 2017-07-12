@@ -51,53 +51,61 @@
 
 }
 
-.title-1 {
-  @include rem(font-size, 40px);
-  text-transform: uppercase;
-  font-weight: bold;
+.fera-title {
 
-  @media #{$tablet} {
-    @include rem(font-size, 48px);
+  @include theme {
+    color: $color;
   }
 
-}
+  &.-title-1 {
+    @include rem(font-size, 40px);
+    text-transform: uppercase;
+    font-weight: bold;
 
-.title-2 {
-  @include rem(font-size, 40px);
-  text-transform: uppercase;
-  font-weight: normal;
+    @media #{$tablet} {
+      @include rem(font-size, 48px);
+    }
 
-  @media #{$tablet} {
-    @include rem(font-size, 48px);
   }
-}
 
-.title-3 {
-  font-family: 'Oswald', sans-serif;
-  @include rem(font-size, 30px);
-  font-weight: bold;
-  text-transform: uppercase;
-}
+  &.-title-2 {
+    @include rem(font-size, 40px);
+    text-transform: uppercase;
+    font-weight: normal;
 
-.title-4 {
-  @include rem(font-size, 24px);
-  font-weight: bold;
-}
+    @media #{$tablet} {
+      @include rem(font-size, 48px);
+    }
+  }
 
-.title-5 {
-  font-family: 'Oswald', sans-serif;
-  @include rem(font-size, 19px);
-  font-weight: bold;
-  text-transform: uppercase;
-}
+  &.-title-3 {
+    font-family: 'Oswald', sans-serif;
+    @include rem(font-size, 30px);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-.title-6 {
-  font-family: 'Oswald', sans-serif;
-  @include rem(font-size, 17px);
-  font-weight: bold;
-}
+  &.-title-4 {
+    @include rem(font-size, 24px);
+    font-weight: bold;
+  }
 
-.title-7 {
-  font-size: 13px;
-  color: color('gray');
+  &.-title-5 {
+    font-family: 'Oswald', sans-serif;
+    @include rem(font-size, 19px);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &.-title-6 {
+    font-family: 'Oswald', sans-serif;
+    @include rem(font-size, 17px);
+    font-weight: bold;
+  }
+
+  &.-title-7 {
+    font-size: 13px;
+    color: color('gray');
+  }
+
 }
