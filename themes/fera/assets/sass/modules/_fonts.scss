@@ -1,40 +1,50 @@
 
-.primary-font{
+.fera-primary-font{
   @include rem(margin-bottom, 30px);
-  p{
-      @include rem(font-size, 26px);
-      @include rem(margin-bottom, 10px);
-      text-transform: uppercase;
-      color: color('black');
 
-      .light{
-        font-weight: 100;
-      }
-      .semibold{
-        font-weight: 400;
-      }
-      .extrabold{
-        font-weight: 900;
-      }
+  p {
+    @include rem(font-size, 26px);
+    @include rem(margin-bottom, 10px);
+    text-transform: uppercase;
+    color: color('black');
+
+    .light {
+      font-weight: 100;
+    }
+
+    .semibold {
+      font-weight: 400;
+    }
+
+    .extrabold {
+      font-weight: 900;
+    }
+
   }
+
 }
 
-.secondary-font{
-  p{
-      font-family: 'Oswald', sans-serif;
-      @include rem(font-size, 26px);
-      @include rem(margin-bottom, 10px);
-      text-transform: uppercase;
-      color: color('black');
+.fera-secondary-font {
 
-      .light{
-        font-weight: 100;
-      }
-      .semibold{
-        font-weight: 400;
-      }
-      .extrabold{
-        font-weight: 900;
-      }
+  p {
+    font-family: 'Oswald', sans-serif;
+    @include rem(font-size, 26px);
+    @include rem(margin-bottom, 10px);
+    text-transform: uppercase;
+    color: color('black');
+
+    .light {
+      font-weight: 100;
+    }
+
+    .semibold {
+      font-weight: 400;
+    }
+
+    .extrabold {
+      font-weight: 900;
+    }
+
   }
+
 }

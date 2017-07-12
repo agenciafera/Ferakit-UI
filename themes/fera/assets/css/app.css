@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*===============================
 =            Compass            =
 ===============================*/
@@ -1238,9 +1237,15 @@ body {
   counter-reset: title; }
 
 .fera-module {
-  padding: 3.75rem;
   margin-bottom: 3.75rem;
+  padding: 1.25rem;
   background-color: white; }
+  @media (min-width: 700px) {
+    .fera-module {
+      padding: 2.5rem; } }
+  @media (min-width: 1025px) {
+    .fera-module {
+      padding: 3.75rem; } }
 
 html {
   font-family: "Open Sans", sans-serif; }
@@ -1720,57 +1725,31 @@ html {
 @media (min-width: 1025px) {
   .d-none\@desktop {
     display: none; } }
-.float-label-container {
-  position: relative; }
-  .float-label-container.-active .float-label-text {
-    margin-top: -1.4375rem;
-    opacity: 1; }
-.float-label-text {
-  position: absolute;
-  transform-style: preserve-3d;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0.6875rem;
-  background-color: white;
-  padding: 0.1875rem 0.5rem;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 11px;
-  opacity: 0;
-  margin-top: 0;
-  letter-spacing: 0.5px;
-  transition-property: opacity, margin;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-  will-change: opacity, margin;
-  pointer-events: none; }
-
-.primary-font {
+.fera-primary-font {
   margin-bottom: 1.875rem; }
-  .primary-font p {
+  .fera-primary-font p {
     font-size: 1.625rem;
     margin-bottom: 0.625rem;
     text-transform: uppercase;
     color: #000; }
-    .primary-font p .light {
+    .fera-primary-font p .light {
       font-weight: 100; }
-    .primary-font p .semibold {
+    .fera-primary-font p .semibold {
       font-weight: 400; }
-    .primary-font p .extrabold {
+    .fera-primary-font p .extrabold {
       font-weight: 900; }
 
-.secondary-font p {
+.fera-secondary-font p {
   font-family: 'Oswald', sans-serif;
   font-size: 1.625rem;
   margin-bottom: 0.625rem;
   text-transform: uppercase;
   color: #000; }
-  .secondary-font p .light {
+  .fera-secondary-font p .light {
     font-weight: 100; }
-  .secondary-font p .semibold {
+  .fera-secondary-font p .semibold {
     font-weight: 400; }
-  .secondary-font p .extrabold {
+  .fera-secondary-font p .extrabold {
     font-weight: 900; }
 
 .grid-container {
@@ -4407,152 +4386,47 @@ html {
     font-size: 1.3125rem;
     margin-bottom: 0.9375rem; }
 
-.main-nav ul {
-  display: flex;
-  flex-flow: row wrap; }
-  .main-nav ul li {
-    align-self: center;
-    flex: 0 0 100%;
-    margin-bottom: 2.5rem; }
-    @media (min-width: 700px) {
-      .main-nav ul li {
-        margin-bottom: 0;
-        flex: 0 0 auto; } }
-    .main-nav ul li:not(:last-child) {
-      margin-right: 1.5625rem; }
-    .main-nav ul li.menu-item-has-children > a::after {
-      content: "▼";
-      display: inline-block;
-      margin-left: 0.3125rem;
-      opacity: 0.5; }
-    .main-nav ul li a:not(.btn) {
-      font-size: 18px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: black;
-      font-weight: bold; }
-      .main-nav ul li a:not(.btn):hover {
-        color: #2992c3; }
-      @media (min-width: 700px) {
-        .main-nav ul li a:not(.btn) {
-          font-size: 13px; } }
-.main-nav .submenu {
-  margin-top: 1.875rem;
-  top: 4.8125rem;
-  z-index: 99999;
-  background: white;
-  border-top: 5px solid #315aa9;
-  padding: 1.875rem;
-  right: -1.875rem;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(5%);
-  transition-property: opacity, transform;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-  will-change: opacity, transform;
-  display: none; }
-  @media (max-width: 699px) {
-    .main-nav .submenu {
-      padding-bottom: 0; } }
+.fera-paragraph {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: 'Open Sans';
+  line-height: 1.52;
+  margin-bottom: 1.67em; }
   @media (min-width: 700px) {
-    .main-nav .submenu {
-      display: flex !important;
-      margin-top: 0;
-      position: absolute;
-      margin-right: 1.875rem;
-      box-shadow: 2px 3.464px 5px 0px rgba(0, 0, 0, 0.1); } }
-  .main-nav .submenu.-active {
-    display: block;
-    opacity: 1;
-    pointer-events: auto; }
-    @media (min-width: 700px) {
-      .main-nav .submenu.-active {
-        transform: translateY(0%); } }
-  .main-nav .submenu a {
-    color: black !important; }
-    .main-nav .submenu a:hover {
-      color: #315aa9 !important; }
+    .fera-paragraph {
+      font-size: 19px; } }
+  @media (min-width: 1025px) {
+    .fera-paragraph {
+      font-size: 21px; } }
+  .fera-paragraph > strong, .fera-paragraph > a {
+    color: #e75a6a; }
+  .fera-paragraph a {
+    text-decoration: underline; }
+  .fera-paragraph.-halloween > strong, .fera-paragraph.-halloween > a {
+    color: #54246a; }
+  .fera-paragraph.-andromeda > strong, .fera-paragraph.-andromeda > a {
+    color: #733e97; }
+  .fera-paragraph.-night > strong, .fera-paragraph.-night > a {
+    color: #315aa9; }
+  .fera-paragraph.-sky > strong, .fera-paragraph.-sky > a {
+    color: #3186c7; }
+  .fera-paragraph.-sunshine > strong, .fera-paragraph.-sunshine > a {
+    color: #f3ac47; }
+  .fera-paragraph.-pink > strong, .fera-paragraph.-pink > a {
+    color: #da1e77; }
+  .fera-paragraph.-salmon > strong, .fera-paragraph.-salmon > a {
+    color: #e75a6a; }
+  .fera-paragraph.-darkness > strong, .fera-paragraph.-darkness > a {
+    color: #333333; }
+  .fera-paragraph.-mellow > strong, .fera-paragraph.-mellow > a {
+    color: #9e9e9e; }
+  .fera-paragraph.-nature > strong, .fera-paragraph.-nature > a {
+    color: #06d25a; }
+  .fera-paragraph.-void > strong, .fera-paragraph.-void > a {
+    color: #eeeeee; }
+  .fera-paragraph.-baby > strong, .fera-paragraph.-baby > a {
+    color: #27b9f5; }
 
-.news-card {
-  display: flex;
-  flex-flow: row nowrap;
-  overflow-x: auto; }
-  @media (max-width: 699px) {
-    .news-card {
-      scroll-snap-type: mandatory; } }
-  @media (min-width: 700px) {
-    .news-card {
-      overflow: hidden;
-      flex-flow: row wrap;
-      margin: -2.3125rem; } }
-  .news-card > .card {
-    flex: 0 0 80%;
-    position: relative;
-    margin-right: 1.25rem;
-    overflow: hidden; }
-    @media (min-width: 700px) {
-      .news-card > .card {
-        flex: 0 0 21.875rem;
-        margin: 2.3125rem; } }
-    .news-card > .card::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 75%, rgba(0, 0, 0, 0.65) 100%);
-      z-index: 5;
-      position: absolute;
-      top: 0;
-      left: 0;
-      pointer-events: none; }
-    @media (max-width: 699px) {
-      .news-card > .card > .cover {
-        width: 100%; } }
-    .news-card > .card > .infos {
-      width: 80%;
-      position: absolute;
-      transform-style: preserve-3d;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 2.5rem;
-      z-index: 10;
-      color: white; }
-      .news-card > .card > .infos > .title {
-        margin-bottom: 2.5rem; }
-
-/*==============================
-=            Motion            =
-==============================*/
-@media (min-width: 1025px) {
-  .news-card .infos .content {
-    max-height: 0px;
-    overflow: hidden;
-    opacity: 0;
-    transition-property: max-height, opacity;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: max-height, opacity; }
-
-  .news-card .card .cover {
-    transition-property: transform;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: transform;
-    transform: scale(1); }
-  .news-card .card::before {
-    opacity: 0.5;
-    transition-property: opacity;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
-    will-change: opacity; }
-  .news-card .card:hover .cover {
-    transform: scale(1.1); }
-  .news-card .card:hover:before {
-    opacity: 1; }
-  .news-card .card:hover .infos .content {
-    max-height: 18.75rem;
-    opacity: 1; } }
-/*=====  End of Motion  ======*/
 .m-left-1 {
   margin-left: 0.625rem; }
 
@@ -5054,49 +4928,6 @@ html {
   .table-price tbody td {
     padding: 0.875rem 1.5625rem;
     background-color: #f2f2f2; }
-
-[class*="text-"]:not(.text-center) {
-  line-height: 1.7;
-  margin: 1em 0 0.5em;
-  /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto; }
-
-.text-1 {
-  font-size: 18px;
-  font-weight: 300; }
-
-.text-2 {
-  font-size: 16px; }
-
-.text-3 {
-  font-size: 14px; }
-
-.text-4 {
-  font-size: 15px;
-  font-weight: bold; }
-
-.text-5 {
-  font-size: 22px;
-  font-weight: bold; }
-
-.text-6 {
-  font-size: 15px;
-  text-transform: uppercase; }
-
-.text-7 {
-  font-size: 26px;
-  color: #808080; }
 
 .theme-bg-purple {
   background-color: #54246a; }
