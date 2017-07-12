@@ -1311,105 +1311,148 @@ html {
 .fera-alert {
   border: 1px solid black;
   display: flex;
-  margin: 2.5rem 0; }
+  margin: 2.5rem 0;
+  justify-content: space-between; }
   .fera-alert.-halloween {
     border-color: #54246a; }
-    .fera-alert.-halloween .alert-icon {
+    .fera-alert.-halloween > .alert-icon {
       background-color: #54246a;
       color: white; }
-    .fera-alert.-halloween strong {
+    .fera-alert.-halloween > .alert-text > strong {
+      color: #54246a; }
+    .fera-alert.-halloween > .alert-button {
       color: #54246a; }
   .fera-alert.-andromeda {
     border-color: #733e97; }
-    .fera-alert.-andromeda .alert-icon {
+    .fera-alert.-andromeda > .alert-icon {
       background-color: #733e97;
       color: white; }
-    .fera-alert.-andromeda strong {
+    .fera-alert.-andromeda > .alert-text > strong {
+      color: #733e97; }
+    .fera-alert.-andromeda > .alert-button {
       color: #733e97; }
   .fera-alert.-night {
     border-color: #315aa9; }
-    .fera-alert.-night .alert-icon {
+    .fera-alert.-night > .alert-icon {
       background-color: #315aa9;
       color: white; }
-    .fera-alert.-night strong {
+    .fera-alert.-night > .alert-text > strong {
+      color: #315aa9; }
+    .fera-alert.-night > .alert-button {
       color: #315aa9; }
   .fera-alert.-sky {
     border-color: #3186c7; }
-    .fera-alert.-sky .alert-icon {
+    .fera-alert.-sky > .alert-icon {
       background-color: #3186c7;
       color: white; }
-    .fera-alert.-sky strong {
+    .fera-alert.-sky > .alert-text > strong {
+      color: #3186c7; }
+    .fera-alert.-sky > .alert-button {
       color: #3186c7; }
   .fera-alert.-sunshine {
     border-color: #f3ac47; }
-    .fera-alert.-sunshine .alert-icon {
+    .fera-alert.-sunshine > .alert-icon {
       background-color: #f3ac47;
       color: white; }
-    .fera-alert.-sunshine strong {
+    .fera-alert.-sunshine > .alert-text > strong {
+      color: #f3ac47; }
+    .fera-alert.-sunshine > .alert-button {
       color: #f3ac47; }
   .fera-alert.-pink {
     border-color: #da1e77; }
-    .fera-alert.-pink .alert-icon {
+    .fera-alert.-pink > .alert-icon {
       background-color: #da1e77;
       color: white; }
-    .fera-alert.-pink strong {
+    .fera-alert.-pink > .alert-text > strong {
+      color: #da1e77; }
+    .fera-alert.-pink > .alert-button {
       color: #da1e77; }
   .fera-alert.-salmon {
     border-color: #e75a6a; }
-    .fera-alert.-salmon .alert-icon {
+    .fera-alert.-salmon > .alert-icon {
       background-color: #e75a6a;
       color: white; }
-    .fera-alert.-salmon strong {
+    .fera-alert.-salmon > .alert-text > strong {
+      color: #e75a6a; }
+    .fera-alert.-salmon > .alert-button {
       color: #e75a6a; }
   .fera-alert.-darkness {
     border-color: #333333; }
-    .fera-alert.-darkness .alert-icon {
+    .fera-alert.-darkness > .alert-icon {
       background-color: #333333;
       color: white; }
-    .fera-alert.-darkness strong {
+    .fera-alert.-darkness > .alert-text > strong {
+      color: #333333; }
+    .fera-alert.-darkness > .alert-button {
       color: #333333; }
   .fera-alert.-mellow {
     border-color: #9e9e9e; }
-    .fera-alert.-mellow .alert-icon {
+    .fera-alert.-mellow > .alert-icon {
       background-color: #9e9e9e;
       color: white; }
-    .fera-alert.-mellow strong {
+    .fera-alert.-mellow > .alert-text > strong {
+      color: #9e9e9e; }
+    .fera-alert.-mellow > .alert-button {
       color: #9e9e9e; }
   .fera-alert.-nature {
     border-color: #06d25a; }
-    .fera-alert.-nature .alert-icon {
+    .fera-alert.-nature > .alert-icon {
       background-color: #06d25a;
       color: white; }
-    .fera-alert.-nature strong {
+    .fera-alert.-nature > .alert-text > strong {
+      color: #06d25a; }
+    .fera-alert.-nature > .alert-button {
       color: #06d25a; }
   .fera-alert.-void {
     border-color: #eeeeee; }
-    .fera-alert.-void .alert-icon {
+    .fera-alert.-void > .alert-icon {
       background-color: #eeeeee;
       color: white; }
-    .fera-alert.-void strong {
+    .fera-alert.-void > .alert-text > strong {
+      color: #eeeeee; }
+    .fera-alert.-void > .alert-button {
       color: #eeeeee; }
   .fera-alert.-baby {
     border-color: #27b9f5; }
-    .fera-alert.-baby .alert-icon {
+    .fera-alert.-baby > .alert-icon {
       background-color: #27b9f5;
       color: white; }
-    .fera-alert.-baby strong {
+    .fera-alert.-baby > .alert-text > strong {
+      color: #27b9f5; }
+    .fera-alert.-baby > .alert-button {
       color: #27b9f5; }
   .fera-alert strong {
     text-transform: uppercase;
     font-weight: bold; }
-  .fera-alert .alert-icon {
+  .fera-alert > .alert-icon {
     content: "";
     background-color: #000;
-    padding: 1.875rem;
+    padding: 0.9375rem;
     font-size: 1.875rem;
     display: block;
     color: white; }
-  .fera-alert .alert-text {
-    font-size: 18px;
+    @media (min-width: 700px) {
+      .fera-alert > .alert-icon {
+        padding: 1.875rem; } }
+  .fera-alert > .alert-text {
+    font-size: 13px;
     color: #7c7c7c;
-    padding: 1.875rem; }
+    padding: 0.9375rem;
+    flex: 1; }
+    @media (min-width: 700px) {
+      .fera-alert > .alert-text {
+        font-size: 15px;
+        padding: 1.875rem; } }
+    @media (min-width: 1025px) {
+      .fera-alert > .alert-text {
+        font-size: 18px; } }
+  .fera-alert > .alert-button {
+    padding-right: 1.5625rem;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer; }
 
 .fera-btn {
   font-size: 18px;
