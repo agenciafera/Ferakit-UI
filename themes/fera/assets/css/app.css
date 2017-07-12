@@ -1132,6 +1132,10 @@ html {
 =            Layout            =
 ==============================*/
 /*=====  End of Layout  ======*/
+/*==================================
+=            Map Colors            =
+==================================*/
+/*=====  End of Map Colors  ======*/
 /*===========================
 =            REM            =
 ===========================*/
@@ -1227,13 +1231,16 @@ img {
   height: auto; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  counter-reset: title; }
 
 .fera-module {
-  padding: 3.125rem;
-  margin-bottom: 6.25rem; }
-  .fera-module .content {
-    max-width: 50%; }
+  padding: 3.75rem;
+  margin-bottom: 3.75rem;
+  background-color: white; }
 
 html {
   font-family: "Open Sans", sans-serif; }
@@ -1301,6 +1308,109 @@ html {
 /*===============================
 =            Modules            =
 ===============================*/
+.fera-alert {
+  border: 1px solid black;
+  display: flex;
+  margin: 2.5rem 0; }
+  .fera-alert.-halloween {
+    border-color: #54246a; }
+    .fera-alert.-halloween .alert-icon {
+      background-color: #54246a;
+      color: white; }
+    .fera-alert.-halloween strong {
+      color: #54246a; }
+  .fera-alert.-andromeda {
+    border-color: #733e97; }
+    .fera-alert.-andromeda .alert-icon {
+      background-color: #733e97;
+      color: white; }
+    .fera-alert.-andromeda strong {
+      color: #733e97; }
+  .fera-alert.-night {
+    border-color: #315aa9; }
+    .fera-alert.-night .alert-icon {
+      background-color: #315aa9;
+      color: white; }
+    .fera-alert.-night strong {
+      color: #315aa9; }
+  .fera-alert.-sky {
+    border-color: #3186c7; }
+    .fera-alert.-sky .alert-icon {
+      background-color: #3186c7;
+      color: white; }
+    .fera-alert.-sky strong {
+      color: #3186c7; }
+  .fera-alert.-sunshine {
+    border-color: #f3ac47; }
+    .fera-alert.-sunshine .alert-icon {
+      background-color: #f3ac47;
+      color: white; }
+    .fera-alert.-sunshine strong {
+      color: #f3ac47; }
+  .fera-alert.-pink {
+    border-color: #da1e77; }
+    .fera-alert.-pink .alert-icon {
+      background-color: #da1e77;
+      color: white; }
+    .fera-alert.-pink strong {
+      color: #da1e77; }
+  .fera-alert.-salmon {
+    border-color: #e75a6a; }
+    .fera-alert.-salmon .alert-icon {
+      background-color: #e75a6a;
+      color: white; }
+    .fera-alert.-salmon strong {
+      color: #e75a6a; }
+  .fera-alert.-darkness {
+    border-color: #333333; }
+    .fera-alert.-darkness .alert-icon {
+      background-color: #333333;
+      color: white; }
+    .fera-alert.-darkness strong {
+      color: #333333; }
+  .fera-alert.-mellow {
+    border-color: #9e9e9e; }
+    .fera-alert.-mellow .alert-icon {
+      background-color: #9e9e9e;
+      color: white; }
+    .fera-alert.-mellow strong {
+      color: #9e9e9e; }
+  .fera-alert.-nature {
+    border-color: #06d25a; }
+    .fera-alert.-nature .alert-icon {
+      background-color: #06d25a;
+      color: white; }
+    .fera-alert.-nature strong {
+      color: #06d25a; }
+  .fera-alert.-void {
+    border-color: #eeeeee; }
+    .fera-alert.-void .alert-icon {
+      background-color: #eeeeee;
+      color: white; }
+    .fera-alert.-void strong {
+      color: #eeeeee; }
+  .fera-alert.-baby {
+    border-color: #27b9f5; }
+    .fera-alert.-baby .alert-icon {
+      background-color: #27b9f5;
+      color: white; }
+    .fera-alert.-baby strong {
+      color: #27b9f5; }
+  .fera-alert strong {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .fera-alert .alert-icon {
+    content: "";
+    background-color: #000;
+    padding: 1.875rem;
+    font-size: 1.875rem;
+    display: block;
+    color: white; }
+  .fera-alert .alert-text {
+    font-size: 18px;
+    color: #7c7c7c;
+    padding: 1.875rem; }
+
 .fera-btn {
   font-size: 18px;
   padding: 20px 60px;
@@ -1497,29 +1607,29 @@ html {
   width: 4.375rem;
   height: 4.375rem;
   margin-right: 1.25rem; }
-  .square.purple {
+  .square.-halloween {
     background: #54246a; }
-  .square.blue {
-    background: #315aa9; }
-  .square.yellow {
-    background: #f3ac47; }
-  .square.rose {
-    background: #e75a6a; }
-  .square.purple-light {
+  .square.-andromeda {
     background: #733e97; }
-  .square.blue-light {
+  .square.-night {
+    background: #315aa9; }
+  .square.-sky {
     background: #3186c7; }
-  .square.pink {
+  .square.-sunshine {
+    background: #f3ac47; }
+  .square.-pink {
     background: #da1e77; }
-  .square.dark-gray {
-    background: #333; }
-  .square.gray {
+  .square.-salmon {
+    background: #e75a6a; }
+  .square.-darkness {
+    background: #333333; }
+  .square.-mellow {
     background: #9e9e9e; }
-  .square.green {
-    background: #07d35b; }
-  .square.light-gray {
-    background: #EEE; }
-  .square.super-blue {
+  .square.-nature {
+    background: #06d25a; }
+  .square.-void {
+    background: #eeeeee; }
+  .square.-baby {
     background: #27b9f5; }
 
 .hex {
@@ -5388,11 +5498,15 @@ html {
 .title-guide {
   font-family: 'brandon', sans-serif;
   font-size: 1.625rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
   color: #54246a;
   font-weight: 200;
   text-transform: uppercase;
-  border-bottom: 1px solid #54246a; }
+  border-bottom: 1px solid #54246a;
+  padding-bottom: 0.5rem; }
+  .title-guide::before {
+    counter-increment: title;
+    content: counter(title,decimal-leading-zero) " - "; }
 
 .title-1 {
   font-size: 2.5rem;
@@ -5460,7 +5574,8 @@ html {
 =            Layouts            =
 ===============================*/
 .main-header {
-  padding: 3.125rem 3.125rem 0 3.125rem; }
+  padding: 3.125rem 3.125rem 0 3.125rem;
+  margin-bottom: 5rem; }
   .main-header .logo {
     width: 31.25rem; }
 

@@ -34,14 +34,21 @@
 
 }
 
-.title-guide{
+.title-guide {
   font-family: 'brandon', sans-serif;
   @include rem(font-size, 26px);
-  @include rem(margin-bottom, 20px);
+  @include rem(margin-bottom, 40px);
   color: color('purple');
   font-weight: 200;
   text-transform: uppercase;
   border-bottom: 1px solid color('purple');
+  @include rem(padding-bottom, 8px);
+
+  &::before {
+    counter-increment: title;
+    content: counter(title, decimal-leading-zero) " - ";
+  }
+
 }
 
 .title-1 {

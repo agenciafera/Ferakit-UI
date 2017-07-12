@@ -1,0 +1,41 @@
+.fera-alert {
+  border: 1px solid black;
+  display: flex;
+  @include rem(margin, 40px 0);
+
+  @include theme {
+    border-color: $color;
+
+    .alert-icon {
+      background-color: $color;
+      // color: contrast-color($color);
+      color: white;
+    }
+
+    strong {
+      color: $color;
+    }
+
+  }
+
+  strong {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .alert-icon {
+    content: "";
+    background-color: #000;
+    @include rem(padding, 30px);
+    @include rem(font-size, 30px);
+    display: block;
+    color: white;
+  }
+
+  .alert-text {
+    font-size: 18px;
+    color: #7c7c7c;
+    @include rem(padding, 30px);
+  }
+
+}
