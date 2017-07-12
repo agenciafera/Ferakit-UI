@@ -29,4 +29,19 @@
     line-height: 1.6;
   }
 
+  /*===============================
+  =            Theming            =
+  ===============================*/
+
+  @include theme {
+
+    > .topic > .topic-title {
+      color: $color;
+    }
+
+  }
+
+  /*=====  End of Theming  ======*/
+
+
 }
