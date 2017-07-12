@@ -36,12 +36,12 @@
 
 .title-guide {
   font-family: 'brandon', sans-serif;
-  @include rem(font-size, 26px);
+  @include rem(font-size, 40px);
   @include rem(margin-bottom, 40px);
   color: color('purple');
   font-weight: 200;
   text-transform: uppercase;
-  border-bottom: 1px solid color('purple');
+  // border-bottom: 1px solid color('purple');
   @include rem(padding-bottom, 8px);
 
   &::before {

@@ -4,6 +4,7 @@
   font-family: 'Open Sans';
   line-height: 1.52;
   margin-bottom: 1.67em;
+  @extend .-salmon;
 
   @media #{$tablet} {
     font-size: 19px;
@@ -11,12 +12,6 @@
 
   @media #{$desktop} {
     font-size: 21px;
-  }
-
-
-
-  > strong, > a {
-    color: map-get($colors, 'salmon');
   }
 
   a {

@@ -1372,23 +1372,23 @@ html {
       color: #da1e77; }
     .fera-alert.-pink > .alert-button {
       color: #da1e77; }
-  .fera-alert.-salmon {
+  .fera-alert.-salmon, .fera-alert.fera-paragraph {
     border-color: #e75a6a; }
-    .fera-alert.-salmon > .alert-icon {
+    .fera-alert.-salmon > .alert-icon, .fera-alert.fera-paragraph > .alert-icon {
       background-color: #e75a6a;
       color: white; }
-    .fera-alert.-salmon > .alert-text > strong {
+    .fera-alert.-salmon > .alert-text > strong, .fera-alert.fera-paragraph > .alert-text > strong {
       color: #e75a6a; }
-    .fera-alert.-salmon > .alert-button {
+    .fera-alert.-salmon > .alert-button, .fera-alert.fera-paragraph > .alert-button {
       color: #e75a6a; }
-  .fera-alert.-darkness {
+  .fera-alert.-darkness, .fera-alert.fera-table {
     border-color: #333333; }
-    .fera-alert.-darkness > .alert-icon {
+    .fera-alert.-darkness > .alert-icon, .fera-alert.fera-table > .alert-icon {
       background-color: #333333;
       color: white; }
-    .fera-alert.-darkness > .alert-text > strong {
+    .fera-alert.-darkness > .alert-text > strong, .fera-alert.fera-table > .alert-text > strong {
       color: #333333; }
-    .fera-alert.-darkness > .alert-button {
+    .fera-alert.-darkness > .alert-button, .fera-alert.fera-table > .alert-button {
       color: #333333; }
   .fera-alert.-mellow {
     border-color: #9e9e9e; }
@@ -1587,24 +1587,24 @@ html {
   .fera-btn.-pink:hover {
     background-color: #e54691; }
 
-.fera-btn.-salmon {
+.fera-btn.-salmon, .fera-btn.fera-paragraph {
   background-color: #e75a6a;
   color: #ffffff; }
-  .fera-btn.-salmon.-action {
+  .fera-btn.-salmon.-action, .fera-btn.-action.fera-paragraph {
     border-bottom: 6px solid #bf1c2e; }
-    .fera-btn.-salmon.-action:hover {
+    .fera-btn.-salmon.-action:hover, .fera-btn.-action.fera-paragraph:hover {
       background-color: #ea707e; }
-  .fera-btn.-salmon:hover {
+  .fera-btn.-salmon:hover, .fera-btn.fera-paragraph:hover {
     background-color: #ed8792; }
 
-.fera-btn.-darkness {
+.fera-btn.-darkness, .fera-btn.fera-table {
   background-color: #333333;
   color: #ffffff; }
-  .fera-btn.-darkness.-action {
+  .fera-btn.-darkness.-action, .fera-btn.-action.fera-table {
     border-bottom: 6px solid black; }
-    .fera-btn.-darkness.-action:hover {
+    .fera-btn.-darkness.-action:hover, .fera-btn.-action.fera-table:hover {
       background-color: #404040; }
-  .fera-btn.-darkness:hover {
+  .fera-btn.-darkness:hover, .fera-btn.fera-table:hover {
     background-color: #4d4d4d; }
 
 .fera-btn.-mellow {
@@ -1667,9 +1667,9 @@ html {
     background: #f3ac47; }
   .square.-pink {
     background: #da1e77; }
-  .square.-salmon {
+  .square.-salmon, .square.fera-paragraph {
     background: #e75a6a; }
-  .square.-darkness {
+  .square.-darkness, .square.fera-table {
     background: #333333; }
   .square.-mellow {
     background: #9e9e9e; }
@@ -4398,8 +4398,6 @@ html {
   @media (min-width: 1025px) {
     .fera-paragraph {
       font-size: 21px; } }
-  .fera-paragraph > strong, .fera-paragraph > a {
-    color: #e75a6a; }
   .fera-paragraph a {
     text-decoration: underline; }
   .fera-paragraph.-halloween > strong, .fera-paragraph.-halloween > a {
@@ -4414,9 +4412,9 @@ html {
     color: #f3ac47; }
   .fera-paragraph.-pink > strong, .fera-paragraph.-pink > a {
     color: #da1e77; }
-  .fera-paragraph.-salmon > strong, .fera-paragraph.-salmon > a {
+  .fera-paragraph.-salmon > strong, .fera-paragraph > strong, .fera-paragraph.-salmon > a, .fera-paragraph > a {
     color: #e75a6a; }
-  .fera-paragraph.-darkness > strong, .fera-paragraph.-darkness > a {
+  .fera-paragraph.-darkness > strong, .fera-paragraph.fera-table > strong, .fera-paragraph.-darkness > a, .fera-paragraph.fera-table > a {
     color: #333333; }
   .fera-paragraph.-mellow > strong, .fera-paragraph.-mellow > a {
     color: #9e9e9e; }
@@ -4910,24 +4908,102 @@ html {
 .table-container {
   overflow-x: auto; }
 
-.table-price {
+.fera-table {
   width: 100%;
-  font-size: 13px; }
-  .table-price tr {
-    border-bottom: 1px solid white; }
-  .table-price td:last-child, .table-price th:last-child {
-    background-color: #2992c3;
+  font-size: 13px;
+  /*=============================
+  =            Theme            =
+  =============================*/
+  /*=====  End of Theme  ======*/ }
+  .fera-table tr {
+    border-bottom: 1px solid #ededed; }
+  .fera-table .table-highlight {
     color: white; }
-  .table-price thead th {
-    background-color: #e9f4f9;
+  .fera-table .table-text-highlight {
+    font-weight: bold; }
+  .fera-table thead th {
+    background-color: #fcfbfb;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1.25rem 1.5625rem;
     white-space: nowrap;
-    color: black; }
-  .table-price tbody td {
+    color: #7f7f7f; }
+  .fera-table tbody td {
+    color: #7f7f7f;
     padding: 0.875rem 1.5625rem;
-    background-color: #f2f2f2; }
+    background-color: white; }
+  .fera-table.-halloween .table-highlight {
+    background-color: #54246a;
+    color: white; }
+  .fera-table.-halloween .table-text-highlight {
+    color: #54246a;
+    font-weight: bold; }
+  .fera-table.-andromeda .table-highlight {
+    background-color: #733e97;
+    color: white; }
+  .fera-table.-andromeda .table-text-highlight {
+    color: #733e97;
+    font-weight: bold; }
+  .fera-table.-night .table-highlight {
+    background-color: #315aa9;
+    color: white; }
+  .fera-table.-night .table-text-highlight {
+    color: #315aa9;
+    font-weight: bold; }
+  .fera-table.-sky .table-highlight {
+    background-color: #3186c7;
+    color: white; }
+  .fera-table.-sky .table-text-highlight {
+    color: #3186c7;
+    font-weight: bold; }
+  .fera-table.-sunshine .table-highlight {
+    background-color: #f3ac47;
+    color: white; }
+  .fera-table.-sunshine .table-text-highlight {
+    color: #f3ac47;
+    font-weight: bold; }
+  .fera-table.-pink .table-highlight {
+    background-color: #da1e77;
+    color: white; }
+  .fera-table.-pink .table-text-highlight {
+    color: #da1e77;
+    font-weight: bold; }
+  .fera-table.-salmon .table-highlight, .fera-table.fera-paragraph .table-highlight {
+    background-color: #e75a6a;
+    color: white; }
+  .fera-table.-salmon .table-text-highlight, .fera-table.fera-paragraph .table-text-highlight {
+    color: #e75a6a;
+    font-weight: bold; }
+  .fera-table.-darkness .table-highlight, .fera-table .table-highlight {
+    background-color: #333333;
+    color: white; }
+  .fera-table.-darkness .table-text-highlight, .fera-table .table-text-highlight {
+    color: #333333;
+    font-weight: bold; }
+  .fera-table.-mellow .table-highlight {
+    background-color: #9e9e9e;
+    color: white; }
+  .fera-table.-mellow .table-text-highlight {
+    color: #9e9e9e;
+    font-weight: bold; }
+  .fera-table.-nature .table-highlight {
+    background-color: #06d25a;
+    color: white; }
+  .fera-table.-nature .table-text-highlight {
+    color: #06d25a;
+    font-weight: bold; }
+  .fera-table.-void .table-highlight {
+    background-color: #eeeeee;
+    color: white; }
+  .fera-table.-void .table-text-highlight {
+    color: #eeeeee;
+    font-weight: bold; }
+  .fera-table.-baby .table-highlight {
+    background-color: #27b9f5;
+    color: white; }
+  .fera-table.-baby .table-text-highlight {
+    color: #27b9f5;
+    font-weight: bold; }
 
 .theme-bg-purple {
   background-color: #54246a; }
@@ -5039,12 +5115,11 @@ html {
 
 .title-guide {
   font-family: 'brandon', sans-serif;
-  font-size: 1.625rem;
+  font-size: 2.5rem;
   margin-bottom: 2.5rem;
   color: #54246a;
   font-weight: 200;
   text-transform: uppercase;
-  border-bottom: 1px solid #54246a;
   padding-bottom: 0.5rem; }
   .title-guide::before {
     counter-increment: title;
@@ -5062,9 +5137,9 @@ html {
   color: #f3ac47; }
 .fera-title.-pink {
   color: #da1e77; }
-.fera-title.-salmon {
+.fera-title.-salmon, .fera-title.fera-paragraph {
   color: #e75a6a; }
-.fera-title.-darkness {
+.fera-title.-darkness, .fera-title.fera-table {
   color: #333333; }
 .fera-title.-mellow {
   color: #9e9e9e; }
@@ -5145,9 +5220,9 @@ html {
     color: #f3ac47; }
   .fera-topics.-pink > .topic > .topic-title {
     color: #da1e77; }
-  .fera-topics.-salmon > .topic > .topic-title {
+  .fera-topics.-salmon > .topic > .topic-title, .fera-topics.fera-paragraph > .topic > .topic-title {
     color: #e75a6a; }
-  .fera-topics.-darkness > .topic > .topic-title {
+  .fera-topics.-darkness > .topic > .topic-title, .fera-topics.fera-table > .topic > .topic-title {
     color: #333333; }
   .fera-topics.-mellow > .topic > .topic-title {
     color: #9e9e9e; }

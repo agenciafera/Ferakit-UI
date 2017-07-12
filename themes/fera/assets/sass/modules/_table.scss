@@ -2,33 +2,32 @@
   overflow-x: auto;
 }
 
-.table-price {
+.fera-table {
   width: 100%;
   font-size: 13px;
-
+  @extend .-darkness;
 
   tr {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ededed;
   }
 
-  td, th {
+  .table-highlight {
+    color: white;
+  }
 
-    &:last-child {
-      background-color: #2992c3;
-      color: white;
-    }
-
+  .table-text-highlight {
+    font-weight: bold;
   }
 
   thead {
 
     th {
-      background-color: #e9f4f9;
+      background-color: #fcfbfb;
       text-transform: uppercase;
       font-weight: bold;
       @include rem(padding, 20px 25px);
       white-space: nowrap;
-      color: black;
+      color: #7f7f7f;
     }
 
   }
@@ -36,10 +35,32 @@
   tbody {
 
     td {
+      color: #7f7f7f;
       @include rem(padding, 14px 25px);
-      background-color: lighten(#e5e5e5, 5%);
+      background-color: white;
     }
 
   }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    .table-highlight {
+      background-color: $color;
+      color: white;
+    }
+
+    .table-text-highlight {
+      color: $color;
+      font-weight: bold;
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
 
 }
