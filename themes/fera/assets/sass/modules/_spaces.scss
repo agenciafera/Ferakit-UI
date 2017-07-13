@@ -1,66 +1,11 @@
 $directions: left right top bottom;
 
-@mixin margin($direction, $i) {
-  @include rem("margin-#{$direction}", ($i*10px));
-}
-
 @each $direction in $directions {
 
-  @for $i from 1 through 20 {
+  @for $i from 1 through 10 {
     .m-#{$direction}-#{$i} {
       @include margin($direction, $i);
     }
-
-    // @media #{$only-smartphone} {
-    //   .m-#{$direction}-#{$i}\@smartphone {
-    //     @include margin($direction, $i);
-    //   }
-    // }
-
-    // @media #{$only-tablet} {
-    //   .m-#{$direction}-#{$i}\@tablet {
-    //     @include margin($direction, $i);
-    //   }
-    // }
-
-    // @media #{$desktop} {
-    //   .m-#{$direction}-#{$i}\@desktop {
-    //     @include margin($direction, $i);
-    //   }
-    // }
-
-  }
-
-}
-
-@mixin padding($direction, $i) {
-    @include rem("padding-#{$direction}", ($i*10px));
-}
-
-@each $direction in $directions {
-
-  @for $i from 1 through 20 {
-    .p-#{$direction}-#{$i} {
-      @include padding($direction, $i);
-    }
-
-    // @media #{$only-smartphone} {
-    //   .p-#{$direction}-#{$i}\@smartphone {
-    //     @include padding($direction, $i);
-    //   }
-    // }
-
-    // @media #{$only-tablet} {
-    //   .p-#{$direction}-#{$i}\@tablet {
-    //     @include padding($direction, $i);
-    //   }
-    // }
-
-    // @media #{$desktop} {
-    //   .p-#{$direction}-#{$i}\@desktop {
-    //     @include padding($direction, $i);
-    //   }
-    // }
 
   }
 

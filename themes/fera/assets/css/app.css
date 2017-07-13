@@ -1342,14 +1342,14 @@ html {
       color: #eeeeee; }
     .fera-alert.-void > .alert-button {
       color: #eeeeee; }
-  .fera-alert.-baby {
+  .fera-alert.-baby, .fera-alert.fera-card, .fera-alert.fera-card-2 {
     border-color: #27b9f5; }
-    .fera-alert.-baby > .alert-icon {
+    .fera-alert.-baby > .alert-icon, .fera-alert.fera-card > .alert-icon, .fera-alert.fera-card-2 > .alert-icon {
       background-color: #27b9f5;
       color: white; }
-    .fera-alert.-baby > .alert-text > strong {
+    .fera-alert.-baby > .alert-text > strong, .fera-alert.fera-card > .alert-text > strong, .fera-alert.fera-card-2 > .alert-text > strong {
       color: #27b9f5; }
-    .fera-alert.-baby > .alert-button {
+    .fera-alert.-baby > .alert-button, .fera-alert.fera-card > .alert-button, .fera-alert.fera-card-2 > .alert-button {
       color: #27b9f5; }
   .fera-alert strong {
     text-transform: uppercase;
@@ -1562,15 +1562,143 @@ html {
   .fera-btn.-void:hover {
     background-color: white; }
 
-.fera-btn.-baby {
+.fera-btn.-baby, .fera-btn.fera-card, .fera-btn.fera-card-2 {
   background-color: #27b9f5;
   color: #ffffff; }
-  .fera-btn.-baby.-action {
+  .fera-btn.-baby.-action, .fera-btn.-action.fera-card, .fera-btn.-action.fera-card-2 {
     border-bottom: 6px solid #087eae; }
-    .fera-btn.-baby.-action:hover {
+    .fera-btn.-baby.-action:hover, .fera-btn.-action.fera-card:hover, .fera-btn.-action.fera-card-2:hover {
       background-color: #3fc1f6; }
-  .fera-btn.-baby:hover {
+  .fera-btn.-baby:hover, .fera-btn.fera-card:hover, .fera-btn.fera-card-2:hover {
     background-color: #58c9f7; }
+
+[class*="fera-card"] {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  transition-property: transform, box-shadow;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
+  will-change: transform, box-shadow; }
+  [class*="fera-card"]:hover {
+    transform: scale(0.98); }
+  [class*="fera-card"] .card-background {
+    transition-property: opacity;
+    transition-duration: 700ms;
+    transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
+    will-change: opacity; }
+  [class*="fera-card"] > .card-body > .card-text {
+    font-size: 13px;
+    line-height: 1.50; }
+
+.fera-card {
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  /*=============================
+  =            Theme            =
+  =============================*/
+  /*=====  End of Theme  ======*/
+  /*==================================
+  =            Variations            =
+  ==================================*/
+  /*=====  End of Variations  ======*/ }
+  .fera-card:hover > .card-highlight > .card-background {
+    opacity: 0.15; }
+  .fera-card > .card-highlight {
+    position: relative;
+    overflow: hidden; }
+    .fera-card > .card-highlight > .card-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block; }
+    .fera-card > .card-highlight > .card-icon {
+      position: absolute;
+      transform-style: preserve-3d;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 90%;
+      height: auto;
+      z-index: 10;
+      color: white;
+      font-size: 6.25rem;
+      padding: 15%; }
+  .fera-card > .card-body {
+    padding: 1.875rem; }
+    .fera-card > .card-body > .card-text {
+      color: #9e9e9e; }
+  .fera-card.-halloween > .card-highlight {
+    background-color: #54246a; }
+  .fera-card.-andromeda > .card-highlight {
+    background-color: #733e97; }
+  .fera-card.-night > .card-highlight {
+    background-color: #315aa9; }
+  .fera-card.-sky > .card-highlight {
+    background-color: #3186c7; }
+  .fera-card.-sunshine > .card-highlight {
+    background-color: #f3ac47; }
+  .fera-card.-pink > .card-highlight {
+    background-color: #da1e77; }
+  .fera-card.-salmon > .card-highlight, .fera-card.fera-paragraph > .card-highlight {
+    background-color: #e75a6a; }
+  .fera-card.-darkness > .card-highlight, .fera-card.fera-table > .card-highlight {
+    background-color: #333333; }
+  .fera-card.-mellow > .card-highlight {
+    background-color: #9e9e9e; }
+  .fera-card.-nature > .card-highlight {
+    background-color: #06d25a; }
+  .fera-card.-void > .card-highlight {
+    background-color: #eeeeee; }
+  .fera-card.-baby > .card-highlight, .fera-card > .card-highlight, .fera-card.fera-card-2 > .card-highlight {
+    background-color: #27b9f5; }
+  .fera-card.-horizontal {
+    display: flex;
+    flex-flow: row nowrap; }
+
+.fera-card-2 {
+  /*=============================
+  =            Theme            =
+  =============================*/
+  /*=====  End of Theme  ======*/ }
+  .fera-card-2:hover > .card-background {
+    opacity: 0.05; }
+  .fera-card-2 > .card-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: .15; }
+  .fera-card-2 > .card-body {
+    padding: 3.125rem 2.1875rem;
+    position: relative;
+    z-index: 10;
+    color: white; }
+  .fera-card-2.-halloween {
+    background-color: #54246a; }
+  .fera-card-2.-andromeda {
+    background-color: #733e97; }
+  .fera-card-2.-night {
+    background-color: #315aa9; }
+  .fera-card-2.-sky {
+    background-color: #3186c7; }
+  .fera-card-2.-sunshine {
+    background-color: #f3ac47; }
+  .fera-card-2.-pink {
+    background-color: #da1e77; }
+  .fera-card-2.-salmon, .fera-card-2.fera-paragraph {
+    background-color: #e75a6a; }
+  .fera-card-2.-darkness, .fera-card-2.fera-table {
+    background-color: #333333; }
+  .fera-card-2.-mellow {
+    background-color: #9e9e9e; }
+  .fera-card-2.-nature {
+    background-color: #06d25a; }
+  .fera-card-2.-void {
+    background-color: #eeeeee; }
+  .fera-card-2.-baby, .fera-card-2 {
+    background-color: #27b9f5; }
 
 .colors .title-7 {
   margin-bottom: 1.875rem; }
@@ -1603,7 +1731,7 @@ html {
     background: #06d25a; }
   .square.-void {
     background: #eeeeee; }
-  .square.-baby {
+  .square.-baby, .square.fera-card, .square.fera-card-2 {
     background: #27b9f5; }
 
 .hex {
@@ -1617,42 +1745,6 @@ html {
     display: block;
     margin-bottom: 0; }
 
-.d-block {
-  display: block; }
-
-@media (max-width: 699px) {
-  .d-block\@smartphone {
-    display: block; } }
-@media (min-width: 700px) and (max-width: 1024px) {
-  .d-block\@tablet {
-    display: block; } }
-@media (min-width: 1025px) {
-  .d-block\@desktop {
-    display: block; } }
-.d-inline-block {
-  display: inline-block; }
-
-@media (max-width: 699px) {
-  .d-inline-block\@smartphone {
-    display: inline-block; } }
-@media (min-width: 700px) and (max-width: 1024px) {
-  .d-inline-block\@tablet {
-    display: inline-block; } }
-@media (min-width: 1025px) {
-  .d-inline-block\@desktop {
-    display: inline-block; } }
-.d-none {
-  display: none; }
-
-@media (max-width: 699px) {
-  .d-none\@smartphone {
-    display: none; } }
-@media (min-width: 700px) and (max-width: 1024px) {
-  .d-none\@tablet {
-    display: none; } }
-@media (min-width: 1025px) {
-  .d-none\@desktop {
-    display: none; } }
 .fera-primary-font {
   margin-bottom: 1.875rem; }
   .fera-primary-font p {
@@ -1775,7 +1867,7 @@ html {
     background: #06d25a; }
   .fera-horizontal-list.-void > .item > .item-title::before {
     background: #eeeeee; }
-  .fera-horizontal-list.-baby > .item > .item-title::before {
+  .fera-horizontal-list.-baby > .item > .item-title::before, .fera-horizontal-list.fera-card > .item > .item-title::before, .fera-horizontal-list.fera-card-2 > .item > .item-title::before {
     background: #27b9f5; }
 
 @font-face {
@@ -4453,7 +4545,7 @@ html {
     color: #06d25a; }
   .fera-paragraph.-void > strong, .fera-paragraph.-void > a {
     color: #eeeeee; }
-  .fera-paragraph.-baby > strong, .fera-paragraph.-baby > a {
+  .fera-paragraph.-baby > strong, .fera-paragraph.fera-card > strong, .fera-paragraph.fera-card-2 > strong, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-paragraph.fera-card-2 > a {
     color: #27b9f5; }
 
 .m-left-1 {
@@ -4486,36 +4578,6 @@ html {
 .m-left-10 {
   margin-left: 6.25rem; }
 
-.m-left-11 {
-  margin-left: 6.875rem; }
-
-.m-left-12 {
-  margin-left: 7.5rem; }
-
-.m-left-13 {
-  margin-left: 8.125rem; }
-
-.m-left-14 {
-  margin-left: 8.75rem; }
-
-.m-left-15 {
-  margin-left: 9.375rem; }
-
-.m-left-16 {
-  margin-left: 10rem; }
-
-.m-left-17 {
-  margin-left: 10.625rem; }
-
-.m-left-18 {
-  margin-left: 11.25rem; }
-
-.m-left-19 {
-  margin-left: 11.875rem; }
-
-.m-left-20 {
-  margin-left: 12.5rem; }
-
 .m-right-1 {
   margin-right: 0.625rem; }
 
@@ -4545,36 +4607,6 @@ html {
 
 .m-right-10 {
   margin-right: 6.25rem; }
-
-.m-right-11 {
-  margin-right: 6.875rem; }
-
-.m-right-12 {
-  margin-right: 7.5rem; }
-
-.m-right-13 {
-  margin-right: 8.125rem; }
-
-.m-right-14 {
-  margin-right: 8.75rem; }
-
-.m-right-15 {
-  margin-right: 9.375rem; }
-
-.m-right-16 {
-  margin-right: 10rem; }
-
-.m-right-17 {
-  margin-right: 10.625rem; }
-
-.m-right-18 {
-  margin-right: 11.25rem; }
-
-.m-right-19 {
-  margin-right: 11.875rem; }
-
-.m-right-20 {
-  margin-right: 12.5rem; }
 
 .m-top-1 {
   margin-top: 0.625rem; }
@@ -4606,36 +4638,6 @@ html {
 .m-top-10 {
   margin-top: 6.25rem; }
 
-.m-top-11 {
-  margin-top: 6.875rem; }
-
-.m-top-12 {
-  margin-top: 7.5rem; }
-
-.m-top-13 {
-  margin-top: 8.125rem; }
-
-.m-top-14 {
-  margin-top: 8.75rem; }
-
-.m-top-15 {
-  margin-top: 9.375rem; }
-
-.m-top-16 {
-  margin-top: 10rem; }
-
-.m-top-17 {
-  margin-top: 10.625rem; }
-
-.m-top-18 {
-  margin-top: 11.25rem; }
-
-.m-top-19 {
-  margin-top: 11.875rem; }
-
-.m-top-20 {
-  margin-top: 12.5rem; }
-
 .m-bottom-1 {
   margin-bottom: 0.625rem; }
 
@@ -4665,276 +4667,6 @@ html {
 
 .m-bottom-10 {
   margin-bottom: 6.25rem; }
-
-.m-bottom-11 {
-  margin-bottom: 6.875rem; }
-
-.m-bottom-12 {
-  margin-bottom: 7.5rem; }
-
-.m-bottom-13 {
-  margin-bottom: 8.125rem; }
-
-.m-bottom-14 {
-  margin-bottom: 8.75rem; }
-
-.m-bottom-15 {
-  margin-bottom: 9.375rem; }
-
-.m-bottom-16 {
-  margin-bottom: 10rem; }
-
-.m-bottom-17 {
-  margin-bottom: 10.625rem; }
-
-.m-bottom-18 {
-  margin-bottom: 11.25rem; }
-
-.m-bottom-19 {
-  margin-bottom: 11.875rem; }
-
-.m-bottom-20 {
-  margin-bottom: 12.5rem; }
-
-.p-left-1 {
-  padding-left: 0.625rem; }
-
-.p-left-2 {
-  padding-left: 1.25rem; }
-
-.p-left-3 {
-  padding-left: 1.875rem; }
-
-.p-left-4 {
-  padding-left: 2.5rem; }
-
-.p-left-5 {
-  padding-left: 3.125rem; }
-
-.p-left-6 {
-  padding-left: 3.75rem; }
-
-.p-left-7 {
-  padding-left: 4.375rem; }
-
-.p-left-8 {
-  padding-left: 5rem; }
-
-.p-left-9 {
-  padding-left: 5.625rem; }
-
-.p-left-10 {
-  padding-left: 6.25rem; }
-
-.p-left-11 {
-  padding-left: 6.875rem; }
-
-.p-left-12 {
-  padding-left: 7.5rem; }
-
-.p-left-13 {
-  padding-left: 8.125rem; }
-
-.p-left-14 {
-  padding-left: 8.75rem; }
-
-.p-left-15 {
-  padding-left: 9.375rem; }
-
-.p-left-16 {
-  padding-left: 10rem; }
-
-.p-left-17 {
-  padding-left: 10.625rem; }
-
-.p-left-18 {
-  padding-left: 11.25rem; }
-
-.p-left-19 {
-  padding-left: 11.875rem; }
-
-.p-left-20 {
-  padding-left: 12.5rem; }
-
-.p-right-1 {
-  padding-right: 0.625rem; }
-
-.p-right-2 {
-  padding-right: 1.25rem; }
-
-.p-right-3 {
-  padding-right: 1.875rem; }
-
-.p-right-4 {
-  padding-right: 2.5rem; }
-
-.p-right-5 {
-  padding-right: 3.125rem; }
-
-.p-right-6 {
-  padding-right: 3.75rem; }
-
-.p-right-7 {
-  padding-right: 4.375rem; }
-
-.p-right-8 {
-  padding-right: 5rem; }
-
-.p-right-9 {
-  padding-right: 5.625rem; }
-
-.p-right-10 {
-  padding-right: 6.25rem; }
-
-.p-right-11 {
-  padding-right: 6.875rem; }
-
-.p-right-12 {
-  padding-right: 7.5rem; }
-
-.p-right-13 {
-  padding-right: 8.125rem; }
-
-.p-right-14 {
-  padding-right: 8.75rem; }
-
-.p-right-15 {
-  padding-right: 9.375rem; }
-
-.p-right-16 {
-  padding-right: 10rem; }
-
-.p-right-17 {
-  padding-right: 10.625rem; }
-
-.p-right-18 {
-  padding-right: 11.25rem; }
-
-.p-right-19 {
-  padding-right: 11.875rem; }
-
-.p-right-20 {
-  padding-right: 12.5rem; }
-
-.p-top-1 {
-  padding-top: 0.625rem; }
-
-.p-top-2 {
-  padding-top: 1.25rem; }
-
-.p-top-3 {
-  padding-top: 1.875rem; }
-
-.p-top-4 {
-  padding-top: 2.5rem; }
-
-.p-top-5 {
-  padding-top: 3.125rem; }
-
-.p-top-6 {
-  padding-top: 3.75rem; }
-
-.p-top-7 {
-  padding-top: 4.375rem; }
-
-.p-top-8 {
-  padding-top: 5rem; }
-
-.p-top-9 {
-  padding-top: 5.625rem; }
-
-.p-top-10 {
-  padding-top: 6.25rem; }
-
-.p-top-11 {
-  padding-top: 6.875rem; }
-
-.p-top-12 {
-  padding-top: 7.5rem; }
-
-.p-top-13 {
-  padding-top: 8.125rem; }
-
-.p-top-14 {
-  padding-top: 8.75rem; }
-
-.p-top-15 {
-  padding-top: 9.375rem; }
-
-.p-top-16 {
-  padding-top: 10rem; }
-
-.p-top-17 {
-  padding-top: 10.625rem; }
-
-.p-top-18 {
-  padding-top: 11.25rem; }
-
-.p-top-19 {
-  padding-top: 11.875rem; }
-
-.p-top-20 {
-  padding-top: 12.5rem; }
-
-.p-bottom-1 {
-  padding-bottom: 0.625rem; }
-
-.p-bottom-2 {
-  padding-bottom: 1.25rem; }
-
-.p-bottom-3 {
-  padding-bottom: 1.875rem; }
-
-.p-bottom-4 {
-  padding-bottom: 2.5rem; }
-
-.p-bottom-5 {
-  padding-bottom: 3.125rem; }
-
-.p-bottom-6 {
-  padding-bottom: 3.75rem; }
-
-.p-bottom-7 {
-  padding-bottom: 4.375rem; }
-
-.p-bottom-8 {
-  padding-bottom: 5rem; }
-
-.p-bottom-9 {
-  padding-bottom: 5.625rem; }
-
-.p-bottom-10 {
-  padding-bottom: 6.25rem; }
-
-.p-bottom-11 {
-  padding-bottom: 6.875rem; }
-
-.p-bottom-12 {
-  padding-bottom: 7.5rem; }
-
-.p-bottom-13 {
-  padding-bottom: 8.125rem; }
-
-.p-bottom-14 {
-  padding-bottom: 8.75rem; }
-
-.p-bottom-15 {
-  padding-bottom: 9.375rem; }
-
-.p-bottom-16 {
-  padding-bottom: 10rem; }
-
-.p-bottom-17 {
-  padding-bottom: 10.625rem; }
-
-.p-bottom-18 {
-  padding-bottom: 11.25rem; }
-
-.p-bottom-19 {
-  padding-bottom: 11.875rem; }
-
-.p-bottom-20 {
-  padding-bottom: 12.5rem; }
 
 .table-container {
   overflow-x: auto; }
@@ -5035,12 +4767,25 @@ html {
   .fera-table.-void .table-text-highlight {
     color: #eeeeee;
     font-weight: bold; }
-  .fera-table.-baby .table-highlight {
+  .fera-table.-baby .table-highlight, .fera-table.fera-card .table-highlight, .fera-table.fera-card-2 .table-highlight {
     background-color: #27b9f5;
     color: white; }
-  .fera-table.-baby .table-text-highlight {
+  .fera-table.-baby .table-text-highlight, .fera-table.fera-card .table-text-highlight, .fera-table.fera-card-2 .table-text-highlight {
     color: #27b9f5;
     font-weight: bold; }
+
+.fera-card > .card-body > .card-title, .fera-topics .topic-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.25rem; }
+
+.fera-card-2 > .card-body > .card-title {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "oswald";
+  margin-bottom: 1.25rem; }
 
 .title-guide {
   font-family: 'brandon', sans-serif;
@@ -5076,7 +4821,7 @@ html {
     color: #06d25a; }
   .fera-title.-void {
     color: #eeeeee; }
-  .fera-title.-baby {
+  .fera-title.-baby, .fera-title.fera-card, .fera-title.fera-card-2 {
     color: #27b9f5; }
   .fera-title.-title-1 {
     font-size: 2.5rem;
@@ -5154,11 +4899,6 @@ html {
     margin-bottom: 15px;
     display: block;
     font-weight: 300; }
-  .fera-topics .topic-title {
-    font-size: 17px;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-bottom: 1.5625rem; }
   .fera-topics .topic-content {
     font-size: 15px;
     color: #9e9e9e;
@@ -5185,7 +4925,7 @@ html {
     color: #06d25a; }
   .fera-topics.-void > .topic > .topic-title {
     color: #eeeeee; }
-  .fera-topics.-baby > .topic > .topic-title {
+  .fera-topics.-baby > .topic > .topic-title, .fera-topics.fera-card > .topic > .topic-title, .fera-topics.fera-card-2 > .topic > .topic-title {
     color: #27b9f5; }
 
 /*===============================

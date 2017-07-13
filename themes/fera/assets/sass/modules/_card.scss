@@ -1,0 +1,141 @@
+[class*="fera-card"] {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  @include transition(transform, box-shadow);
+
+  &:hover {
+    transform: scale(0.98);
+  }
+
+  .card-background {
+    @include transition(opacity);
+  }
+
+  > .card-body > .card-text {
+    font-size: 13px;
+    line-height: 1.50;
+  }
+
+}
+
+.fera-card {
+  box-shadow: 3px 3px 15px 0px rgba(black, .1);
+  @extend .-baby;
+
+  &:hover {
+
+    > .card-highlight > .card-background {
+      opacity: 0.15;
+    }
+
+  }
+
+  > .card-highlight {
+    position: relative;
+    overflow: hidden;
+
+    > .card-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    > .card-icon {
+      @include align;
+      max-width: 90%;
+      height: auto;
+      z-index: 10;
+      color: white;
+      @include rem(font-size, 100px);
+      padding: 15%;
+    }
+
+  }
+
+  > .card-body {
+    @include rem(padding, 30px);
+
+    > .card-title {
+      @extend %title-1;
+    }
+
+    > .card-text {
+      color: color('mellow');
+    }
+
+  }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    > .card-highlight {
+      background-color: $color;
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
+  /*==================================
+  =            Variations            =
+  ==================================*/
+
+  &.-horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  /*=====  End of Variations  ======*/
+
+}
+
+.fera-card-2 {
+  @extend .-baby;
+
+  &:hover {
+
+    > .card-background {
+      opacity: 0.05;
+    }
+
+  }
+
+  > .card-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: .15;
+  }
+
+  > .card-body {
+    @include rem(padding, 50px 35px);
+    position: relative;
+    z-index: 10;
+    color: white;
+
+    > .card-title {
+      @extend %title-2;
+    }
+
+  }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+    background-color: $color;
+  }
+
+  /*=====  End of Theme  ======*/
+
+
+}
