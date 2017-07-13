@@ -14,7 +14,7 @@
 }
 
 .fera-title {
-  margin: 1em 0 0.5em;
+  margin: 1em 0 1em;
 
   @include theme {
     color: $color;
@@ -68,8 +68,7 @@
 
   &.-title-7 {
     font-size: 13px;
-    color: color('gray');
-    @include rem(margin-bottom, 40px);
+    color: color('mellow');
   }
 
 }

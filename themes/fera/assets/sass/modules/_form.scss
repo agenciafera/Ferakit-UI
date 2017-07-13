@@ -1,13 +1,14 @@
 .fera-form {
+  @extend .-baby;
 
   .form-input, .form-select {
     width: 100%;
     display: block;
-    @include transition(box-shadow);
+    @include transition(box-shadow, border);
     box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0);
 
-    &:hover {
-      box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.15);
+    &:hover, &:focus {
+      box-shadow: 2px 2px 18px 1px rgba(black, 0.15);
     }
 
   }
@@ -18,11 +19,12 @@
     font-weight: 600;
     @include rem(margin-bottom, 15px);
     display: block;
+    @include transition(color);
   }
 
   .form-input {
     padding: 20px 15px;
-    border: 1px solid map-get($colors, darkness);
+    border: 2px solid map-get($colors, void);
     font-size: 18px;
     color: map-get($colors, darkness);
     width: 100%;
@@ -39,7 +41,6 @@
     padding: 17px 15px;
     padding-right: 100px;
     color: white;
-    background-color: map-get($colors, baby);
     font-family: "Open Sans";
     appearance: none;
     font-size: 18px;
@@ -50,5 +51,29 @@
   textarea.form-input {
     height: 100px;
   }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    .form-input, .form-select {
+
+      &:hover, &:focus {
+        box-shadow: 2px 2px 18px 1px rgba($color, 0.15);
+        border-color: $color;
+      }
+
+    }
+
+    .form-select {
+      background-color: $color;
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
 
 }
