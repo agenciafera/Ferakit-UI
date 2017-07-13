@@ -1,26 +1,3 @@
-/*==============================
-=            Colors            =
-==============================*/
-
-$themeColors: (
-  'purple': #54246a,
-  'purple-light': #733e97,
-  'blue': #315aa9,
-  'blue-light': #3186c7,
-  'yellow': #f3ac47,
-  'pink': #da1e77,
-  'rose': #e75a6a,
-  'dark-gray': #333,
-  'gray': #9e9e9e,
-  'light-gray': #EEE,
-  'green': #07d35b,
-  'super-blue': #27b9f5,
-  'black': #000,
-  'white': #fff
-);
-
-/*=====  End of Colors  ======*/
-
 /*================================
 =            Defaults            =
 ================================*/
@@ -38,7 +15,7 @@ $column-gutter: 25px;
 /*=====  End of Layout  ======*/
 
 /*==================================
-=            Map Colors            =
+=            Colors            =
 ==================================*/
 
 $colors: (
@@ -56,4 +33,6 @@ $colors: (
   "baby": #27b9f5,
 );
 
-/*=====  End of Map Colors  ======*/
+$fera-rainbow: linear-gradient(to right,#f6ad49 0,#e85b6b 16%,#dc1c78 32%,#743f98 50%,#56246b 69%,#305baa 85%,#3187c8 99%);
+
+/*=====  End of Colors  ======*/

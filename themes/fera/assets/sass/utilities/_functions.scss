@@ -49,5 +49,5 @@
 }
 
 @function color($color) {
-  @return map-get($themeColors, $color);
+  @return map-get($colors, $color);
 }
