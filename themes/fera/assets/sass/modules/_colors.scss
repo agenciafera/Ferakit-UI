@@ -9,6 +9,7 @@
   @include rem(width, 70px);
   @include rem(height, 70px);
   @include rem(margin-right, 20px);
+  border-radius: 99999px;
 
   @include theme {
     background: $color;
@@ -19,9 +20,15 @@
 .hex{
   display: inline-block;
   vertical-align: top;
-  @include rem(padding-top, 30px);
+  @include rem(padding-top, 10px);
   @include rem(font-size, 16px);
   color: color('dark-gray');
   text-transform: uppercase;
   font-weight: 100;
+
+  strong {
+    display: block;
+    margin-bottom: 0;
+  }
+
 }

@@ -1249,6 +1249,9 @@ body {
     .fera-module {
       padding: 3.75rem; } }
 
+strong {
+  font-weight: 600; }
+
 html {
   font-family: "Open Sans", sans-serif; }
 
@@ -1656,7 +1659,8 @@ html {
   display: inline-block;
   width: 4.375rem;
   height: 4.375rem;
-  margin-right: 1.25rem; }
+  margin-right: 1.25rem;
+  border-radius: 99999px; }
   .square.-halloween {
     background: #54246a; }
   .square.-andromeda {
@@ -1685,11 +1689,14 @@ html {
 .hex {
   display: inline-block;
   vertical-align: top;
-  padding-top: 1.875rem;
+  padding-top: 0.625rem;
   font-size: 1rem;
   color: #333;
   text-transform: uppercase;
   font-weight: 100; }
+  .hex strong {
+    display: block;
+    margin-bottom: 0; }
 
 .d-block {
   display: block; }
@@ -1811,17 +1818,46 @@ html {
 .grid-container.-full {
   max-width: initial; }
 
-.fera-horizontal-list > .item > .item-title {
-  font-size: 16px;
-  font-family: "Open Sans";
-  font-weight: 700; }
-  .fera-horizontal-list > .item > .item-title::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    display: block;
-    margin-bottom: 1.25rem;
-    background: linear-gradient(to right, #f6ad49 0%, #e85b6b 16%, #dc1c78 32%, #743f98 50%, #56246b 69%, #305baa 85%, #3187c8 99%); }
+.fera-horizontal-list {
+  /*=============================
+  =            Theme            =
+  =============================*/
+  /*=====  End of Theme  ======*/ }
+  .fera-horizontal-list > .item > .item-title {
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 700; }
+    .fera-horizontal-list > .item > .item-title::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      margin-bottom: 1.25rem;
+      background: linear-gradient(to right, #f6ad49 0%, #e85b6b 16%, #dc1c78 32%, #743f98 50%, #56246b 69%, #305baa 85%, #3187c8 99%); }
+  .fera-horizontal-list.-halloween > .item > .item-title::before {
+    background: #54246a; }
+  .fera-horizontal-list.-andromeda > .item > .item-title::before {
+    background: #733e97; }
+  .fera-horizontal-list.-night > .item > .item-title::before {
+    background: #315aa9; }
+  .fera-horizontal-list.-sky > .item > .item-title::before {
+    background: #3186c7; }
+  .fera-horizontal-list.-sunshine > .item > .item-title::before {
+    background: #f3ac47; }
+  .fera-horizontal-list.-pink > .item > .item-title::before {
+    background: #da1e77; }
+  .fera-horizontal-list.-salmon > .item > .item-title::before, .fera-horizontal-list.fera-paragraph > .item > .item-title::before {
+    background: #e75a6a; }
+  .fera-horizontal-list.-darkness > .item > .item-title::before, .fera-horizontal-list.fera-table > .item > .item-title::before {
+    background: #333333; }
+  .fera-horizontal-list.-mellow > .item > .item-title::before {
+    background: #9e9e9e; }
+  .fera-horizontal-list.-nature > .item > .item-title::before {
+    background: #06d25a; }
+  .fera-horizontal-list.-void > .item > .item-title::before {
+    background: #eeeeee; }
+  .fera-horizontal-list.-baby > .item > .item-title::before {
+    background: #27b9f5; }
 
 @font-face {
   font-family: 'icons';
@@ -5160,72 +5196,74 @@ html {
 .title-guide {
   font-family: 'brandon', sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
   color: #54246a;
   font-weight: 300;
   text-transform: uppercase; }
   .title-guide::before {
     counter-increment: title; }
 
-.fera-title.-halloween {
-  color: #54246a; }
-.fera-title.-andromeda {
-  color: #733e97; }
-.fera-title.-night {
-  color: #315aa9; }
-.fera-title.-sky {
-  color: #3186c7; }
-.fera-title.-sunshine {
-  color: #f3ac47; }
-.fera-title.-pink {
-  color: #da1e77; }
-.fera-title.-salmon, .fera-title.fera-paragraph {
-  color: #e75a6a; }
-.fera-title.-darkness, .fera-title.fera-table {
-  color: #333333; }
-.fera-title.-mellow {
-  color: #9e9e9e; }
-.fera-title.-nature {
-  color: #06d25a; }
-.fera-title.-void {
-  color: #eeeeee; }
-.fera-title.-baby {
-  color: #27b9f5; }
-.fera-title.-title-1 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: bold; }
-  @media (min-width: 700px) {
-    .fera-title.-title-1 {
-      font-size: 3rem; } }
-.fera-title.-title-2 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: normal; }
-  @media (min-width: 700px) {
-    .fera-title.-title-2 {
-      font-size: 3rem; } }
-.fera-title.-title-3 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.875rem;
-  font-weight: bold;
-  text-transform: uppercase; }
-.fera-title.-title-4 {
-  font-size: 1.5rem;
-  font-weight: bold; }
-.fera-title.-title-5 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.1875rem;
-  font-weight: bold;
-  text-transform: uppercase; }
-.fera-title.-title-6 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.0625rem;
-  font-weight: bold; }
-.fera-title.-title-7 {
-  font-size: 13px;
-  color: #9e9e9e;
-  margin-bottom: 2.5rem; }
+.fera-title {
+  margin: 1em 0 0.5em; }
+  .fera-title.-halloween {
+    color: #54246a; }
+  .fera-title.-andromeda {
+    color: #733e97; }
+  .fera-title.-night {
+    color: #315aa9; }
+  .fera-title.-sky {
+    color: #3186c7; }
+  .fera-title.-sunshine {
+    color: #f3ac47; }
+  .fera-title.-pink {
+    color: #da1e77; }
+  .fera-title.-salmon, .fera-title.fera-paragraph {
+    color: #e75a6a; }
+  .fera-title.-darkness, .fera-title.fera-table {
+    color: #333333; }
+  .fera-title.-mellow {
+    color: #9e9e9e; }
+  .fera-title.-nature {
+    color: #06d25a; }
+  .fera-title.-void {
+    color: #eeeeee; }
+  .fera-title.-baby {
+    color: #27b9f5; }
+  .fera-title.-title-1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold; }
+    @media (min-width: 700px) {
+      .fera-title.-title-1 {
+        font-size: 3rem; } }
+  .fera-title.-title-2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: normal; }
+    @media (min-width: 700px) {
+      .fera-title.-title-2 {
+        font-size: 3rem; } }
+  .fera-title.-title-3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .fera-title.-title-4 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .fera-title.-title-5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1875rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .fera-title.-title-6 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: bold; }
+  .fera-title.-title-7 {
+    font-size: 13px;
+    color: #9e9e9e;
+    margin-bottom: 2.5rem; }
 
 .fera-top-article {
   max-width: 50rem;
@@ -5243,7 +5281,8 @@ html {
     font-weight: 400; }
     .fera-top-article .article-author img {
       width: 5.625rem;
-      height: 5.625rem; }
+      height: 5.625rem;
+      border-radius: 9999px; }
     .fera-top-article .article-author span.date {
       color: #9e9e9e; }
   .fera-top-article .article-title {

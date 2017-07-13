@@ -1,12 +1,10 @@
 .title-guide {
   font-family: 'brandon', sans-serif;
   @include rem(font-size, 40px);
-  @include rem(margin-bottom, 40px);
+  @include rem(margin-bottom, 80px);
   color: color('purple');
   font-weight: 300;
   text-transform: uppercase;
-  // border-bottom: 1px solid color('purple');
-  // @include rem(padding-bottom, 20px);
 
   &::before {
     counter-increment: title;
@@ -16,6 +14,7 @@
 }
 
 .fera-title {
+  margin: 1em 0 0.5em;
 
   @include theme {
     color: $color;
