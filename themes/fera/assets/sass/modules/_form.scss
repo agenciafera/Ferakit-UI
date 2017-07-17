@@ -52,6 +52,24 @@
     height: 100px;
   }
 
+  .select-container {
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url(../images/select-icon.svg);
+      @include rem(width, 28px);
+      @include rem(height, 15px);
+      background-size: cover;
+      position: absolute;
+      z-index: 10;
+      position: absolute;
+      @include align('vertical');
+      @include rem(right, 20px);
+    }
+
+  }
+
   /*=============================
   =            Theme            =
   =============================*/

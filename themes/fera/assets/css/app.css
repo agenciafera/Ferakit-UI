@@ -2123,6 +2123,22 @@ html {
     border: 0; }
   .fera-form textarea.form-input {
     height: 100px; }
+  .fera-form .select-container {
+    position: relative; }
+    .fera-form .select-container::after {
+      content: "";
+      background-image: url(../images/select-icon.svg);
+      width: 1.75rem;
+      height: 0.9375rem;
+      background-size: cover;
+      position: absolute;
+      z-index: 10;
+      position: absolute;
+      position: absolute;
+      transform-style: preserve-3d;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1.25rem; }
   .fera-form.-halloween .form-input:hover, .fera-form.-halloween .form-input:focus, .fera-form.-halloween .form-select:hover, .fera-form.-halloween .form-select:focus {
     box-shadow: 2px 2px 18px 1px rgba(84, 36, 106, 0.15);
     border-color: #54246a; }
