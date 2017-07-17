@@ -1242,7 +1242,8 @@ html {
   border: 1px solid black;
   display: flex;
   margin: 2.5rem 0;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   .fera-alert.-halloween {
     border-color: #54246a; }
     .fera-alert.-halloween > .alert-icon {
