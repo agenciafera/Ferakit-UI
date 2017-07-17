@@ -1158,10 +1158,10 @@ body {
 
 .fera-module {
   margin-bottom: 3.75rem;
-  padding: 1.25rem;
+  padding: 1.875rem;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1); }
   @media (min-width: 700px) {
     .fera-module {
       padding: 2.5rem; } }
@@ -2192,6 +2192,37 @@ html {
 
 .grid-container.-full {
   max-width: initial; }
+
+.fera-header {
+  display: flex;
+  flex-flow: column nowrap; }
+  @media (min-width: 700px) {
+    .fera-header {
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: row nowrap; } }
+  .fera-header .header-logo {
+    margin-bottom: 3.125rem; }
+    @media (min-width: 700px) {
+      .fera-header .header-logo {
+        margin-bottom: 0; } }
+  .fera-header .header-nav ul {
+    display: flex;
+    flex-flow: column nowrap; }
+    @media (min-width: 700px) {
+      .fera-header .header-nav ul {
+        flex-flow: row nowrap; } }
+    .fera-header .header-nav ul li {
+      text-transform: uppercase;
+      color: #333333;
+      font-size: 19px;
+      font-weight: 300; }
+      .fera-header .header-nav ul li:not(:last-child) {
+        margin-bottom: 3.125rem; }
+        @media (min-width: 700px) {
+          .fera-header .header-nav ul li:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 3.125rem; } }
 
 .fera-horizontal-list {
   /*=============================

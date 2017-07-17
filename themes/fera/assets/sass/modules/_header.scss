@@ -1,0 +1,53 @@
+.fera-header {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @media #{$tablet} {
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  .header-logo {
+    @include rem(margin-bottom, 50px);
+
+    @media #{$tablet} {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .header-nav {
+
+    ul {
+      display: flex;
+      flex-flow: column nowrap;
+
+      @media #{$tablet} {
+        flex-flow: row nowrap;
+      }
+
+
+      li {
+        text-transform: uppercase;
+        color: map-get($colors, darkness);
+        font-size: 19px;
+        font-weight: 300;
+
+        &:not(:last-child) {
+          @include rem(margin-bottom, 50px);
+
+          @media #{$tablet} {
+            margin-bottom: 0;
+            @include rem(margin-right, 50px);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
