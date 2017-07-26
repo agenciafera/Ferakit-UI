@@ -9,11 +9,6 @@
       	"utilities/functions",
       	"utilities/mixins";
 
-/*============================
-=            Base            =
-============================*/
-@import "base/typography";
-
 /*===============================
 =            Modules            =
 ===============================*/
@@ -24,6 +19,7 @@
         "modules/colors",
         "modules/fonts",
         "modules/form",
+        "modules/module",
         "modules/header",
         "modules/horizontal-list",
         "modules/icons",

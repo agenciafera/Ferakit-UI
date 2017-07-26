@@ -10,6 +10,7 @@
     "gulp-compass": "*",
     "gulp-concat": "*",
     "gulp-livereload": "*",
+    "gulp-rename": "^1.2.2",
     "gulp-sassbeautify": "*",
     "gulp-sourcemaps": "*",
     "gulp-uglify": "*",

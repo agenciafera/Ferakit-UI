@@ -22,10 +22,10 @@ gulp.task('compass', function() {
   gulp.src('assets/scss/**/*.scss')
     .pipe(compass({
       config_file: 'config.rb',
-      css: 'css',
-      font: 'fonts',
-      sass: 'scss',
-      image: 'images'
+      css: 'assets/css',
+      font: 'assets/fonts',
+      sass: 'assets/scss',
+      image: 'assets/images'
     }))
     .on('error', onError)
 })

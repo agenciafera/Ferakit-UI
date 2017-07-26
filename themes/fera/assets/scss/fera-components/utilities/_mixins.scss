@@ -19,3 +19,16 @@
   }
 
 }
+
+@mixin theme {
+
+  @each $name, $color in $colors {
+    $color: $color !global;
+
+    &.-#{$name} {
+      @content;
+    }
+
+  }
+
+}
