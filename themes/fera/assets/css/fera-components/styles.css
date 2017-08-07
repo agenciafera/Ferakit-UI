@@ -1765,17 +1765,17 @@ html {
 .fera-alert.-pink > .alert-button {
   color: #da1e77;
 }
-.fera-alert.-salmon, .fera-alert.fera-paragraph {
+.fera-alert.-salmon, .fera-alert.fera-paragraph, .fera-rich-content p.fera-alert {
   border-color: #e75a6a;
 }
-.fera-alert.-salmon > .alert-icon, .fera-alert.fera-paragraph > .alert-icon {
+.fera-alert.-salmon > .alert-icon, .fera-alert.fera-paragraph > .alert-icon, .fera-rich-content p.fera-alert > .alert-icon {
   background-color: #e75a6a;
   color: white;
 }
-.fera-alert.-salmon > .alert-text > strong, .fera-alert.fera-paragraph > .alert-text > strong {
+.fera-alert.-salmon > .alert-text > strong, .fera-alert.fera-paragraph > .alert-text > strong, .fera-rich-content p.fera-alert > .alert-text > strong {
   color: #e75a6a;
 }
-.fera-alert.-salmon > .alert-button, .fera-alert.fera-paragraph > .alert-button {
+.fera-alert.-salmon > .alert-button, .fera-alert.fera-paragraph > .alert-button, .fera-rich-content p.fera-alert > .alert-button {
   color: #e75a6a;
 }
 .fera-alert.-darkness, .fera-alert.fera-case, .fera-alert.fera-table {
@@ -2050,17 +2050,17 @@ html {
   background-color: #e54691;
 }
 
-.fera-btn.-salmon, .fera-btn.fera-paragraph {
+.fera-btn.-salmon, .fera-btn.fera-paragraph, .fera-rich-content p.fera-btn {
   background-color: #e75a6a;
   color: #ffffff;
 }
-.fera-btn.-salmon.-action, .fera-btn.-action.fera-paragraph {
+.fera-btn.-salmon.-action, .fera-btn.-action.fera-paragraph, .fera-rich-content p.fera-btn.-action {
   border-bottom: 6px solid #bf1c2e;
 }
-.fera-btn.-salmon.-action:hover, .fera-btn.-action.fera-paragraph:hover {
+.fera-btn.-salmon.-action:hover, .fera-btn.-action.fera-paragraph:hover, .fera-rich-content p.fera-btn.-action:hover {
   background-color: #ea707e;
 }
-.fera-btn.-salmon:hover, .fera-btn.fera-paragraph:hover {
+.fera-btn.-salmon:hover, .fera-btn.fera-paragraph:hover, .fera-rich-content p.fera-btn:hover {
   background-color: #ed8792;
 }
 
@@ -2218,7 +2218,7 @@ html {
 .fera-card.-pink > .card-highlight {
   background-color: #da1e77;
 }
-.fera-card.-salmon > .card-highlight, .fera-card.fera-paragraph > .card-highlight {
+.fera-card.-salmon > .card-highlight, .fera-card.fera-paragraph > .card-highlight, .fera-rich-content p.fera-card > .card-highlight {
   background-color: #e75a6a;
 }
 .fera-card.-darkness > .card-highlight, .fera-card.fera-case > .card-highlight, .fera-card.fera-table > .card-highlight {
@@ -2283,7 +2283,7 @@ html {
 .fera-card-2.-pink {
   background-color: #da1e77;
 }
-.fera-card-2.-salmon, .fera-card-2.fera-paragraph {
+.fera-card-2.-salmon, .fera-card-2.fera-paragraph, .fera-rich-content p.fera-card-2 {
   background-color: #e75a6a;
 }
 .fera-card-2.-darkness, .fera-card-2.fera-case, .fera-card-2.fera-table {
@@ -2567,23 +2567,23 @@ html {
   background-color: #fec6e1;
   color: #000000;
 }
-.fera-case.-salmon .case-tags li:nth-child(1), .fera-case.fera-paragraph .case-tags li:nth-child(1) {
+.fera-case.-salmon .case-tags li:nth-child(1), .fera-case.fera-paragraph .case-tags li:nth-child(1), .fera-rich-content p.fera-case .case-tags li:nth-child(1) {
   background-color: #e75a6a;
   color: #ffffff;
 }
-.fera-case.-salmon .case-tags li:nth-child(2), .fera-case.fera-paragraph .case-tags li:nth-child(2) {
+.fera-case.-salmon .case-tags li:nth-child(2), .fera-case.fera-paragraph .case-tags li:nth-child(2), .fera-rich-content p.fera-case .case-tags li:nth-child(2) {
   background-color: #f18390;
   color: #ffffff;
 }
-.fera-case.-salmon .case-tags li:nth-child(3), .fera-case.fera-paragraph .case-tags li:nth-child(3) {
+.fera-case.-salmon .case-tags li:nth-child(3), .fera-case.fera-paragraph .case-tags li:nth-child(3), .fera-rich-content p.fera-case .case-tags li:nth-child(3) {
   background-color: #f8afb7;
   color: #000000;
 }
-.fera-case.-salmon .case-tags li:nth-child(4), .fera-case.fera-paragraph .case-tags li:nth-child(4) {
+.fera-case.-salmon .case-tags li:nth-child(4), .fera-case.fera-paragraph .case-tags li:nth-child(4), .fera-rich-content p.fera-case .case-tags li:nth-child(4) {
   background-color: #fddde1;
   color: #000000;
 }
-.fera-case.-salmon .case-tags li:nth-child(5), .fera-case.fera-paragraph .case-tags li:nth-child(5) {
+.fera-case.-salmon .case-tags li:nth-child(5), .fera-case.fera-paragraph .case-tags li:nth-child(5), .fera-rich-content p.fera-case .case-tags li:nth-child(5) {
   background-color: white;
   color: #000000;
 }
@@ -2717,7 +2717,7 @@ html {
 .square.-pink {
   background: #da1e77;
 }
-.square.-salmon, .square.fera-paragraph {
+.square.-salmon, .square.fera-paragraph, .fera-rich-content p.square {
   background: #e75a6a;
 }
 .square.-darkness, .square.fera-case, .square.fera-table {
@@ -2983,19 +2983,19 @@ html {
   border-color: #da1e77;
   background: #da1e77 url('../../images/checkbox-on.png?1500322188') center center no-repeat;
 }
-.fera-form.-salmon .form-input:hover, .fera-form.fera-paragraph .form-input:hover, .fera-form.-salmon .form-input:focus, .fera-form.fera-paragraph .form-input:focus, .fera-form.-salmon .form-select:hover, .fera-form.fera-paragraph .form-select:hover, .fera-form.-salmon .form-select:focus, .fera-form.fera-paragraph .form-select:focus, .fera-form.-salmon .form-checkbox:hover, .fera-form.fera-paragraph .form-checkbox:hover, .fera-form.-salmon .form-checkbox:focus, .fera-form.fera-paragraph .form-checkbox:focus, .fera-form.-salmon .form-radio:hover, .fera-form.fera-paragraph .form-radio:hover, .fera-form.-salmon .form-radio:focus, .fera-form.fera-paragraph .form-radio:focus {
+.fera-form.-salmon .form-input:hover, .fera-form.fera-paragraph .form-input:hover, .fera-rich-content p.fera-form .form-input:hover, .fera-form.-salmon .form-input:focus, .fera-form.fera-paragraph .form-input:focus, .fera-rich-content p.fera-form .form-input:focus, .fera-form.-salmon .form-select:hover, .fera-form.fera-paragraph .form-select:hover, .fera-rich-content p.fera-form .form-select:hover, .fera-form.-salmon .form-select:focus, .fera-form.fera-paragraph .form-select:focus, .fera-rich-content p.fera-form .form-select:focus, .fera-form.-salmon .form-checkbox:hover, .fera-form.fera-paragraph .form-checkbox:hover, .fera-rich-content p.fera-form .form-checkbox:hover, .fera-form.-salmon .form-checkbox:focus, .fera-form.fera-paragraph .form-checkbox:focus, .fera-rich-content p.fera-form .form-checkbox:focus, .fera-form.-salmon .form-radio:hover, .fera-form.fera-paragraph .form-radio:hover, .fera-rich-content p.fera-form .form-radio:hover, .fera-form.-salmon .form-radio:focus, .fera-form.fera-paragraph .form-radio:focus, .fera-rich-content p.fera-form .form-radio:focus {
   box-shadow: 2px 2px 18px 1px rgba(231, 90, 106, 0.15);
   border-color: #e75a6a;
 }
-.fera-form.-salmon .form-select:hover, .fera-form.fera-paragraph .form-select:hover {
+.fera-form.-salmon .form-select:hover, .fera-form.fera-paragraph .form-select:hover, .fera-rich-content p.fera-form .form-select:hover {
   background-color: #e75a6a;
   color: white;
 }
-.fera-form.-salmon .form-radio:checked, .fera-form.fera-paragraph .form-radio:checked {
+.fera-form.-salmon .form-radio:checked, .fera-form.fera-paragraph .form-radio:checked, .fera-rich-content p.fera-form .form-radio:checked {
   border-color: #e75a6a;
   background: #e75a6a;
 }
-.fera-form.-salmon .form-checkbox:checked, .fera-form.fera-paragraph .form-checkbox:checked {
+.fera-form.-salmon .form-checkbox:checked, .fera-form.fera-paragraph .form-checkbox:checked, .fera-rich-content p.fera-form .form-checkbox:checked {
   border-color: #e75a6a;
   background: #e75a6a url('../../images/checkbox-on.png?1500322188') center center no-repeat;
 }
@@ -3093,6 +3093,8 @@ html {
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
+    padding: 0.9375rem;
+    border-bottom: 1px solid #f9f9f9;
   }
 }
 .fera-header .header-logo {
@@ -3168,7 +3170,7 @@ html {
 .fera-horizontal-list.-pink > .item > .item-title::before {
   background: #da1e77;
 }
-.fera-horizontal-list.-salmon > .item > .item-title::before, .fera-horizontal-list.fera-paragraph > .item > .item-title::before {
+.fera-horizontal-list.-salmon > .item > .item-title::before, .fera-horizontal-list.fera-paragraph > .item > .item-title::before, .fera-rich-content p.fera-horizontal-list > .item > .item-title::before {
   background: #e75a6a;
 }
 .fera-horizontal-list.-darkness > .item > .item-title::before, .fera-horizontal-list.fera-case > .item > .item-title::before, .fera-horizontal-list.fera-table > .item > .item-title::before {
@@ -5196,7 +5198,7 @@ html {
   margin-bottom: 0.9375rem;
 }
 
-.fera-paragraph {
+.fera-paragraph, .fera-rich-content p {
   font-size: 17px;
   font-weight: 300;
   font-family: 'Open Sans';
@@ -5204,52 +5206,52 @@ html {
   margin-bottom: 1.67em;
 }
 @media (min-width: 700px) {
-  .fera-paragraph {
+  .fera-paragraph, .fera-rich-content p {
     font-size: 19px;
   }
 }
 @media (min-width: 1025px) {
-  .fera-paragraph {
+  .fera-paragraph, .fera-rich-content p {
     font-size: 21px;
   }
 }
-.fera-paragraph a {
+.fera-paragraph a, .fera-rich-content p a {
   text-decoration: underline;
 }
-.fera-paragraph.-halloween > strong, .fera-paragraph.-halloween > a {
+.fera-paragraph.-halloween > strong, .fera-rich-content p.-halloween > strong, .fera-paragraph.-halloween > a, .fera-rich-content p.-halloween > a {
   color: #54246a;
 }
-.fera-paragraph.-andromeda > strong, .fera-paragraph.-andromeda > a {
+.fera-paragraph.-andromeda > strong, .fera-rich-content p.-andromeda > strong, .fera-paragraph.-andromeda > a, .fera-rich-content p.-andromeda > a {
   color: #733e97;
 }
-.fera-paragraph.-night > strong, .fera-paragraph.-night > a {
+.fera-paragraph.-night > strong, .fera-rich-content p.-night > strong, .fera-paragraph.-night > a, .fera-rich-content p.-night > a {
   color: #315aa9;
 }
-.fera-paragraph.-sky > strong, .fera-paragraph.-sky > a {
+.fera-paragraph.-sky > strong, .fera-rich-content p.-sky > strong, .fera-paragraph.-sky > a, .fera-rich-content p.-sky > a {
   color: #3186c7;
 }
-.fera-paragraph.-sunshine > strong, .fera-paragraph.-sunshine > a {
+.fera-paragraph.-sunshine > strong, .fera-rich-content p.-sunshine > strong, .fera-paragraph.-sunshine > a, .fera-rich-content p.-sunshine > a {
   color: #f3ac47;
 }
-.fera-paragraph.-pink > strong, .fera-paragraph.-pink > a {
+.fera-paragraph.-pink > strong, .fera-rich-content p.-pink > strong, .fera-paragraph.-pink > a, .fera-rich-content p.-pink > a {
   color: #da1e77;
 }
-.fera-paragraph.-salmon > strong, .fera-paragraph > strong, .fera-paragraph.-salmon > a, .fera-paragraph > a {
+.fera-paragraph.-salmon > strong, .fera-paragraph > strong, .fera-rich-content p > strong, .fera-rich-content p.-salmon > strong, .fera-rich-content p.fera-paragraph > strong, .fera-paragraph.-salmon > a, .fera-paragraph > a, .fera-rich-content p > a, .fera-rich-content p.-salmon > a, .fera-rich-content p.fera-paragraph > a {
   color: #e75a6a;
 }
-.fera-paragraph.-darkness > strong, .fera-paragraph.fera-case > strong, .fera-paragraph.fera-table > strong, .fera-paragraph.-darkness > a, .fera-paragraph.fera-case > a, .fera-paragraph.fera-table > a {
+.fera-paragraph.-darkness > strong, .fera-paragraph.fera-case > strong, .fera-rich-content p.fera-case > strong, .fera-rich-content p.-darkness > strong, .fera-rich-content p.fera-table > strong, .fera-paragraph.fera-table > strong, .fera-paragraph.-darkness > a, .fera-paragraph.fera-case > a, .fera-rich-content p.fera-case > a, .fera-rich-content p.-darkness > a, .fera-rich-content p.fera-table > a, .fera-paragraph.fera-table > a {
   color: #333333;
 }
-.fera-paragraph.-mellow > strong, .fera-paragraph.-mellow > a {
+.fera-paragraph.-mellow > strong, .fera-rich-content p.-mellow > strong, .fera-paragraph.-mellow > a, .fera-rich-content p.-mellow > a {
   color: #9e9e9e;
 }
-.fera-paragraph.-nature > strong, .fera-paragraph.-nature > a {
+.fera-paragraph.-nature > strong, .fera-rich-content p.-nature > strong, .fera-paragraph.-nature > a, .fera-rich-content p.-nature > a {
   color: #06d25a;
 }
-.fera-paragraph.-void > strong, .fera-paragraph.-void > a {
+.fera-paragraph.-void > strong, .fera-rich-content p.-void > strong, .fera-paragraph.-void > a, .fera-rich-content p.-void > a {
   color: #eeeeee;
 }
-.fera-paragraph.-baby > strong, .fera-paragraph.fera-card > strong, .fera-paragraph.fera-card-2 > strong, .fera-paragraph.fera-form > strong, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-paragraph.fera-card-2 > a, .fera-paragraph.fera-form > a {
+.fera-paragraph.-baby > strong, .fera-paragraph.fera-card > strong, .fera-rich-content p.fera-card > strong, .fera-paragraph.fera-card-2 > strong, .fera-rich-content p.fera-card-2 > strong, .fera-paragraph.fera-form > strong, .fera-rich-content p.fera-form > strong, .fera-rich-content p.-baby > strong, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-rich-content p.fera-card > a, .fera-paragraph.fera-card-2 > a, .fera-rich-content p.fera-card-2 > a, .fera-paragraph.fera-form > a, .fera-rich-content p.fera-form > a, .fera-rich-content p.-baby > a {
   color: #27b9f5;
 }
 
@@ -5345,11 +5347,11 @@ html {
   color: #da1e77;
   font-weight: bold;
 }
-.fera-table.-salmon .table-highlight, .fera-table.fera-paragraph .table-highlight {
+.fera-table.-salmon .table-highlight, .fera-table.fera-paragraph .table-highlight, .fera-rich-content p.fera-table .table-highlight {
   background-color: #e75a6a;
   color: white;
 }
-.fera-table.-salmon .table-text-highlight, .fera-table.fera-paragraph .table-text-highlight {
+.fera-table.-salmon .table-text-highlight, .fera-table.fera-paragraph .table-text-highlight, .fera-rich-content p.fera-table .table-text-highlight {
   color: #e75a6a;
   font-weight: bold;
 }
@@ -5430,7 +5432,7 @@ html {
 .fera-title.-pink {
   color: #da1e77;
 }
-.fera-title.-salmon, .fera-title.fera-paragraph {
+.fera-title.-salmon, .fera-title.fera-paragraph, .fera-rich-content p.fera-title {
   color: #e75a6a;
 }
 .fera-title.-darkness, .fera-title.fera-case, .fera-title.fera-table {
@@ -5503,7 +5505,7 @@ html {
   font-size: 19px;
   font-weight: 500;
   color: #9e9e9e;
-  line-height: 1.3;
+  line-height: 1.52;
 }
 .fera-top-article .article-author {
   margin-top: 3.75rem;
@@ -5566,7 +5568,7 @@ html {
 .fera-topics.-pink > .topic > .topic-title {
   color: #da1e77;
 }
-.fera-topics.-salmon > .topic > .topic-title, .fera-topics.fera-paragraph > .topic > .topic-title {
+.fera-topics.-salmon > .topic > .topic-title, .fera-topics.fera-paragraph > .topic > .topic-title, .fera-rich-content p.fera-topics > .topic > .topic-title {
   color: #e75a6a;
 }
 .fera-topics.-darkness > .topic > .topic-title, .fera-topics.fera-case > .topic > .topic-title, .fera-topics.fera-table > .topic > .topic-title {

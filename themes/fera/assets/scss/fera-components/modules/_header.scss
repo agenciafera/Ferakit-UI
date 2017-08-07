@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
+    @include rem(padding, 15px);
+    border-bottom: 1px solid #f9f9f9;
   }
 
   .header-logo {
