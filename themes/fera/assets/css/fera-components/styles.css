@@ -1898,6 +1898,7 @@ html {
   cursor: pointer;
   user-select: none;
   transition: all 100ms ease;
+  text-decoration: none;
   will-change: background, transform, color;
 }
 .fera-btn:hover {
