@@ -1677,6 +1677,80 @@ html {
 =            REM            =
 ===========================*/
 /*=====  End of REM  ======*/
+.fera-color.-halloween {
+  color: #54246a !important;
+}
+.fera-color.-andromeda {
+  color: #733e97 !important;
+}
+.fera-color.-night {
+  color: #315aa9 !important;
+}
+.fera-color.-sky {
+  color: #3186c7 !important;
+}
+.fera-color.-sunshine {
+  color: #f3ac47 !important;
+}
+.fera-color.-pink {
+  color: #da1e77 !important;
+}
+.fera-color.-salmon, .fera-color.fera-paragraph, .fera-rich-content p.fera-color {
+  color: #e75a6a !important;
+}
+.fera-color.-darkness, .fera-color.fera-case, .fera-color.fera-sidebar-nav, .fera-color.fera-table {
+  color: #333333 !important;
+}
+.fera-color.-mellow {
+  color: #9e9e9e !important;
+}
+.fera-color.-nature {
+  color: #06d25a !important;
+}
+.fera-color.-void {
+  color: #eeeeee !important;
+}
+.fera-color.-baby, .fera-color.fera-card, .fera-color.fera-card-2, .fera-color.fera-form {
+  color: #27b9f5 !important;
+}
+
+.fera-bgcolor.-halloween {
+  background-color: #54246a !important;
+}
+.fera-bgcolor.-andromeda {
+  background-color: #733e97 !important;
+}
+.fera-bgcolor.-night {
+  background-color: #315aa9 !important;
+}
+.fera-bgcolor.-sky {
+  background-color: #3186c7 !important;
+}
+.fera-bgcolor.-sunshine {
+  background-color: #f3ac47 !important;
+}
+.fera-bgcolor.-pink {
+  background-color: #da1e77 !important;
+}
+.fera-bgcolor.-salmon, .fera-bgcolor.fera-paragraph, .fera-rich-content p.fera-bgcolor {
+  background-color: #e75a6a !important;
+}
+.fera-bgcolor.-darkness, .fera-bgcolor.fera-case, .fera-bgcolor.fera-sidebar-nav, .fera-bgcolor.fera-table {
+  background-color: #333333 !important;
+}
+.fera-bgcolor.-mellow {
+  background-color: #9e9e9e !important;
+}
+.fera-bgcolor.-nature {
+  background-color: #06d25a !important;
+}
+.fera-bgcolor.-void {
+  background-color: #eeeeee !important;
+}
+.fera-bgcolor.-baby, .fera-bgcolor.fera-card, .fera-bgcolor.fera-card-2, .fera-bgcolor.fera-form {
+  background-color: #27b9f5 !important;
+}
+
 /*===============================
 =            Modules            =
 ===============================*/
