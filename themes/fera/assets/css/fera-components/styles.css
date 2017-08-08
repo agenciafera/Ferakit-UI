@@ -2879,7 +2879,7 @@ html {
   box-shadow: 2px 2px 18px 1px rgba(0, 0, 0, 0.15);
 }
 .fera-form .form-label {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Open Sans";
   font-weight: 600;
   margin-bottom: 0.9375rem;
@@ -2890,36 +2890,36 @@ html {
   will-change: color;
 }
 .fera-form .form-input {
-  padding: 20px 15px;
+  padding: 1rem 0.9375rem;
   border: 2px solid #eeeeee;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #333333;
   width: 100%;
   font-weight: 300;
 }
 .fera-form .form-input:-moz-placeholder {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #9e9e9e;
 }
 .fera-form .form-input::-moz-placeholder {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #9e9e9e;
 }
 .fera-form .form-input:-ms-input-placeholder {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #9e9e9e;
 }
 .fera-form .form-input::-webkit-input-placeholder {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #9e9e9e;
 }
 .fera-form .form-select {
-  padding: 17px 15px;
-  padding-right: 100px;
+  padding: 1.0625rem 0.9375rem;
+  padding-right: 6.25rem;
   border: 2px solid #eeeeee;
   font-family: "Open Sans";
   appearance: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   background-color: #fff;
   color: #333333;
@@ -2939,7 +2939,7 @@ html {
   border-radius: 9999px;
 }
 .fera-form textarea.form-input {
-  height: 100px;
+  height: 6.25rem;
 }
 .fera-form .select-container {
   position: relative;
