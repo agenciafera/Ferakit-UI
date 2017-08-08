@@ -1,12 +1,12 @@
 .fera-header {
   display: flex;
   flex-flow: column nowrap;
+  @include rem(padding, 15px);
 
   @media #{$tablet} {
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
-    @include rem(padding, 15px);
     border-bottom: 1px solid #f9f9f9;
   }
 
@@ -35,6 +35,10 @@
         color: map-get($colors, darkness);
         font-size: 19px;
         font-weight: 300;
+
+        a {
+          text-decoration: none;
+        }
 
         &:not(:last-child) {
           @include rem(margin-bottom, 50px);
