@@ -6,7 +6,6 @@
     > .nav-links {
 
         > .item {
-            @include rem(padding, 22.5px 25px);
             border-left: 4px solid transparent;
             @include transition(border, color, background, opacity);
             color: black;
@@ -28,6 +27,8 @@
                 text-decoration: none;
                 @include rem(font-size, 13px);
                 color: inherit;
+                @include rem(padding, 22.5px 25px);
+                display: block;
 
                 i {
                     @include rem(margin-right, 15px);

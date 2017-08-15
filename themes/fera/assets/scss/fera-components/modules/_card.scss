@@ -59,10 +59,18 @@
 
     > .card-title {
       @extend %title-1;
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
     }
 
     > .card-text {
       color: color('mellow');
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
     }
 
   }
