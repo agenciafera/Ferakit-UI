@@ -14,8 +14,8 @@ $colors: (
 );
 
 .fera-btn {
-  font-size: 18px;
-  padding: 20px 60px;
+  @include rem(font-size, 18px);
+  @include rem(padding, 15px 60px);
   text-transform: uppercase;
   background-color: #2b86cb;
   border-radius: 4px;
@@ -53,14 +53,14 @@ $colors: (
 
   @media #{$tablet} {
     font-size: 13.5px;
-    padding: 15px 45px;
+    @include rem(padding, 9px 45px);
   }
 
 }
 
 .fera-btn.-big {
   font-size: 22.5px;
-  padding: 25px 75px;
+  @include rem(padding, 25px 75px);
 }
 
 /*=====  End of Sizes  ======*/
@@ -70,16 +70,16 @@ $colors: (
 ==================================*/
 
 .fera-btn.-pill {
-  font-size: 16px;
+  @include rem(font-size, 16px);
   padding: 9.5px 20px;
   border-radius: 999px;
 }
 
 .fera-btn.-action {
-  font-size: 24px;
+  @include rem(font-size, 24px);
   text-transform: uppercase;
   font-weight: bold;
-  padding: 26px 90px;
+  @include rem(padding, 26px 90px);
 }
 
 /*=====  End of Variations  ======*/
