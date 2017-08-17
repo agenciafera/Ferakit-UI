@@ -1730,6 +1730,9 @@ html {
 .fera-form .form-input:hover, .fera-form .form-input:focus, .fera-form .form-select:hover, .fera-form .form-select:focus, .fera-form .form-checkbox:hover, .fera-form .form-checkbox:focus, .fera-form .form-radio:hover, .fera-form .form-radio:focus {
   box-shadow: 2px 2px 18px 1px rgba(0, 0, 0, 0.15);
 }
+.fera-form .form-input, .fera-form .form-select {
+  padding: 0.9375rem 0.9375rem;
+}
 .fera-form .form-label {
   font-size: 1.25rem;
   font-family: "Open Sans";
@@ -1742,7 +1745,6 @@ html {
   will-change: color;
 }
 .fera-form .form-input {
-  padding: 1rem 0.9375rem;
   border: 2px solid #eeeeee;
   font-size: 1.125rem;
   color: #333333;
@@ -1766,7 +1768,6 @@ html {
   color: #9e9e9e;
 }
 .fera-form .form-select {
-  padding: 1.0625rem 0.9375rem;
   padding-right: 6.25rem;
   border: 2px solid #eeeeee;
   font-family: "Open Sans";
