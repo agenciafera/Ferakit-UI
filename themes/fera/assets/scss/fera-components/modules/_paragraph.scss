@@ -3,7 +3,7 @@
   font-weight: 300;
   font-family: 'Open Sans';
   line-height: 1.52;
-  margin-bottom: 1.67em;
+  @include rem(margin-bottom, 30px);
   @extend .-salmon;
 
   @media #{$tablet} {

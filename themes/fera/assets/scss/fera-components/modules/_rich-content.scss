@@ -4,4 +4,23 @@
     @extend .fera-paragraph;
   }
 
+  ul, ol{
+    @include rem(padding-left, 30px);
+  }
+
+  li {
+    @extend .fera-paragraph;
+    @include rem(margin-bottom, 10px);
+  }
+
+  em{
+    font-style: italic;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.23);
+  }
+
+  blockquote{
+    border-left: 3px solid #717a8f;
+    @include rem(padding-left, 30px);
+  }
+
 }
