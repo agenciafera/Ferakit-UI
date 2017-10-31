@@ -24,4 +24,18 @@
     @include rem(padding-left, 30px);
   }
 
+  @include theme {
+
+    p{
+      > strong, > a {
+        color: $color;
+      }
+    }
+
+    blockquote{
+      border-left: 3px solid $color;
+    }
+
+  }
+
 }
