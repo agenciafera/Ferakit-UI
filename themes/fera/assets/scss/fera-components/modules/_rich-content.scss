@@ -6,6 +6,7 @@
 
   ul, ol{
     @include rem(padding-left, 30px);
+    @include rem(margin-bottom, 30px);
   }
 
   li {
