@@ -9,6 +9,14 @@
     @include rem(margin-bottom, 30px);
   }
 
+  ul li{
+    list-style: disc;
+  }
+
+  ol li{
+    list-style: decimal;
+  }
+
   li {
     @extend .fera-paragraph;
     @include rem(margin-bottom, 10px);

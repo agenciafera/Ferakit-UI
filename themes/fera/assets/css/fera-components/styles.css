@@ -4358,6 +4358,12 @@ html {
   padding-left: 1.875rem;
   margin-bottom: 1.875rem;
 }
+.fera-rich-content ul li {
+  list-style: disc;
+}
+.fera-rich-content ol li {
+  list-style: decimal;
+}
 .fera-rich-content li {
   margin-bottom: 0.625rem;
 }
