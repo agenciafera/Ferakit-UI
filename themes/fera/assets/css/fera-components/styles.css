@@ -557,6 +557,9 @@ html {
 .fera-color.-baby, .fera-color.fera-card, .fera-color.fera-card-2, .fera-color.fera-form {
   color: #27b9f5 !important;
 }
+.fera-color.-pumpkin {
+  color: #fc7700 !important;
+}
 
 .fera-bgcolor.-halloween {
   background-color: #54246a !important;
@@ -593,6 +596,9 @@ html {
 }
 .fera-bgcolor.-baby, .fera-bgcolor.fera-card, .fera-bgcolor.fera-card-2, .fera-bgcolor.fera-form {
   background-color: #27b9f5 !important;
+}
+.fera-bgcolor.-pumpkin {
+  background-color: #fc7700 !important;
 }
 
 /*===============================
@@ -760,6 +766,19 @@ html {
 }
 .fera-alert.-baby > .alert-button, .fera-alert.fera-card > .alert-button, .fera-alert.fera-card-2 > .alert-button, .fera-alert.fera-form > .alert-button {
   color: #27b9f5;
+}
+.fera-alert.-pumpkin {
+  border-color: #fc7700;
+}
+.fera-alert.-pumpkin > .alert-icon {
+  background-color: #fc7700;
+  color: white;
+}
+.fera-alert.-pumpkin > .alert-text > strong {
+  color: #fc7700;
+}
+.fera-alert.-pumpkin > .alert-button {
+  color: #fc7700;
 }
 .fera-alert strong {
   text-transform: uppercase;
@@ -1054,6 +1073,20 @@ html {
   background-color: #58c9f7;
 }
 
+.fera-btn.-pumpkin {
+  background-color: #fc7700;
+  color: #ffffff;
+}
+.fera-btn.-pumpkin.-action {
+  border-bottom: 6px solid #964700;
+}
+.fera-btn.-pumpkin.-action:hover {
+  background-color: #ff8417;
+}
+.fera-btn.-pumpkin:hover {
+  background-color: #ff9230;
+}
+
 [class*="fera-card"] {
   border-radius: 7px;
   overflow: hidden;
@@ -1164,6 +1197,9 @@ html {
 .fera-card.-baby > .card-highlight, .fera-card > .card-highlight, .fera-card.fera-card-2 > .card-highlight, .fera-card.fera-form > .card-highlight {
   background-color: #27b9f5;
 }
+.fera-card.-pumpkin > .card-highlight {
+  background-color: #fc7700;
+}
 .fera-card.-horizontal {
   display: flex;
   flex-flow: row nowrap;
@@ -1228,6 +1264,9 @@ html {
 }
 .fera-card-2.-baby, .fera-card-2 {
   background-color: #27b9f5;
+}
+.fera-card-2.-pumpkin {
+  background-color: #fc7700;
 }
 
 .fera-case {
@@ -1615,6 +1654,26 @@ html {
   background-color: #e9f9ff;
   color: #000000;
 }
+.fera-case.-pumpkin .case-tags li:nth-child(1) {
+  background-color: #fc7700;
+  color: #ffffff;
+}
+.fera-case.-pumpkin .case-tags li:nth-child(2) {
+  background-color: #ff9230;
+  color: #ffffff;
+}
+.fera-case.-pumpkin .case-tags li:nth-child(3) {
+  background-color: #ffad63;
+  color: #ffffff;
+}
+.fera-case.-pumpkin .case-tags li:nth-child(4) {
+  background-color: #ffc896;
+  color: #000000;
+}
+.fera-case.-pumpkin .case-tags li:nth-child(5) {
+  background-color: #ffe3c9;
+  color: #000000;
+}
 
 .colors .title-7 {
   margin-bottom: 1.875rem;
@@ -1662,6 +1721,9 @@ html {
 }
 .square.-baby, .square.fera-card, .square.fera-card-2, .square.fera-form {
   background: #27b9f5;
+}
+.square.-pumpkin {
+  background: #fc7700;
 }
 
 .hex {
@@ -2014,6 +2076,22 @@ html {
   border-color: #27b9f5;
   background: #27b9f5 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
+.fera-form.-pumpkin .form-input:hover, .fera-form.-pumpkin .form-input:focus, .fera-form.-pumpkin .form-select:hover, .fera-form.-pumpkin .form-select:focus, .fera-form.-pumpkin .form-checkbox:hover, .fera-form.-pumpkin .form-checkbox:focus, .fera-form.-pumpkin .form-radio:hover, .fera-form.-pumpkin .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(252, 119, 0, 0.15);
+  border-color: #fc7700;
+}
+.fera-form.-pumpkin .form-select:hover {
+  background-color: #fc7700;
+  color: white;
+}
+.fera-form.-pumpkin .form-radio:checked {
+  border-color: #fc7700;
+  background: #fc7700;
+}
+.fera-form.-pumpkin .form-checkbox:checked {
+  border-color: #fc7700;
+  background: #fc7700 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 
 [class*="fera-"] {
   font-family: "Open Sans";
@@ -2125,6 +2203,9 @@ html {
 }
 .fera-horizontal-list.-baby > .item > .item-title::before, .fera-horizontal-list.fera-card > .item > .item-title::before, .fera-horizontal-list.fera-card-2 > .item > .item-title::before, .fera-horizontal-list.fera-form > .item > .item-title::before {
   background: #27b9f5;
+}
+.fera-horizontal-list.-pumpkin > .item > .item-title::before {
+  background: #fc7700;
 }
 
 @font-face {
@@ -4288,6 +4369,16 @@ html {
   background-color: rgba(39, 185, 245, 0.05);
   border-color: #27b9f5;
 }
+.fera-sidebar-nav.-pumpkin > .nav-links > .item {
+  color: #fc7700;
+}
+.fera-sidebar-nav.-pumpkin > .nav-links > .item:hover {
+  background-color: rgba(252, 119, 0, 0.025);
+}
+.fera-sidebar-nav.-pumpkin > .nav-links > .item.-active {
+  background-color: rgba(252, 119, 0, 0.05);
+  border-color: #fc7700;
+}
 
 .fera-list {
   list-style: square;
@@ -4352,6 +4443,9 @@ html {
 }
 .fera-paragraph.-baby > strong, .fera-paragraph.fera-card > strong, .fera-rich-content p.fera-card > strong, .fera-rich-content li.fera-card > strong, .fera-paragraph.fera-card-2 > strong, .fera-rich-content p.fera-card-2 > strong, .fera-rich-content li.fera-card-2 > strong, .fera-paragraph.fera-form > strong, .fera-rich-content p.fera-form > strong, .fera-rich-content li.fera-form > strong, .fera-rich-content p.-baby > strong, .fera-rich-content li.-baby > strong, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-rich-content p.fera-card > a, .fera-rich-content li.fera-card > a, .fera-paragraph.fera-card-2 > a, .fera-rich-content p.fera-card-2 > a, .fera-rich-content li.fera-card-2 > a, .fera-paragraph.fera-form > a, .fera-rich-content p.fera-form > a, .fera-rich-content li.fera-form > a, .fera-rich-content p.-baby > a, .fera-rich-content li.-baby > a {
   color: #27b9f5;
+}
+.fera-paragraph.-pumpkin > strong, .fera-rich-content p.-pumpkin > strong, .fera-rich-content li.-pumpkin > strong, .fera-paragraph.-pumpkin > a, .fera-rich-content p.-pumpkin > a, .fera-rich-content li.-pumpkin > a {
+  color: #fc7700;
 }
 
 .fera-rich-content ul, .fera-rich-content ol {
@@ -4446,6 +4540,12 @@ html {
 }
 .fera-rich-content.-baby blockquote, .fera-rich-content.fera-card blockquote, .fera-rich-content.fera-card-2 blockquote, .fera-rich-content.fera-form blockquote {
   border-left: 3px solid #27b9f5;
+}
+.fera-rich-content.-pumpkin p > strong, .fera-rich-content.-pumpkin p > a {
+  color: #fc7700;
+}
+.fera-rich-content.-pumpkin blockquote {
+  border-left: 3px solid #fc7700;
 }
 
 .table-container {
@@ -4588,6 +4688,14 @@ html {
   color: #27b9f5;
   font-weight: bold;
 }
+.fera-table.-pumpkin .table-highlight {
+  background-color: #fc7700;
+  color: white;
+}
+.fera-table.-pumpkin .table-text-highlight {
+  color: #fc7700;
+  font-weight: bold;
+}
 
 .fera-card > .card-body > .card-title, .fera-topics .topic-title {
   font-size: 17px;
@@ -4642,6 +4750,9 @@ html {
 }
 .fera-title.-baby, .fera-title.fera-card, .fera-title.fera-card-2, .fera-title.fera-form {
   color: #27b9f5;
+}
+.fera-title.-pumpkin {
+  color: #fc7700;
 }
 .fera-title.-title-1 {
   font-size: 2.5rem;
@@ -4778,4 +4889,7 @@ html {
 }
 .fera-topics.-baby > .topic > .topic-title, .fera-topics.fera-card > .topic > .topic-title, .fera-topics.fera-card-2 > .topic > .topic-title, .fera-topics.fera-form > .topic > .topic-title {
   color: #27b9f5;
+}
+.fera-topics.-pumpkin > .topic > .topic-title {
+  color: #fc7700;
 }
