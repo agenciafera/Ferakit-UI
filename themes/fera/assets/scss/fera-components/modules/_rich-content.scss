@@ -4,6 +4,10 @@
     @extend .fera-paragraph;
   }
 
+  h2{
+    @extend .fera-title.-title-4;
+  }
+
   ul, ol{
     @include rem(padding-left, 30px);
     @include rem(margin-bottom, 30px);

@@ -4780,7 +4780,7 @@ html {
   font-weight: bold;
   text-transform: uppercase;
 }
-.fera-title.-title-4 {
+.fera-title.-title-4, .fera-rich-content h2 {
   font-size: 1.5rem;
   font-weight: bold;
 }
