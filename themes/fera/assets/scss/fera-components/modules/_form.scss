@@ -97,6 +97,7 @@
       @include align('vertical');
       @include rem(right, 20px);
       filter: invert(100%);
+      pointer-events: none;
     }
 
     &:hover {

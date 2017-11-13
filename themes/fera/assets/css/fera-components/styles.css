@@ -1880,6 +1880,7 @@ html {
   transform: translateY(-50%);
   right: 1.25rem;
   filter: invert(100%);
+  pointer-events: none;
 }
 .fera-form .select-container:hover::after {
   filter: invert(0%) !important;
@@ -4448,6 +4449,9 @@ html {
   color: #fc7700;
 }
 
+.fera-rich-content h2 {
+  margin-bottom: 1.25rem;
+}
 .fera-rich-content ul, .fera-rich-content ol {
   padding-left: 1.875rem;
   margin-bottom: 1.875rem;
