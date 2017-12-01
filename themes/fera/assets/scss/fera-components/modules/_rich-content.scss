@@ -2,6 +2,10 @@
 
   p {
     @extend .fera-paragraph;
+
+    img{
+      @include rem(margin-bottom, 40px);
+    }
   }
 
   h2{
