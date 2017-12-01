@@ -601,6 +601,10 @@ html {
   background-color: #fc7700 !important;
 }
 
+.-t-center {
+  text-align: center;
+}
+
 /*===============================
 =            Modules            =
 ===============================*/
