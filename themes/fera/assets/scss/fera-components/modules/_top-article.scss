@@ -11,14 +11,14 @@
   }
 
   .article-author {
-    @include rem(margin-top, 60px);
+    @include rem(margin-top, 30px);
     color: map-get($colors, darkness);
     font-size: 16px;
     font-weight: 400;
 
     img {
-      @include rem(width, 90px);
-      @include rem(height, 90px);
+      @include rem(width, 60px);
+      @include rem(height, 60px);
       border-radius: 9999px;
     }
 
@@ -33,6 +33,10 @@
     line-height: 1.50;
     font-weight: 600;
     @include rem(margin-bottom, 35px);
+  }
+
+  .author-text{
+    @include rem(font-size, 13px);
   }
 
 }
