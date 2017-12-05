@@ -4410,6 +4410,7 @@ html {
   font-weight: 300;
   font-family: 'Open Sans';
   line-height: 1.52;
+  color: black;
   margin-bottom: 1.875rem;
 }
 @media (min-width: 700px) {
@@ -4425,83 +4426,48 @@ html {
 .fera-paragraph a, .fera-rich-content p a, .fera-rich-content li a {
   text-decoration: underline;
 }
-.fera-paragraph.-halloween > strong, .fera-rich-content p.-halloween > strong, .fera-rich-content li.-halloween > strong, .fera-paragraph.-halloween > a, .fera-rich-content p.-halloween > a, .fera-rich-content li.-halloween > a {
-  color: #54246a;
-}
-.fera-paragraph.-halloween > strong, .fera-rich-content p.-halloween > strong, .fera-rich-content li.-halloween > strong {
+.fera-paragraph > strong, .fera-rich-content p > strong, .fera-rich-content li > strong {
   font-weight: bold;
-}
-.fera-paragraph.-andromeda > strong, .fera-rich-content p.-andromeda > strong, .fera-rich-content li.-andromeda > strong, .fera-paragraph.-andromeda > a, .fera-rich-content p.-andromeda > a, .fera-rich-content li.-andromeda > a {
-  color: #733e97;
-}
-.fera-paragraph.-andromeda > strong, .fera-rich-content p.-andromeda > strong, .fera-rich-content li.-andromeda > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-night > strong, .fera-rich-content p.-night > strong, .fera-rich-content li.-night > strong, .fera-paragraph.-night > a, .fera-rich-content p.-night > a, .fera-rich-content li.-night > a {
-  color: #315aa9;
-}
-.fera-paragraph.-night > strong, .fera-rich-content p.-night > strong, .fera-rich-content li.-night > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-sky > strong, .fera-rich-content p.-sky > strong, .fera-rich-content li.-sky > strong, .fera-paragraph.-sky > a, .fera-rich-content p.-sky > a, .fera-rich-content li.-sky > a {
-  color: #3186c7;
-}
-.fera-paragraph.-sky > strong, .fera-rich-content p.-sky > strong, .fera-rich-content li.-sky > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-sunshine > strong, .fera-rich-content p.-sunshine > strong, .fera-rich-content li.-sunshine > strong, .fera-paragraph.-sunshine > a, .fera-rich-content p.-sunshine > a, .fera-rich-content li.-sunshine > a {
-  color: #f3ac47;
-}
-.fera-paragraph.-sunshine > strong, .fera-rich-content p.-sunshine > strong, .fera-rich-content li.-sunshine > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-pink > strong, .fera-rich-content p.-pink > strong, .fera-rich-content li.-pink > strong, .fera-paragraph.-pink > a, .fera-rich-content p.-pink > a, .fera-rich-content li.-pink > a {
-  color: #da1e77;
-}
-.fera-paragraph.-pink > strong, .fera-rich-content p.-pink > strong, .fera-rich-content li.-pink > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-salmon > strong, .fera-paragraph > strong, .fera-rich-content p > strong, .fera-rich-content li > strong, .fera-rich-content p.-salmon > strong, .fera-rich-content p.fera-paragraph > strong, .fera-rich-content li.-salmon > strong, .fera-rich-content li.fera-paragraph > strong, .fera-paragraph.-salmon > a, .fera-paragraph > a, .fera-rich-content p > a, .fera-rich-content li > a, .fera-rich-content p.-salmon > a, .fera-rich-content p.fera-paragraph > a, .fera-rich-content li.-salmon > a, .fera-rich-content li.fera-paragraph > a {
-  color: #e75a6a;
-}
-.fera-paragraph.-salmon > strong, .fera-paragraph > strong, .fera-rich-content p > strong, .fera-rich-content li > strong, .fera-rich-content p.-salmon > strong, .fera-rich-content p.fera-paragraph > strong, .fera-rich-content li.-salmon > strong, .fera-rich-content li.fera-paragraph > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-darkness > strong, .fera-paragraph.fera-case > strong, .fera-rich-content p.fera-case > strong, .fera-rich-content li.fera-case > strong, .fera-paragraph.fera-sidebar-nav > strong, .fera-rich-content p.fera-sidebar-nav > strong, .fera-rich-content li.fera-sidebar-nav > strong, .fera-rich-content p.-darkness > strong, .fera-rich-content p.fera-table > strong, .fera-rich-content li.-darkness > strong, .fera-rich-content li.fera-table > strong, .fera-paragraph.fera-table > strong, .fera-paragraph.-darkness > a, .fera-paragraph.fera-case > a, .fera-rich-content p.fera-case > a, .fera-rich-content li.fera-case > a, .fera-paragraph.fera-sidebar-nav > a, .fera-rich-content p.fera-sidebar-nav > a, .fera-rich-content li.fera-sidebar-nav > a, .fera-rich-content p.-darkness > a, .fera-rich-content p.fera-table > a, .fera-rich-content li.-darkness > a, .fera-rich-content li.fera-table > a, .fera-paragraph.fera-table > a {
   color: #333333;
 }
-.fera-paragraph.-darkness > strong, .fera-paragraph.fera-case > strong, .fera-rich-content p.fera-case > strong, .fera-rich-content li.fera-case > strong, .fera-paragraph.fera-sidebar-nav > strong, .fera-rich-content p.fera-sidebar-nav > strong, .fera-rich-content li.fera-sidebar-nav > strong, .fera-rich-content p.-darkness > strong, .fera-rich-content p.fera-table > strong, .fera-rich-content li.-darkness > strong, .fera-rich-content li.fera-table > strong, .fera-paragraph.fera-table > strong {
-  font-weight: bold;
+.fera-paragraph.-halloween > span, .fera-rich-content p.-halloween > span, .fera-rich-content li.-halloween > span, .fera-paragraph.-halloween > a, .fera-rich-content p.-halloween > a, .fera-rich-content li.-halloween > a {
+  color: #54246a;
 }
-.fera-paragraph.-mellow > strong, .fera-rich-content p.-mellow > strong, .fera-rich-content li.-mellow > strong, .fera-paragraph.-mellow > a, .fera-rich-content p.-mellow > a, .fera-rich-content li.-mellow > a {
+.fera-paragraph.-andromeda > span, .fera-rich-content p.-andromeda > span, .fera-rich-content li.-andromeda > span, .fera-paragraph.-andromeda > a, .fera-rich-content p.-andromeda > a, .fera-rich-content li.-andromeda > a {
+  color: #733e97;
+}
+.fera-paragraph.-night > span, .fera-rich-content p.-night > span, .fera-rich-content li.-night > span, .fera-paragraph.-night > a, .fera-rich-content p.-night > a, .fera-rich-content li.-night > a {
+  color: #315aa9;
+}
+.fera-paragraph.-sky > span, .fera-rich-content p.-sky > span, .fera-rich-content li.-sky > span, .fera-paragraph.-sky > a, .fera-rich-content p.-sky > a, .fera-rich-content li.-sky > a {
+  color: #3186c7;
+}
+.fera-paragraph.-sunshine > span, .fera-rich-content p.-sunshine > span, .fera-rich-content li.-sunshine > span, .fera-paragraph.-sunshine > a, .fera-rich-content p.-sunshine > a, .fera-rich-content li.-sunshine > a {
+  color: #f3ac47;
+}
+.fera-paragraph.-pink > span, .fera-rich-content p.-pink > span, .fera-rich-content li.-pink > span, .fera-paragraph.-pink > a, .fera-rich-content p.-pink > a, .fera-rich-content li.-pink > a {
+  color: #da1e77;
+}
+.fera-paragraph.-salmon > span, .fera-paragraph > span, .fera-rich-content p > span, .fera-rich-content li > span, .fera-rich-content p.-salmon > span, .fera-rich-content p.fera-paragraph > span, .fera-rich-content li.-salmon > span, .fera-rich-content li.fera-paragraph > span, .fera-paragraph.-salmon > a, .fera-paragraph > a, .fera-rich-content p > a, .fera-rich-content li > a, .fera-rich-content p.-salmon > a, .fera-rich-content p.fera-paragraph > a, .fera-rich-content li.-salmon > a, .fera-rich-content li.fera-paragraph > a {
+  color: #e75a6a;
+}
+.fera-paragraph.-darkness > span, .fera-paragraph.fera-case > span, .fera-rich-content p.fera-case > span, .fera-rich-content li.fera-case > span, .fera-paragraph.fera-sidebar-nav > span, .fera-rich-content p.fera-sidebar-nav > span, .fera-rich-content li.fera-sidebar-nav > span, .fera-rich-content p.-darkness > span, .fera-rich-content p.fera-table > span, .fera-rich-content li.-darkness > span, .fera-rich-content li.fera-table > span, .fera-paragraph.fera-table > span, .fera-paragraph.-darkness > a, .fera-paragraph.fera-case > a, .fera-rich-content p.fera-case > a, .fera-rich-content li.fera-case > a, .fera-paragraph.fera-sidebar-nav > a, .fera-rich-content p.fera-sidebar-nav > a, .fera-rich-content li.fera-sidebar-nav > a, .fera-rich-content p.-darkness > a, .fera-rich-content p.fera-table > a, .fera-rich-content li.-darkness > a, .fera-rich-content li.fera-table > a, .fera-paragraph.fera-table > a {
+  color: #333333;
+}
+.fera-paragraph.-mellow > span, .fera-rich-content p.-mellow > span, .fera-rich-content li.-mellow > span, .fera-paragraph.-mellow > a, .fera-rich-content p.-mellow > a, .fera-rich-content li.-mellow > a {
   color: #9e9e9e;
 }
-.fera-paragraph.-mellow > strong, .fera-rich-content p.-mellow > strong, .fera-rich-content li.-mellow > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-nature > strong, .fera-rich-content p.-nature > strong, .fera-rich-content li.-nature > strong, .fera-paragraph.-nature > a, .fera-rich-content p.-nature > a, .fera-rich-content li.-nature > a {
+.fera-paragraph.-nature > span, .fera-rich-content p.-nature > span, .fera-rich-content li.-nature > span, .fera-paragraph.-nature > a, .fera-rich-content p.-nature > a, .fera-rich-content li.-nature > a {
   color: #06d25a;
 }
-.fera-paragraph.-nature > strong, .fera-rich-content p.-nature > strong, .fera-rich-content li.-nature > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-void > strong, .fera-rich-content p.-void > strong, .fera-rich-content li.-void > strong, .fera-paragraph.-void > a, .fera-rich-content p.-void > a, .fera-rich-content li.-void > a {
+.fera-paragraph.-void > span, .fera-rich-content p.-void > span, .fera-rich-content li.-void > span, .fera-paragraph.-void > a, .fera-rich-content p.-void > a, .fera-rich-content li.-void > a {
   color: #eeeeee;
 }
-.fera-paragraph.-void > strong, .fera-rich-content p.-void > strong, .fera-rich-content li.-void > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-baby > strong, .fera-paragraph.fera-card > strong, .fera-rich-content p.fera-card > strong, .fera-rich-content li.fera-card > strong, .fera-paragraph.fera-card-2 > strong, .fera-rich-content p.fera-card-2 > strong, .fera-rich-content li.fera-card-2 > strong, .fera-paragraph.fera-form > strong, .fera-rich-content p.fera-form > strong, .fera-rich-content li.fera-form > strong, .fera-rich-content p.-baby > strong, .fera-rich-content li.-baby > strong, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-rich-content p.fera-card > a, .fera-rich-content li.fera-card > a, .fera-paragraph.fera-card-2 > a, .fera-rich-content p.fera-card-2 > a, .fera-rich-content li.fera-card-2 > a, .fera-paragraph.fera-form > a, .fera-rich-content p.fera-form > a, .fera-rich-content li.fera-form > a, .fera-rich-content p.-baby > a, .fera-rich-content li.-baby > a {
+.fera-paragraph.-baby > span, .fera-paragraph.fera-card > span, .fera-rich-content p.fera-card > span, .fera-rich-content li.fera-card > span, .fera-paragraph.fera-card-2 > span, .fera-rich-content p.fera-card-2 > span, .fera-rich-content li.fera-card-2 > span, .fera-paragraph.fera-form > span, .fera-rich-content p.fera-form > span, .fera-rich-content li.fera-form > span, .fera-rich-content p.-baby > span, .fera-rich-content li.-baby > span, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-rich-content p.fera-card > a, .fera-rich-content li.fera-card > a, .fera-paragraph.fera-card-2 > a, .fera-rich-content p.fera-card-2 > a, .fera-rich-content li.fera-card-2 > a, .fera-paragraph.fera-form > a, .fera-rich-content p.fera-form > a, .fera-rich-content li.fera-form > a, .fera-rich-content p.-baby > a, .fera-rich-content li.-baby > a {
   color: #27b9f5;
 }
-.fera-paragraph.-baby > strong, .fera-paragraph.fera-card > strong, .fera-rich-content p.fera-card > strong, .fera-rich-content li.fera-card > strong, .fera-paragraph.fera-card-2 > strong, .fera-rich-content p.fera-card-2 > strong, .fera-rich-content li.fera-card-2 > strong, .fera-paragraph.fera-form > strong, .fera-rich-content p.fera-form > strong, .fera-rich-content li.fera-form > strong, .fera-rich-content p.-baby > strong, .fera-rich-content li.-baby > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-pumpkin > strong, .fera-rich-content p.-pumpkin > strong, .fera-rich-content li.-pumpkin > strong, .fera-paragraph.-pumpkin > a, .fera-rich-content p.-pumpkin > a, .fera-rich-content li.-pumpkin > a {
+.fera-paragraph.-pumpkin > span, .fera-rich-content p.-pumpkin > span, .fera-rich-content li.-pumpkin > span, .fera-paragraph.-pumpkin > a, .fera-rich-content p.-pumpkin > a, .fera-rich-content li.-pumpkin > a {
   color: #fc7700;
-}
-.fera-paragraph.-pumpkin > strong, .fera-rich-content p.-pumpkin > strong, .fera-rich-content li.-pumpkin > strong {
-  font-weight: bold;
 }
 
 .fera-rich-content p img {
