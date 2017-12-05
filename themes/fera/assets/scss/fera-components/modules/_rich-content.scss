@@ -11,18 +11,21 @@
     @include rem(font-size, 30px);
     font-weight: bold;
     @include rem(margin-bottom, 20px);
+    font-family: "Lato", sans-serif;
   }
 
   h3{
     @include rem(font-size, 22px);
     font-weight: bold;
     @include rem(margin-bottom, 20px);
+    font-family: "Lato", sans-serif;
   }
 
   h4{
     @include rem(font-size, 18px);
     font-weight: bold;
     @include rem(margin-bottom, 20px);
+    font-family: "Lato", sans-serif;
   }
 
   ul, ol{
