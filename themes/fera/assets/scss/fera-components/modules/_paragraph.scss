@@ -24,6 +24,12 @@
     color: color('darkness');
   }
 
+  > span{
+    > strong{
+      font-weight: bold;
+    }
+  }
+
   @include theme {
 
     > span, > a {

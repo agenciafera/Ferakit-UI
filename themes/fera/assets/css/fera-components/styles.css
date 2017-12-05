@@ -4430,6 +4430,9 @@ html {
   font-weight: bold;
   color: #333333;
 }
+.fera-paragraph > span > strong, .fera-rich-content p > span > strong, .fera-rich-content li > span > strong {
+  font-weight: bold;
+}
 .fera-paragraph.-halloween > span, .fera-rich-content p.-halloween > span, .fera-rich-content li.-halloween > span, .fera-paragraph.-halloween > a, .fera-rich-content p.-halloween > a, .fera-rich-content li.-halloween > a {
   color: #54246a;
 }
@@ -4477,16 +4480,19 @@ html {
   font-size: 1.875rem;
   font-weight: bold;
   margin-bottom: 1.25rem;
+  font-family: "Lato", sans-serif;
 }
 .fera-rich-content h3 {
   font-size: 1.375rem;
   font-weight: bold;
   margin-bottom: 1.25rem;
+  font-family: "Lato", sans-serif;
 }
 .fera-rich-content h4 {
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 1.25rem;
+  font-family: "Lato", sans-serif;
 }
 .fera-rich-content ul, .fera-rich-content ol {
   padding-left: 1.875rem;
