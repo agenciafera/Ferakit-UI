@@ -38,6 +38,8 @@
 
         a {
           text-decoration: none;
+          color: color('mellow');
+          @include rem(font-size, 15px);
         }
 
         &:not(:last-child) {
