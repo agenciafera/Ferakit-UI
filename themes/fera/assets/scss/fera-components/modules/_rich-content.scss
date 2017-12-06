@@ -54,8 +54,13 @@
   }
 
   blockquote{
-    border-left: 3px solid #717a8f;
+    border-left: 3px solid color('andromeda');
+    color: color('andromeda');
     @include rem(padding-left, 30px);
+    @include rem(font-size, 30px);
+    @include rem(line-height, 50px);
+    font-weight: 300;
+    font-style: italic;
   }
 
   @include theme {
@@ -68,6 +73,7 @@
 
     blockquote{
       border-left: 3px solid $color;
+      color: $color;
     }
 
   }
