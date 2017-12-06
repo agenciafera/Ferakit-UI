@@ -55,7 +55,6 @@
 
   blockquote{
     border-left: 3px solid color('andromeda');
-    color: color('andromeda');
     @include rem(padding-left, 30px);
     font-weight: 300;
     font-style: italic;
@@ -63,6 +62,7 @@
     p{
       @include rem(font-size, 26px);
       @include rem(line-height, 45px);
+      color: color('andromeda');
     }
   }
 

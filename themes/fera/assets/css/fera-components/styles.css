@@ -4515,7 +4515,6 @@ html {
 }
 .fera-rich-content blockquote {
   border-left: 3px solid #733e97;
-  color: #733e97;
   padding-left: 1.875rem;
   font-weight: 300;
   font-style: italic;
@@ -4523,6 +4522,7 @@ html {
 .fera-rich-content blockquote p {
   font-size: 1.625rem;
   line-height: 2.8125rem;
+  color: #733e97;
 }
 .fera-rich-content.-halloween p > strong, .fera-rich-content.-halloween p > a {
   color: #54246a;
