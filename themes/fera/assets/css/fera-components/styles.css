@@ -4517,10 +4517,12 @@ html {
   border-left: 3px solid #733e97;
   color: #733e97;
   padding-left: 1.875rem;
-  font-size: 1.875rem;
-  line-height: 3.125rem;
   font-weight: 300;
   font-style: italic;
+}
+.fera-rich-content blockquote p {
+  font-size: 1.625rem;
+  line-height: 2.8125rem;
 }
 .fera-rich-content.-halloween p > strong, .fera-rich-content.-halloween p > a {
   color: #54246a;
