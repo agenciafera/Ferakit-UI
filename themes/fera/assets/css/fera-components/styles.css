@@ -4477,7 +4477,7 @@ html {
 
 .fera-rich-content p img {
   margin-bottom: 2.5rem;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .fera-rich-content h2 {
