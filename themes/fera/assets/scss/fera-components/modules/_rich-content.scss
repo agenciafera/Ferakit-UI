@@ -4,7 +4,7 @@
     @extend .fera-paragraph;
     img{
       @include rem(margin-bottom, 40px);
-      width: 100%;
+      max-width: 100%;
       height: auto;
     }
   }
