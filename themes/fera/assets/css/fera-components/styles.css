@@ -4503,7 +4503,7 @@ html {
   margin-bottom: 1.875rem;
 }
 .fera-rich-content ul li {
-  list-style: disc;
+  list-style: square;
 }
 .fera-rich-content ol li {
   list-style: decimal;
