@@ -42,6 +42,9 @@
   ol li{
     list-style: decimal;
   }
+  code{
+    font-family: monospace;
+  }
 
   li {
     @extend .fera-paragraph;
@@ -50,12 +53,7 @@
 
   em{
     font-style: italic;
-    @include rem(padding-left, 40px);
-    display: block;
-    border-left: 3px solid color('andromeda');
-    text-transform: uppercase;
-    @include rem(font-size, 16px);
-    font-weight: 400;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.23);
   }
 
   blockquote{
