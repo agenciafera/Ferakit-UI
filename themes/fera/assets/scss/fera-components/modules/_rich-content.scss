@@ -64,7 +64,7 @@
 
     p{
       @include rem(font-size, 26px);
-      @include rem(line-height, 45px);
+      @include rem(line-height, 34px);
       color: color('andromeda');
     }
   }
