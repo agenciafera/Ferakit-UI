@@ -4513,7 +4513,12 @@ html {
 }
 .fera-rich-content em {
   font-style: italic;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.23);
+  padding-left: 2.5rem;
+  display: block;
+  border-left: 3px solid #733e97;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .fera-rich-content blockquote {
   border-left: 3px solid #733e97;
