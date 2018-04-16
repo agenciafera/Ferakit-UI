@@ -145,5 +145,54 @@
 
   /*=====  End of Theme  ======*/
 
+}
+
+.fera-card-wicon {
+  @extend .-baby;
+  display: flex;
+
+  .card-icon{
+    @include rem(padding, 50px 0 0 20px);
+  }
+
+  &:hover {
+    > .card-background {
+      opacity: 0.05;
+    }
+
+  }
+
+  > .card-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: .15;
+  }
+
+  > .card-body {
+    @include rem(padding, 50px 20px);
+    position: relative;
+    z-index: 10;
+    color: white;
+
+    > .card-title {
+      @extend %title-2;
+    }
+
+  }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+    background-color: $color;
+  }
+
+  /*=====  End of Theme  ======*/
+
 
 }
