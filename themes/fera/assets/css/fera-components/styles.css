@@ -827,6 +827,24 @@ html {
   cursor: pointer;
 }
 
+.fera-breadcrumbs a, .fera-breadcrumbs span {
+  font-size: 12px;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.fera-breadcrumbs a:first-child, .fera-breadcrumbs span:first-child {
+  margin-left: 0;
+}
+.fera-breadcrumbs a:last-child, .fera-breadcrumbs span:last-child {
+  margin-right: 0;
+}
+.fera-breadcrumbs.-dash {
+  padding: 0.9375rem 0.3125rem;
+  border-top: 1px solid #9e9e9e;
+  border-bottom: 1px solid #9e9e9e;
+}
+
 .fera-btn {
   font-size: 1.125rem;
   padding: 0.9375rem 3.75rem;
@@ -4607,82 +4625,82 @@ html {
   margin-bottom: 10px;
   color: #7f7f7f;
 }
-.fera-product-content.-halloween .fera-product-content .price {
+.fera-product-content.-halloween .price {
   color: #54246a;
 }
-.fera-product-content.-halloween .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-halloween .product-variant .color-true li a.active {
   border: 2px solid #54246a;
 }
-.fera-product-content.-andromeda .fera-product-content .price {
+.fera-product-content.-andromeda .price {
   color: #733e97;
 }
-.fera-product-content.-andromeda .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-andromeda .product-variant .color-true li a.active {
   border: 2px solid #733e97;
 }
-.fera-product-content.-night .fera-product-content .price {
+.fera-product-content.-night .price {
   color: #315aa9;
 }
-.fera-product-content.-night .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-night .product-variant .color-true li a.active {
   border: 2px solid #315aa9;
 }
-.fera-product-content.-sky .fera-product-content .price {
+.fera-product-content.-sky .price {
   color: #3186c7;
 }
-.fera-product-content.-sky .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-sky .product-variant .color-true li a.active {
   border: 2px solid #3186c7;
 }
-.fera-product-content.-sunshine .fera-product-content .price {
+.fera-product-content.-sunshine .price {
   color: #f3ac47;
 }
-.fera-product-content.-sunshine .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-sunshine .product-variant .color-true li a.active {
   border: 2px solid #f3ac47;
 }
-.fera-product-content.-pink .fera-product-content .price {
+.fera-product-content.-pink .price {
   color: #da1e77;
 }
-.fera-product-content.-pink .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-pink .product-variant .color-true li a.active {
   border: 2px solid #da1e77;
 }
-.fera-product-content.-salmon .fera-product-content .price, .fera-product-content.fera-paragraph .fera-product-content .price, .fera-rich-content p.fera-product-content .fera-product-content .price, .fera-rich-content li.fera-product-content .fera-product-content .price {
+.fera-product-content.-salmon .price, .fera-product-content.fera-paragraph .price, .fera-rich-content p.fera-product-content .price, .fera-rich-content li.fera-product-content .price {
   color: #e75a6a;
 }
-.fera-product-content.-salmon .fera-product-content .product-variant .color-true li a.active, .fera-product-content.fera-paragraph .fera-product-content .product-variant .color-true li a.active, .fera-rich-content p.fera-product-content .fera-product-content .product-variant .color-true li a.active, .fera-rich-content li.fera-product-content .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-salmon .product-variant .color-true li a.active, .fera-product-content.fera-paragraph .product-variant .color-true li a.active, .fera-rich-content p.fera-product-content .product-variant .color-true li a.active, .fera-rich-content li.fera-product-content .product-variant .color-true li a.active {
   border: 2px solid #e75a6a;
 }
-.fera-product-content.-darkness .fera-product-content .price, .fera-product-content.fera-case .fera-product-content .price, .fera-product-content.fera-sidebar-nav .fera-product-content .price, .fera-product-content.fera-table .fera-product-content .price {
+.fera-product-content.-darkness .price, .fera-product-content.fera-case .price, .fera-product-content.fera-sidebar-nav .price, .fera-product-content.fera-table .price {
   color: #333333;
 }
-.fera-product-content.-darkness .fera-product-content .product-variant .color-true li a.active, .fera-product-content.fera-case .fera-product-content .product-variant .color-true li a.active, .fera-product-content.fera-sidebar-nav .fera-product-content .product-variant .color-true li a.active, .fera-product-content.fera-table .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-darkness .product-variant .color-true li a.active, .fera-product-content.fera-case .product-variant .color-true li a.active, .fera-product-content.fera-sidebar-nav .product-variant .color-true li a.active, .fera-product-content.fera-table .product-variant .color-true li a.active {
   border: 2px solid #333333;
 }
-.fera-product-content.-mellow .fera-product-content .price {
+.fera-product-content.-mellow .price {
   color: #9e9e9e;
 }
-.fera-product-content.-mellow .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-mellow .product-variant .color-true li a.active {
   border: 2px solid #9e9e9e;
 }
-.fera-product-content.-nature .fera-product-content .price {
+.fera-product-content.-nature .price {
   color: #06d25a;
 }
-.fera-product-content.-nature .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-nature .product-variant .color-true li a.active {
   border: 2px solid #06d25a;
 }
-.fera-product-content.-void .fera-product-content .price {
+.fera-product-content.-void .price {
   color: #eeeeee;
 }
-.fera-product-content.-void .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-void .product-variant .color-true li a.active {
   border: 2px solid #eeeeee;
 }
-.fera-product-content.-baby .fera-product-content .price, .fera-product-content.fera-card .fera-product-content .price, .fera-product-content.fera-form .fera-product-content .price {
+.fera-product-content.-baby .price, .fera-product-content.fera-card .price, .fera-product-content.fera-form .price {
   color: #27b9f5;
 }
-.fera-product-content.-baby .fera-product-content .product-variant .color-true li a.active, .fera-product-content.fera-card .fera-product-content .product-variant .color-true li a.active, .fera-product-content.fera-form .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-baby .product-variant .color-true li a.active, .fera-product-content.fera-card .product-variant .color-true li a.active, .fera-product-content.fera-form .product-variant .color-true li a.active {
   border: 2px solid #27b9f5;
 }
-.fera-product-content.-pumpkin .fera-product-content .price {
+.fera-product-content.-pumpkin .price {
   color: #fc7700;
 }
-.fera-product-content.-pumpkin .fera-product-content .product-variant .color-true li a.active {
+.fera-product-content.-pumpkin .product-variant .color-true li a.active {
   border: 2px solid #fc7700;
 }
 
