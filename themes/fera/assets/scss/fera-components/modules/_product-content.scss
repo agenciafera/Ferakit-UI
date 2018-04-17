@@ -1,0 +1,91 @@
+.fera-product-content {
+
+  hr{
+    border: 1px solid #eae8e8;
+  }
+
+  .price{
+    font-weight: bold;
+    @include rem(font-size, 26px);
+    color: color('andromeda');
+    display: block;
+    @include rem(padding, 10px 0);
+  }
+
+  .product-variant{
+    display: flex;
+    align-items: center;
+    @include rem(padding, 20px 0);
+
+    label{
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .color-true{
+      display:flex;
+      li{
+        a{
+          text-indent: -9000px;
+          width: 20px;
+          height: 20px;
+          display: block;
+          margin-right: 10px;
+
+          &.active{
+            border: 2px solid color('andromeda');
+          }
+        }
+      }
+    }
+  }
+
+  .description{
+    p{
+      @include rem(padding, 20px 0);
+      @include rem(font-size, 16px);
+      @include rem(line-height, 26px);
+      color: #7f7f7f;
+    }
+  }
+
+  .product-info{
+    ul{
+      li{
+        margin-bottom: 10px;
+        color: #7f7f7f;
+      }
+    }
+  }
+
+  /*=============================
+  =         Theme-$color        =
+  =============================*/
+
+  @include theme {
+
+    .fera-product-content {
+      .price{
+        color: $color;
+      }
+
+      .product-variant{
+        .color-true{
+          li{
+            a{
+              &.active{
+                border: 2px solid $color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
+
+}

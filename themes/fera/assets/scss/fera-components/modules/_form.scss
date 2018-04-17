@@ -90,7 +90,8 @@
       background-image: image-url("select-icon.svg");
       @include rem(width, 28px);
       @include rem(height, 15px);
-      background-size: cover;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
       position: absolute;
       z-index: 10;
       position: absolute;
@@ -106,6 +107,19 @@
         filter: invert(0%)!important;
       }
 
+    }
+
+    &.-small{
+      &::after {
+        @include rem(width, 18px);
+        @include rem(height, 15px);
+        top: 60%;
+        right: 15px;
+      }
+
+      .form-select{
+        @include rem(padding,10px 50px 10px 15px);
+      }
     }
 
   }

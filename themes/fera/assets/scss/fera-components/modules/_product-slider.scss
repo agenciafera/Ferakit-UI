@@ -14,6 +14,10 @@
    border: 3px solid color('andromeda');
   }
 
+  .owl-thumb-item{
+    margin-right: 1px;
+  }
+
   .owl-nav{
     button.owl-prev, button.owl-next{
       @include rem(font-size, 20px);
