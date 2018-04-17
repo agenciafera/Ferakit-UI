@@ -1,11 +1,19 @@
 .fera-topics {
   counter-reset: topics;
 
+  &.-wnumbers{
+    .topic {
+      &::before{
+        content: counter(topics, decimal-leading-zero);
+      }
+    }
+  }
+
   .topic {
 
     &::before {
       counter-increment: topics;
-      content: counter(topics, decimal-leading-zero);
+      content: "";
       color: #bbbbbb;
       font-size: 14px;
       font-family: 'Oswald', sans-serif;
@@ -13,8 +21,9 @@
       display: block;
       font-weight: 300;
     }
-
   }
+
+
 
   .topic-title {
     @extend %title-1;

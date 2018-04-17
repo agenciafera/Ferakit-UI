@@ -5484,9 +5484,12 @@ html {
   ===============================*/
   /*=====  End of Theming  ======*/
 }
+.fera-topics.-wnumbers .topic::before {
+  content: counter(topics,decimal-leading-zero);
+}
 .fera-topics .topic::before {
   counter-increment: topics;
-  content: counter(topics,decimal-leading-zero);
+  content: "";
   color: #bbbbbb;
   font-size: 14px;
   font-family: 'Oswald', sans-serif;
