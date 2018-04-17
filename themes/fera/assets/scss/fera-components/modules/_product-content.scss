@@ -79,6 +79,40 @@
         }
       }
     }
+
+    .fera-form{
+      .form-input, .form-select, .form-checkbox, .form-radio {
+
+        &:hover, &:focus {
+          box-shadow: 2px 2px 18px 1px rgba($color, 0.15);
+          border-color: $color;
+        }
+
+      }
+
+      .form-select {
+
+        &:hover {
+          background-color: $color;
+          color: white;
+        }
+
+      }
+
+      .form-radio:checked {
+        border-color: $color;
+        background: $color;
+      }
+
+      .form-checkbox {
+
+        &:checked {
+          border-color: $color;
+          background: $color image-url("checkbox-on.png") center center no-repeat;
+        }
+
+      }
+    }
   }
 
   /*=====  End of Theme  ======*/

@@ -4631,11 +4631,43 @@ html {
 .fera-product-content.-halloween .product-variant .color-true li a.active {
   border: 2px solid #54246a;
 }
+.fera-product-content.-halloween .fera-form .form-input:hover, .fera-product-content.-halloween .fera-form .form-input:focus, .fera-product-content.-halloween .fera-form .form-select:hover, .fera-product-content.-halloween .fera-form .form-select:focus, .fera-product-content.-halloween .fera-form .form-checkbox:hover, .fera-product-content.-halloween .fera-form .form-checkbox:focus, .fera-product-content.-halloween .fera-form .form-radio:hover, .fera-product-content.-halloween .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(84, 36, 106, 0.15);
+  border-color: #54246a;
+}
+.fera-product-content.-halloween .fera-form .form-select:hover {
+  background-color: #54246a;
+  color: white;
+}
+.fera-product-content.-halloween .fera-form .form-radio:checked {
+  border-color: #54246a;
+  background: #54246a;
+}
+.fera-product-content.-halloween .fera-form .form-checkbox:checked {
+  border-color: #54246a;
+  background: #54246a url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 .fera-product-content.-andromeda .price {
   color: #733e97;
 }
 .fera-product-content.-andromeda .product-variant .color-true li a.active {
   border: 2px solid #733e97;
+}
+.fera-product-content.-andromeda .fera-form .form-input:hover, .fera-product-content.-andromeda .fera-form .form-input:focus, .fera-product-content.-andromeda .fera-form .form-select:hover, .fera-product-content.-andromeda .fera-form .form-select:focus, .fera-product-content.-andromeda .fera-form .form-checkbox:hover, .fera-product-content.-andromeda .fera-form .form-checkbox:focus, .fera-product-content.-andromeda .fera-form .form-radio:hover, .fera-product-content.-andromeda .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(115, 62, 151, 0.15);
+  border-color: #733e97;
+}
+.fera-product-content.-andromeda .fera-form .form-select:hover {
+  background-color: #733e97;
+  color: white;
+}
+.fera-product-content.-andromeda .fera-form .form-radio:checked {
+  border-color: #733e97;
+  background: #733e97;
+}
+.fera-product-content.-andromeda .fera-form .form-checkbox:checked {
+  border-color: #733e97;
+  background: #733e97 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 .fera-product-content.-night .price {
   color: #315aa9;
@@ -4643,11 +4675,43 @@ html {
 .fera-product-content.-night .product-variant .color-true li a.active {
   border: 2px solid #315aa9;
 }
+.fera-product-content.-night .fera-form .form-input:hover, .fera-product-content.-night .fera-form .form-input:focus, .fera-product-content.-night .fera-form .form-select:hover, .fera-product-content.-night .fera-form .form-select:focus, .fera-product-content.-night .fera-form .form-checkbox:hover, .fera-product-content.-night .fera-form .form-checkbox:focus, .fera-product-content.-night .fera-form .form-radio:hover, .fera-product-content.-night .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(49, 90, 169, 0.15);
+  border-color: #315aa9;
+}
+.fera-product-content.-night .fera-form .form-select:hover {
+  background-color: #315aa9;
+  color: white;
+}
+.fera-product-content.-night .fera-form .form-radio:checked {
+  border-color: #315aa9;
+  background: #315aa9;
+}
+.fera-product-content.-night .fera-form .form-checkbox:checked {
+  border-color: #315aa9;
+  background: #315aa9 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 .fera-product-content.-sky .price {
   color: #3186c7;
 }
 .fera-product-content.-sky .product-variant .color-true li a.active {
   border: 2px solid #3186c7;
+}
+.fera-product-content.-sky .fera-form .form-input:hover, .fera-product-content.-sky .fera-form .form-input:focus, .fera-product-content.-sky .fera-form .form-select:hover, .fera-product-content.-sky .fera-form .form-select:focus, .fera-product-content.-sky .fera-form .form-checkbox:hover, .fera-product-content.-sky .fera-form .form-checkbox:focus, .fera-product-content.-sky .fera-form .form-radio:hover, .fera-product-content.-sky .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(49, 134, 199, 0.15);
+  border-color: #3186c7;
+}
+.fera-product-content.-sky .fera-form .form-select:hover {
+  background-color: #3186c7;
+  color: white;
+}
+.fera-product-content.-sky .fera-form .form-radio:checked {
+  border-color: #3186c7;
+  background: #3186c7;
+}
+.fera-product-content.-sky .fera-form .form-checkbox:checked {
+  border-color: #3186c7;
+  background: #3186c7 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 .fera-product-content.-sunshine .price {
   color: #f3ac47;
@@ -4655,11 +4719,43 @@ html {
 .fera-product-content.-sunshine .product-variant .color-true li a.active {
   border: 2px solid #f3ac47;
 }
+.fera-product-content.-sunshine .fera-form .form-input:hover, .fera-product-content.-sunshine .fera-form .form-input:focus, .fera-product-content.-sunshine .fera-form .form-select:hover, .fera-product-content.-sunshine .fera-form .form-select:focus, .fera-product-content.-sunshine .fera-form .form-checkbox:hover, .fera-product-content.-sunshine .fera-form .form-checkbox:focus, .fera-product-content.-sunshine .fera-form .form-radio:hover, .fera-product-content.-sunshine .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(243, 172, 71, 0.15);
+  border-color: #f3ac47;
+}
+.fera-product-content.-sunshine .fera-form .form-select:hover {
+  background-color: #f3ac47;
+  color: white;
+}
+.fera-product-content.-sunshine .fera-form .form-radio:checked {
+  border-color: #f3ac47;
+  background: #f3ac47;
+}
+.fera-product-content.-sunshine .fera-form .form-checkbox:checked {
+  border-color: #f3ac47;
+  background: #f3ac47 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 .fera-product-content.-pink .price {
   color: #da1e77;
 }
 .fera-product-content.-pink .product-variant .color-true li a.active {
   border: 2px solid #da1e77;
+}
+.fera-product-content.-pink .fera-form .form-input:hover, .fera-product-content.-pink .fera-form .form-input:focus, .fera-product-content.-pink .fera-form .form-select:hover, .fera-product-content.-pink .fera-form .form-select:focus, .fera-product-content.-pink .fera-form .form-checkbox:hover, .fera-product-content.-pink .fera-form .form-checkbox:focus, .fera-product-content.-pink .fera-form .form-radio:hover, .fera-product-content.-pink .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(218, 30, 119, 0.15);
+  border-color: #da1e77;
+}
+.fera-product-content.-pink .fera-form .form-select:hover {
+  background-color: #da1e77;
+  color: white;
+}
+.fera-product-content.-pink .fera-form .form-radio:checked {
+  border-color: #da1e77;
+  background: #da1e77;
+}
+.fera-product-content.-pink .fera-form .form-checkbox:checked {
+  border-color: #da1e77;
+  background: #da1e77 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 .fera-product-content.-salmon .price, .fera-product-content.fera-paragraph .price, .fera-rich-content p.fera-product-content .price, .fera-rich-content li.fera-product-content .price {
   color: #e75a6a;
@@ -4667,11 +4763,43 @@ html {
 .fera-product-content.-salmon .product-variant .color-true li a.active, .fera-product-content.fera-paragraph .product-variant .color-true li a.active, .fera-rich-content p.fera-product-content .product-variant .color-true li a.active, .fera-rich-content li.fera-product-content .product-variant .color-true li a.active {
   border: 2px solid #e75a6a;
 }
+.fera-product-content.-salmon .fera-form .form-input:hover, .fera-product-content.fera-paragraph .fera-form .form-input:hover, .fera-rich-content p.fera-product-content .fera-form .form-input:hover, .fera-rich-content li.fera-product-content .fera-form .form-input:hover, .fera-product-content.-salmon .fera-form .form-input:focus, .fera-product-content.fera-paragraph .fera-form .form-input:focus, .fera-rich-content p.fera-product-content .fera-form .form-input:focus, .fera-rich-content li.fera-product-content .fera-form .form-input:focus, .fera-product-content.-salmon .fera-form .form-select:hover, .fera-product-content.fera-paragraph .fera-form .form-select:hover, .fera-rich-content p.fera-product-content .fera-form .form-select:hover, .fera-rich-content li.fera-product-content .fera-form .form-select:hover, .fera-product-content.-salmon .fera-form .form-select:focus, .fera-product-content.fera-paragraph .fera-form .form-select:focus, .fera-rich-content p.fera-product-content .fera-form .form-select:focus, .fera-rich-content li.fera-product-content .fera-form .form-select:focus, .fera-product-content.-salmon .fera-form .form-checkbox:hover, .fera-product-content.fera-paragraph .fera-form .form-checkbox:hover, .fera-rich-content p.fera-product-content .fera-form .form-checkbox:hover, .fera-rich-content li.fera-product-content .fera-form .form-checkbox:hover, .fera-product-content.-salmon .fera-form .form-checkbox:focus, .fera-product-content.fera-paragraph .fera-form .form-checkbox:focus, .fera-rich-content p.fera-product-content .fera-form .form-checkbox:focus, .fera-rich-content li.fera-product-content .fera-form .form-checkbox:focus, .fera-product-content.-salmon .fera-form .form-radio:hover, .fera-product-content.fera-paragraph .fera-form .form-radio:hover, .fera-rich-content p.fera-product-content .fera-form .form-radio:hover, .fera-rich-content li.fera-product-content .fera-form .form-radio:hover, .fera-product-content.-salmon .fera-form .form-radio:focus, .fera-product-content.fera-paragraph .fera-form .form-radio:focus, .fera-rich-content p.fera-product-content .fera-form .form-radio:focus, .fera-rich-content li.fera-product-content .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(231, 90, 106, 0.15);
+  border-color: #e75a6a;
+}
+.fera-product-content.-salmon .fera-form .form-select:hover, .fera-product-content.fera-paragraph .fera-form .form-select:hover, .fera-rich-content p.fera-product-content .fera-form .form-select:hover, .fera-rich-content li.fera-product-content .fera-form .form-select:hover {
+  background-color: #e75a6a;
+  color: white;
+}
+.fera-product-content.-salmon .fera-form .form-radio:checked, .fera-product-content.fera-paragraph .fera-form .form-radio:checked, .fera-rich-content p.fera-product-content .fera-form .form-radio:checked, .fera-rich-content li.fera-product-content .fera-form .form-radio:checked {
+  border-color: #e75a6a;
+  background: #e75a6a;
+}
+.fera-product-content.-salmon .fera-form .form-checkbox:checked, .fera-product-content.fera-paragraph .fera-form .form-checkbox:checked, .fera-rich-content p.fera-product-content .fera-form .form-checkbox:checked, .fera-rich-content li.fera-product-content .fera-form .form-checkbox:checked {
+  border-color: #e75a6a;
+  background: #e75a6a url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 .fera-product-content.-darkness .price, .fera-product-content.fera-case .price, .fera-product-content.fera-sidebar-nav .price, .fera-product-content.fera-table .price {
   color: #333333;
 }
 .fera-product-content.-darkness .product-variant .color-true li a.active, .fera-product-content.fera-case .product-variant .color-true li a.active, .fera-product-content.fera-sidebar-nav .product-variant .color-true li a.active, .fera-product-content.fera-table .product-variant .color-true li a.active {
   border: 2px solid #333333;
+}
+.fera-product-content.-darkness .fera-form .form-input:hover, .fera-product-content.fera-case .fera-form .form-input:hover, .fera-product-content.fera-sidebar-nav .fera-form .form-input:hover, .fera-product-content.fera-table .fera-form .form-input:hover, .fera-product-content.-darkness .fera-form .form-input:focus, .fera-product-content.fera-case .fera-form .form-input:focus, .fera-product-content.fera-sidebar-nav .fera-form .form-input:focus, .fera-product-content.fera-table .fera-form .form-input:focus, .fera-product-content.-darkness .fera-form .form-select:hover, .fera-product-content.fera-case .fera-form .form-select:hover, .fera-product-content.fera-sidebar-nav .fera-form .form-select:hover, .fera-product-content.fera-table .fera-form .form-select:hover, .fera-product-content.-darkness .fera-form .form-select:focus, .fera-product-content.fera-case .fera-form .form-select:focus, .fera-product-content.fera-sidebar-nav .fera-form .form-select:focus, .fera-product-content.fera-table .fera-form .form-select:focus, .fera-product-content.-darkness .fera-form .form-checkbox:hover, .fera-product-content.fera-case .fera-form .form-checkbox:hover, .fera-product-content.fera-sidebar-nav .fera-form .form-checkbox:hover, .fera-product-content.fera-table .fera-form .form-checkbox:hover, .fera-product-content.-darkness .fera-form .form-checkbox:focus, .fera-product-content.fera-case .fera-form .form-checkbox:focus, .fera-product-content.fera-sidebar-nav .fera-form .form-checkbox:focus, .fera-product-content.fera-table .fera-form .form-checkbox:focus, .fera-product-content.-darkness .fera-form .form-radio:hover, .fera-product-content.fera-case .fera-form .form-radio:hover, .fera-product-content.fera-sidebar-nav .fera-form .form-radio:hover, .fera-product-content.fera-table .fera-form .form-radio:hover, .fera-product-content.-darkness .fera-form .form-radio:focus, .fera-product-content.fera-case .fera-form .form-radio:focus, .fera-product-content.fera-sidebar-nav .fera-form .form-radio:focus, .fera-product-content.fera-table .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(51, 51, 51, 0.15);
+  border-color: #333333;
+}
+.fera-product-content.-darkness .fera-form .form-select:hover, .fera-product-content.fera-case .fera-form .form-select:hover, .fera-product-content.fera-sidebar-nav .fera-form .form-select:hover, .fera-product-content.fera-table .fera-form .form-select:hover {
+  background-color: #333333;
+  color: white;
+}
+.fera-product-content.-darkness .fera-form .form-radio:checked, .fera-product-content.fera-case .fera-form .form-radio:checked, .fera-product-content.fera-sidebar-nav .fera-form .form-radio:checked, .fera-product-content.fera-table .fera-form .form-radio:checked {
+  border-color: #333333;
+  background: #333333;
+}
+.fera-product-content.-darkness .fera-form .form-checkbox:checked, .fera-product-content.fera-case .fera-form .form-checkbox:checked, .fera-product-content.fera-sidebar-nav .fera-form .form-checkbox:checked, .fera-product-content.fera-table .fera-form .form-checkbox:checked {
+  border-color: #333333;
+  background: #333333 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 .fera-product-content.-mellow .price {
   color: #9e9e9e;
@@ -4679,11 +4807,43 @@ html {
 .fera-product-content.-mellow .product-variant .color-true li a.active {
   border: 2px solid #9e9e9e;
 }
+.fera-product-content.-mellow .fera-form .form-input:hover, .fera-product-content.-mellow .fera-form .form-input:focus, .fera-product-content.-mellow .fera-form .form-select:hover, .fera-product-content.-mellow .fera-form .form-select:focus, .fera-product-content.-mellow .fera-form .form-checkbox:hover, .fera-product-content.-mellow .fera-form .form-checkbox:focus, .fera-product-content.-mellow .fera-form .form-radio:hover, .fera-product-content.-mellow .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(158, 158, 158, 0.15);
+  border-color: #9e9e9e;
+}
+.fera-product-content.-mellow .fera-form .form-select:hover {
+  background-color: #9e9e9e;
+  color: white;
+}
+.fera-product-content.-mellow .fera-form .form-radio:checked {
+  border-color: #9e9e9e;
+  background: #9e9e9e;
+}
+.fera-product-content.-mellow .fera-form .form-checkbox:checked {
+  border-color: #9e9e9e;
+  background: #9e9e9e url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 .fera-product-content.-nature .price {
   color: #06d25a;
 }
 .fera-product-content.-nature .product-variant .color-true li a.active {
   border: 2px solid #06d25a;
+}
+.fera-product-content.-nature .fera-form .form-input:hover, .fera-product-content.-nature .fera-form .form-input:focus, .fera-product-content.-nature .fera-form .form-select:hover, .fera-product-content.-nature .fera-form .form-select:focus, .fera-product-content.-nature .fera-form .form-checkbox:hover, .fera-product-content.-nature .fera-form .form-checkbox:focus, .fera-product-content.-nature .fera-form .form-radio:hover, .fera-product-content.-nature .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(6, 210, 90, 0.15);
+  border-color: #06d25a;
+}
+.fera-product-content.-nature .fera-form .form-select:hover {
+  background-color: #06d25a;
+  color: white;
+}
+.fera-product-content.-nature .fera-form .form-radio:checked {
+  border-color: #06d25a;
+  background: #06d25a;
+}
+.fera-product-content.-nature .fera-form .form-checkbox:checked {
+  border-color: #06d25a;
+  background: #06d25a url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 .fera-product-content.-void .price {
   color: #eeeeee;
@@ -4691,17 +4851,65 @@ html {
 .fera-product-content.-void .product-variant .color-true li a.active {
   border: 2px solid #eeeeee;
 }
+.fera-product-content.-void .fera-form .form-input:hover, .fera-product-content.-void .fera-form .form-input:focus, .fera-product-content.-void .fera-form .form-select:hover, .fera-product-content.-void .fera-form .form-select:focus, .fera-product-content.-void .fera-form .form-checkbox:hover, .fera-product-content.-void .fera-form .form-checkbox:focus, .fera-product-content.-void .fera-form .form-radio:hover, .fera-product-content.-void .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(238, 238, 238, 0.15);
+  border-color: #eeeeee;
+}
+.fera-product-content.-void .fera-form .form-select:hover {
+  background-color: #eeeeee;
+  color: white;
+}
+.fera-product-content.-void .fera-form .form-radio:checked {
+  border-color: #eeeeee;
+  background: #eeeeee;
+}
+.fera-product-content.-void .fera-form .form-checkbox:checked {
+  border-color: #eeeeee;
+  background: #eeeeee url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 .fera-product-content.-baby .price, .fera-product-content.fera-card .price, .fera-product-content.fera-form .price {
   color: #27b9f5;
 }
 .fera-product-content.-baby .product-variant .color-true li a.active, .fera-product-content.fera-card .product-variant .color-true li a.active, .fera-product-content.fera-form .product-variant .color-true li a.active {
   border: 2px solid #27b9f5;
 }
+.fera-product-content.-baby .fera-form .form-input:hover, .fera-product-content.fera-card .fera-form .form-input:hover, .fera-product-content.fera-form .fera-form .form-input:hover, .fera-product-content.-baby .fera-form .form-input:focus, .fera-product-content.fera-card .fera-form .form-input:focus, .fera-product-content.fera-form .fera-form .form-input:focus, .fera-product-content.-baby .fera-form .form-select:hover, .fera-product-content.fera-card .fera-form .form-select:hover, .fera-product-content.fera-form .fera-form .form-select:hover, .fera-product-content.-baby .fera-form .form-select:focus, .fera-product-content.fera-card .fera-form .form-select:focus, .fera-product-content.fera-form .fera-form .form-select:focus, .fera-product-content.-baby .fera-form .form-checkbox:hover, .fera-product-content.fera-card .fera-form .form-checkbox:hover, .fera-product-content.fera-form .fera-form .form-checkbox:hover, .fera-product-content.-baby .fera-form .form-checkbox:focus, .fera-product-content.fera-card .fera-form .form-checkbox:focus, .fera-product-content.fera-form .fera-form .form-checkbox:focus, .fera-product-content.-baby .fera-form .form-radio:hover, .fera-product-content.fera-card .fera-form .form-radio:hover, .fera-product-content.fera-form .fera-form .form-radio:hover, .fera-product-content.-baby .fera-form .form-radio:focus, .fera-product-content.fera-card .fera-form .form-radio:focus, .fera-product-content.fera-form .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(39, 185, 245, 0.15);
+  border-color: #27b9f5;
+}
+.fera-product-content.-baby .fera-form .form-select:hover, .fera-product-content.fera-card .fera-form .form-select:hover, .fera-product-content.fera-form .fera-form .form-select:hover {
+  background-color: #27b9f5;
+  color: white;
+}
+.fera-product-content.-baby .fera-form .form-radio:checked, .fera-product-content.fera-card .fera-form .form-radio:checked, .fera-product-content.fera-form .fera-form .form-radio:checked {
+  border-color: #27b9f5;
+  background: #27b9f5;
+}
+.fera-product-content.-baby .fera-form .form-checkbox:checked, .fera-product-content.fera-card .fera-form .form-checkbox:checked, .fera-product-content.fera-form .fera-form .form-checkbox:checked {
+  border-color: #27b9f5;
+  background: #27b9f5 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+}
 .fera-product-content.-pumpkin .price {
   color: #fc7700;
 }
 .fera-product-content.-pumpkin .product-variant .color-true li a.active {
   border: 2px solid #fc7700;
+}
+.fera-product-content.-pumpkin .fera-form .form-input:hover, .fera-product-content.-pumpkin .fera-form .form-input:focus, .fera-product-content.-pumpkin .fera-form .form-select:hover, .fera-product-content.-pumpkin .fera-form .form-select:focus, .fera-product-content.-pumpkin .fera-form .form-checkbox:hover, .fera-product-content.-pumpkin .fera-form .form-checkbox:focus, .fera-product-content.-pumpkin .fera-form .form-radio:hover, .fera-product-content.-pumpkin .fera-form .form-radio:focus {
+  box-shadow: 2px 2px 18px 1px rgba(252, 119, 0, 0.15);
+  border-color: #fc7700;
+}
+.fera-product-content.-pumpkin .fera-form .form-select:hover {
+  background-color: #fc7700;
+  color: white;
+}
+.fera-product-content.-pumpkin .fera-form .form-radio:checked {
+  border-color: #fc7700;
+  background: #fc7700;
+}
+.fera-product-content.-pumpkin .fera-form .form-checkbox:checked {
+  border-color: #fc7700;
+  background: #fc7700 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 
 .fera-product-slider {
