@@ -13,24 +13,4 @@
 /*===============================
 =            Modules            =
 ===============================*/
-@import "modules/alert",
-        "modules/buttons",
-        "modules/card",
-        "modules/case",
-        "modules/colors",
-        "modules/fonts",
-        "modules/form",
-        "modules/module",
-        "modules/header",
-        "modules/horizontal-list",
-        "modules/icons",
-        "modules/inside-menu",
-        "modules/sidebar-nav",
-        "modules/list",
-        "modules/paragraph",
-        "modules/rich-content",
-        "modules/table",
-        "modules/text",
-        "modules/title",
-        "modules/top-article",
-        "modules/topic";
+@import "modules/*";

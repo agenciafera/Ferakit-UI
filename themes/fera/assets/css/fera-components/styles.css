@@ -2178,10 +2178,6 @@ html {
   background: #fc7700 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 
-[class*="fera-"] {
-  font-family: "Open Sans";
-}
-
 .fera-header {
   display: flex;
   flex-flow: column nowrap;
@@ -4296,6 +4292,412 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.fera-list {
+  list-style: square;
+}
+.fera-list > li {
+  font-size: 1.3125rem;
+  margin-bottom: 0.9375rem;
+}
+
+[class*="fera-"] {
+  font-family: "Open Sans";
+}
+
+.fera-paragraph, .fera-rich-content p, .fera-rich-content li {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: 'Open Sans';
+  line-height: 1.52;
+  color: black;
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 700px) {
+  .fera-paragraph, .fera-rich-content p, .fera-rich-content li {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1025px) {
+  .fera-paragraph, .fera-rich-content p, .fera-rich-content li {
+    font-size: 21px;
+  }
+}
+.fera-paragraph a, .fera-rich-content p a, .fera-rich-content li a {
+  text-decoration: underline;
+}
+.fera-paragraph > strong, .fera-rich-content p > strong, .fera-rich-content li > strong {
+  font-weight: bold;
+  color: #333333;
+}
+.fera-paragraph > span > strong, .fera-rich-content p > span > strong, .fera-rich-content li > span > strong {
+  font-weight: bold;
+}
+.fera-paragraph.-halloween > span, .fera-rich-content p.-halloween > span, .fera-rich-content li.-halloween > span, .fera-paragraph.-halloween > a, .fera-rich-content p.-halloween > a, .fera-rich-content li.-halloween > a {
+  color: #54246a;
+}
+.fera-paragraph.-andromeda > span, .fera-rich-content p.-andromeda > span, .fera-rich-content li.-andromeda > span, .fera-paragraph.-andromeda > a, .fera-rich-content p.-andromeda > a, .fera-rich-content li.-andromeda > a {
+  color: #733e97;
+}
+.fera-paragraph.-night > span, .fera-rich-content p.-night > span, .fera-rich-content li.-night > span, .fera-paragraph.-night > a, .fera-rich-content p.-night > a, .fera-rich-content li.-night > a {
+  color: #315aa9;
+}
+.fera-paragraph.-sky > span, .fera-rich-content p.-sky > span, .fera-rich-content li.-sky > span, .fera-paragraph.-sky > a, .fera-rich-content p.-sky > a, .fera-rich-content li.-sky > a {
+  color: #3186c7;
+}
+.fera-paragraph.-sunshine > span, .fera-rich-content p.-sunshine > span, .fera-rich-content li.-sunshine > span, .fera-paragraph.-sunshine > a, .fera-rich-content p.-sunshine > a, .fera-rich-content li.-sunshine > a {
+  color: #f3ac47;
+}
+.fera-paragraph.-pink > span, .fera-rich-content p.-pink > span, .fera-rich-content li.-pink > span, .fera-paragraph.-pink > a, .fera-rich-content p.-pink > a, .fera-rich-content li.-pink > a {
+  color: #da1e77;
+}
+.fera-paragraph.-salmon > span, .fera-paragraph > span, .fera-rich-content p > span, .fera-rich-content li > span, .fera-rich-content p.-salmon > span, .fera-rich-content p.fera-paragraph > span, .fera-rich-content li.-salmon > span, .fera-rich-content li.fera-paragraph > span, .fera-paragraph.-salmon > a, .fera-paragraph > a, .fera-rich-content p > a, .fera-rich-content li > a, .fera-rich-content p.-salmon > a, .fera-rich-content p.fera-paragraph > a, .fera-rich-content li.-salmon > a, .fera-rich-content li.fera-paragraph > a {
+  color: #e75a6a;
+}
+.fera-paragraph.-darkness > span, .fera-paragraph.fera-case > span, .fera-rich-content p.fera-case > span, .fera-rich-content li.fera-case > span, .fera-rich-content p.-darkness > span, .fera-rich-content p.fera-sidebar-nav > span, .fera-rich-content p.fera-table > span, .fera-rich-content li.-darkness > span, .fera-rich-content li.fera-sidebar-nav > span, .fera-rich-content li.fera-table > span, .fera-paragraph.fera-sidebar-nav > span, .fera-paragraph.fera-table > span, .fera-paragraph.-darkness > a, .fera-paragraph.fera-case > a, .fera-rich-content p.fera-case > a, .fera-rich-content li.fera-case > a, .fera-rich-content p.-darkness > a, .fera-rich-content p.fera-sidebar-nav > a, .fera-rich-content p.fera-table > a, .fera-rich-content li.-darkness > a, .fera-rich-content li.fera-sidebar-nav > a, .fera-rich-content li.fera-table > a, .fera-paragraph.fera-sidebar-nav > a, .fera-paragraph.fera-table > a {
+  color: #333333;
+}
+.fera-paragraph.-mellow > span, .fera-rich-content p.-mellow > span, .fera-rich-content li.-mellow > span, .fera-paragraph.-mellow > a, .fera-rich-content p.-mellow > a, .fera-rich-content li.-mellow > a {
+  color: #9e9e9e;
+}
+.fera-paragraph.-nature > span, .fera-rich-content p.-nature > span, .fera-rich-content li.-nature > span, .fera-paragraph.-nature > a, .fera-rich-content p.-nature > a, .fera-rich-content li.-nature > a {
+  color: #06d25a;
+}
+.fera-paragraph.-void > span, .fera-rich-content p.-void > span, .fera-rich-content li.-void > span, .fera-paragraph.-void > a, .fera-rich-content p.-void > a, .fera-rich-content li.-void > a {
+  color: #eeeeee;
+}
+.fera-paragraph.-baby > span, .fera-paragraph.fera-card > span, .fera-rich-content p.fera-card > span, .fera-rich-content li.fera-card > span, .fera-paragraph.fera-card-2 > span, .fera-rich-content p.fera-card-2 > span, .fera-rich-content li.fera-card-2 > span, .fera-paragraph.fera-card-wicon > span, .fera-rich-content p.fera-card-wicon > span, .fera-rich-content li.fera-card-wicon > span, .fera-paragraph.fera-form > span, .fera-rich-content p.fera-form > span, .fera-rich-content li.fera-form > span, .fera-rich-content p.-baby > span, .fera-rich-content li.-baby > span, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-rich-content p.fera-card > a, .fera-rich-content li.fera-card > a, .fera-paragraph.fera-card-2 > a, .fera-rich-content p.fera-card-2 > a, .fera-rich-content li.fera-card-2 > a, .fera-paragraph.fera-card-wicon > a, .fera-rich-content p.fera-card-wicon > a, .fera-rich-content li.fera-card-wicon > a, .fera-paragraph.fera-form > a, .fera-rich-content p.fera-form > a, .fera-rich-content li.fera-form > a, .fera-rich-content p.-baby > a, .fera-rich-content li.-baby > a {
+  color: #27b9f5;
+}
+.fera-paragraph.-pumpkin > span, .fera-rich-content p.-pumpkin > span, .fera-rich-content li.-pumpkin > span, .fera-paragraph.-pumpkin > a, .fera-rich-content p.-pumpkin > a, .fera-rich-content li.-pumpkin > a {
+  color: #fc7700;
+}
+
+.fera-product-slider {
+  /*=============================
+  =            Theme            =
+  =============================*/
+  /*=====  End of Theme  ======*/
+}
+.fera-product-slider .owl-carousel .owl-item img {
+  max-width: auto;
+}
+.fera-product-slider .fera-slider {
+  margin-bottom: -15px;
+}
+.fera-product-slider .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #733e97;
+}
+.fera-product-slider .owl-nav button.owl-prev, .fera-product-slider .owl-nav button.owl-next {
+  font-size: 1.25rem;
+  color: #733e97;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 30px;
+  text-align: center;
+  color: #505050;
+  border-radius: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 0 -1px 3px transparent, 0 1px 10px transparent;
+  transition: .3s linear;
+  position: absolute;
+}
+.fera-product-slider .owl-nav button.owl-prev:hover, .fera-product-slider .owl-nav button.owl-next:hover {
+  cursor: pointer;
+  color: #FFF;
+  background-color: #733e97;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.fera-product-slider .owl-nav button.owl-prev span, .fera-product-slider .owl-nav button.owl-next span {
+  top: 2px;
+  position: absolute;
+  left: 15px;
+}
+.fera-product-slider .owl-nav button.owl-prev {
+  top: 50%;
+  left: 10px;
+}
+.fera-product-slider .owl-nav button.owl-next {
+  top: 50%;
+  right: 10px;
+}
+.fera-product-slider.-halloween .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #54246a;
+}
+.fera-product-slider.-halloween .owl-nav button.owl-prev, .fera-product-slider.-halloween .owl-nav button.owl-next {
+  color: #54246a;
+}
+.fera-product-slider.-halloween .owl-nav button.owl-prev:hover, .fera-product-slider.-halloween .owl-nav button.owl-next:hover {
+  background-color: #54246a;
+  color: #FFF;
+}
+.fera-product-slider.-andromeda .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #733e97;
+}
+.fera-product-slider.-andromeda .owl-nav button.owl-prev, .fera-product-slider.-andromeda .owl-nav button.owl-next {
+  color: #733e97;
+}
+.fera-product-slider.-andromeda .owl-nav button.owl-prev:hover, .fera-product-slider.-andromeda .owl-nav button.owl-next:hover {
+  background-color: #733e97;
+  color: #FFF;
+}
+.fera-product-slider.-night .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #315aa9;
+}
+.fera-product-slider.-night .owl-nav button.owl-prev, .fera-product-slider.-night .owl-nav button.owl-next {
+  color: #315aa9;
+}
+.fera-product-slider.-night .owl-nav button.owl-prev:hover, .fera-product-slider.-night .owl-nav button.owl-next:hover {
+  background-color: #315aa9;
+  color: #FFF;
+}
+.fera-product-slider.-sky .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #3186c7;
+}
+.fera-product-slider.-sky .owl-nav button.owl-prev, .fera-product-slider.-sky .owl-nav button.owl-next {
+  color: #3186c7;
+}
+.fera-product-slider.-sky .owl-nav button.owl-prev:hover, .fera-product-slider.-sky .owl-nav button.owl-next:hover {
+  background-color: #3186c7;
+  color: #FFF;
+}
+.fera-product-slider.-sunshine .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #f3ac47;
+}
+.fera-product-slider.-sunshine .owl-nav button.owl-prev, .fera-product-slider.-sunshine .owl-nav button.owl-next {
+  color: #f3ac47;
+}
+.fera-product-slider.-sunshine .owl-nav button.owl-prev:hover, .fera-product-slider.-sunshine .owl-nav button.owl-next:hover {
+  background-color: #f3ac47;
+  color: #FFF;
+}
+.fera-product-slider.-pink .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #da1e77;
+}
+.fera-product-slider.-pink .owl-nav button.owl-prev, .fera-product-slider.-pink .owl-nav button.owl-next {
+  color: #da1e77;
+}
+.fera-product-slider.-pink .owl-nav button.owl-prev:hover, .fera-product-slider.-pink .owl-nav button.owl-next:hover {
+  background-color: #da1e77;
+  color: #FFF;
+}
+.fera-product-slider.-salmon .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-paragraph .fera-slider-thumbs .owl-item.active.center, .fera-rich-content p.fera-product-slider .fera-slider-thumbs .owl-item.active.center, .fera-rich-content li.fera-product-slider .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #e75a6a;
+}
+.fera-product-slider.-salmon .owl-nav button.owl-prev, .fera-product-slider.fera-paragraph .owl-nav button.owl-prev, .fera-rich-content p.fera-product-slider .owl-nav button.owl-prev, .fera-rich-content li.fera-product-slider .owl-nav button.owl-prev, .fera-product-slider.-salmon .owl-nav button.owl-next, .fera-product-slider.fera-paragraph .owl-nav button.owl-next, .fera-rich-content p.fera-product-slider .owl-nav button.owl-next, .fera-rich-content li.fera-product-slider .owl-nav button.owl-next {
+  color: #e75a6a;
+}
+.fera-product-slider.-salmon .owl-nav button.owl-prev:hover, .fera-product-slider.fera-paragraph .owl-nav button.owl-prev:hover, .fera-rich-content p.fera-product-slider .owl-nav button.owl-prev:hover, .fera-rich-content li.fera-product-slider .owl-nav button.owl-prev:hover, .fera-product-slider.-salmon .owl-nav button.owl-next:hover, .fera-product-slider.fera-paragraph .owl-nav button.owl-next:hover, .fera-rich-content p.fera-product-slider .owl-nav button.owl-next:hover, .fera-rich-content li.fera-product-slider .owl-nav button.owl-next:hover {
+  background-color: #e75a6a;
+  color: #FFF;
+}
+.fera-product-slider.-darkness .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-case .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-sidebar-nav .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-table .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #333333;
+}
+.fera-product-slider.-darkness .owl-nav button.owl-prev, .fera-product-slider.fera-case .owl-nav button.owl-prev, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-prev, .fera-product-slider.fera-table .owl-nav button.owl-prev, .fera-product-slider.-darkness .owl-nav button.owl-next, .fera-product-slider.fera-case .owl-nav button.owl-next, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-next, .fera-product-slider.fera-table .owl-nav button.owl-next {
+  color: #333333;
+}
+.fera-product-slider.-darkness .owl-nav button.owl-prev:hover, .fera-product-slider.fera-case .owl-nav button.owl-prev:hover, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-prev:hover, .fera-product-slider.fera-table .owl-nav button.owl-prev:hover, .fera-product-slider.-darkness .owl-nav button.owl-next:hover, .fera-product-slider.fera-case .owl-nav button.owl-next:hover, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-next:hover, .fera-product-slider.fera-table .owl-nav button.owl-next:hover {
+  background-color: #333333;
+  color: #FFF;
+}
+.fera-product-slider.-mellow .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #9e9e9e;
+}
+.fera-product-slider.-mellow .owl-nav button.owl-prev, .fera-product-slider.-mellow .owl-nav button.owl-next {
+  color: #9e9e9e;
+}
+.fera-product-slider.-mellow .owl-nav button.owl-prev:hover, .fera-product-slider.-mellow .owl-nav button.owl-next:hover {
+  background-color: #9e9e9e;
+  color: #FFF;
+}
+.fera-product-slider.-nature .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #06d25a;
+}
+.fera-product-slider.-nature .owl-nav button.owl-prev, .fera-product-slider.-nature .owl-nav button.owl-next {
+  color: #06d25a;
+}
+.fera-product-slider.-nature .owl-nav button.owl-prev:hover, .fera-product-slider.-nature .owl-nav button.owl-next:hover {
+  background-color: #06d25a;
+  color: #FFF;
+}
+.fera-product-slider.-void .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #eeeeee;
+}
+.fera-product-slider.-void .owl-nav button.owl-prev, .fera-product-slider.-void .owl-nav button.owl-next {
+  color: #eeeeee;
+}
+.fera-product-slider.-void .owl-nav button.owl-prev:hover, .fera-product-slider.-void .owl-nav button.owl-next:hover {
+  background-color: #eeeeee;
+  color: #FFF;
+}
+.fera-product-slider.-baby .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-card .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-card-2 .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-card-wicon .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-form .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #27b9f5;
+}
+.fera-product-slider.-baby .owl-nav button.owl-prev, .fera-product-slider.fera-card .owl-nav button.owl-prev, .fera-product-slider.fera-card-2 .owl-nav button.owl-prev, .fera-product-slider.fera-card-wicon .owl-nav button.owl-prev, .fera-product-slider.fera-form .owl-nav button.owl-prev, .fera-product-slider.-baby .owl-nav button.owl-next, .fera-product-slider.fera-card .owl-nav button.owl-next, .fera-product-slider.fera-card-2 .owl-nav button.owl-next, .fera-product-slider.fera-card-wicon .owl-nav button.owl-next, .fera-product-slider.fera-form .owl-nav button.owl-next {
+  color: #27b9f5;
+}
+.fera-product-slider.-baby .owl-nav button.owl-prev:hover, .fera-product-slider.fera-card .owl-nav button.owl-prev:hover, .fera-product-slider.fera-card-2 .owl-nav button.owl-prev:hover, .fera-product-slider.fera-card-wicon .owl-nav button.owl-prev:hover, .fera-product-slider.fera-form .owl-nav button.owl-prev:hover, .fera-product-slider.-baby .owl-nav button.owl-next:hover, .fera-product-slider.fera-card .owl-nav button.owl-next:hover, .fera-product-slider.fera-card-2 .owl-nav button.owl-next:hover, .fera-product-slider.fera-card-wicon .owl-nav button.owl-next:hover, .fera-product-slider.fera-form .owl-nav button.owl-next:hover {
+  background-color: #27b9f5;
+  color: #FFF;
+}
+.fera-product-slider.-pumpkin .fera-slider-thumbs .owl-item.active.center {
+  border: 3px solid #fc7700;
+}
+.fera-product-slider.-pumpkin .owl-nav button.owl-prev, .fera-product-slider.-pumpkin .owl-nav button.owl-next {
+  color: #fc7700;
+}
+.fera-product-slider.-pumpkin .owl-nav button.owl-prev:hover, .fera-product-slider.-pumpkin .owl-nav button.owl-next:hover {
+  background-color: #fc7700;
+  color: #FFF;
+}
+
+.fera-rich-content p img {
+  margin-bottom: 2.5rem;
+  max-width: 100%;
+  height: auto;
+}
+.fera-rich-content h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  font-family: "Lato", sans-serif;
+}
+.fera-rich-content h3 {
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  font-family: "Lato", sans-serif;
+}
+.fera-rich-content h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  font-family: "Lato", sans-serif;
+}
+.fera-rich-content ul, .fera-rich-content ol {
+  padding-left: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+.fera-rich-content ul li {
+  list-style: square;
+}
+.fera-rich-content ol li {
+  list-style: decimal;
+}
+.fera-rich-content code {
+  font-family: monospace;
+}
+.fera-rich-content li {
+  margin-bottom: 0.625rem;
+}
+.fera-rich-content em {
+  font-style: italic;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.23);
+}
+.fera-rich-content blockquote {
+  border-left: 3px solid #733e97;
+  padding-left: 1.875rem;
+  font-weight: 300;
+  font-style: italic;
+}
+.fera-rich-content blockquote p {
+  font-size: 1.625rem;
+  line-height: 2.125rem;
+  color: #733e97;
+}
+.fera-rich-content.-halloween p > strong, .fera-rich-content.-halloween p > a {
+  color: #54246a;
+}
+.fera-rich-content.-halloween blockquote {
+  border-left: 3px solid #54246a;
+  color: #54246a;
+}
+.fera-rich-content.-andromeda p > strong, .fera-rich-content.-andromeda p > a {
+  color: #733e97;
+}
+.fera-rich-content.-andromeda blockquote {
+  border-left: 3px solid #733e97;
+  color: #733e97;
+}
+.fera-rich-content.-night p > strong, .fera-rich-content.-night p > a {
+  color: #315aa9;
+}
+.fera-rich-content.-night blockquote {
+  border-left: 3px solid #315aa9;
+  color: #315aa9;
+}
+.fera-rich-content.-sky p > strong, .fera-rich-content.-sky p > a {
+  color: #3186c7;
+}
+.fera-rich-content.-sky blockquote {
+  border-left: 3px solid #3186c7;
+  color: #3186c7;
+}
+.fera-rich-content.-sunshine p > strong, .fera-rich-content.-sunshine p > a {
+  color: #f3ac47;
+}
+.fera-rich-content.-sunshine blockquote {
+  border-left: 3px solid #f3ac47;
+  color: #f3ac47;
+}
+.fera-rich-content.-pink p > strong, .fera-rich-content.-pink p > a {
+  color: #da1e77;
+}
+.fera-rich-content.-pink blockquote {
+  border-left: 3px solid #da1e77;
+  color: #da1e77;
+}
+.fera-rich-content.-salmon p > strong, .fera-rich-content.fera-paragraph p > strong, .fera-rich-content p.fera-rich-content p > strong, .fera-rich-content li.fera-rich-content p > strong, .fera-rich-content.-salmon p > a, .fera-rich-content.fera-paragraph p > a, .fera-rich-content p.fera-rich-content p > a, .fera-rich-content li.fera-rich-content p > a {
+  color: #e75a6a;
+}
+.fera-rich-content.-salmon blockquote, .fera-rich-content.fera-paragraph blockquote, .fera-rich-content p.fera-rich-content blockquote, .fera-rich-content li.fera-rich-content blockquote {
+  border-left: 3px solid #e75a6a;
+  color: #e75a6a;
+}
+.fera-rich-content.-darkness p > strong, .fera-rich-content.fera-case p > strong, .fera-rich-content.fera-sidebar-nav p > strong, .fera-rich-content.fera-table p > strong, .fera-rich-content.-darkness p > a, .fera-rich-content.fera-case p > a, .fera-rich-content.fera-sidebar-nav p > a, .fera-rich-content.fera-table p > a {
+  color: #333333;
+}
+.fera-rich-content.-darkness blockquote, .fera-rich-content.fera-case blockquote, .fera-rich-content.fera-sidebar-nav blockquote, .fera-rich-content.fera-table blockquote {
+  border-left: 3px solid #333333;
+  color: #333333;
+}
+.fera-rich-content.-mellow p > strong, .fera-rich-content.-mellow p > a {
+  color: #9e9e9e;
+}
+.fera-rich-content.-mellow blockquote {
+  border-left: 3px solid #9e9e9e;
+  color: #9e9e9e;
+}
+.fera-rich-content.-nature p > strong, .fera-rich-content.-nature p > a {
+  color: #06d25a;
+}
+.fera-rich-content.-nature blockquote {
+  border-left: 3px solid #06d25a;
+  color: #06d25a;
+}
+.fera-rich-content.-void p > strong, .fera-rich-content.-void p > a {
+  color: #eeeeee;
+}
+.fera-rich-content.-void blockquote {
+  border-left: 3px solid #eeeeee;
+  color: #eeeeee;
+}
+.fera-rich-content.-baby p > strong, .fera-rich-content.fera-card p > strong, .fera-rich-content.fera-card-2 p > strong, .fera-rich-content.fera-card-wicon p > strong, .fera-rich-content.fera-form p > strong, .fera-rich-content.-baby p > a, .fera-rich-content.fera-card p > a, .fera-rich-content.fera-card-2 p > a, .fera-rich-content.fera-card-wicon p > a, .fera-rich-content.fera-form p > a {
+  color: #27b9f5;
+}
+.fera-rich-content.-baby blockquote, .fera-rich-content.fera-card blockquote, .fera-rich-content.fera-card-2 blockquote, .fera-rich-content.fera-card-wicon blockquote, .fera-rich-content.fera-form blockquote {
+  border-left: 3px solid #27b9f5;
+  color: #27b9f5;
+}
+.fera-rich-content.-pumpkin p > strong, .fera-rich-content.-pumpkin p > a {
+  color: #fc7700;
+}
+.fera-rich-content.-pumpkin blockquote {
+  border-left: 3px solid #fc7700;
+  color: #fc7700;
+}
+
 .fera-sidebar-nav {
   max-width: 18.75rem;
   /*=============================
@@ -4465,228 +4867,6 @@ html {
 .fera-sidebar-nav.-pumpkin > .nav-links > .item.-active {
   background-color: rgba(252, 119, 0, 0.05);
   border-color: #fc7700;
-}
-
-.fera-list {
-  list-style: square;
-}
-.fera-list > li {
-  font-size: 1.3125rem;
-  margin-bottom: 0.9375rem;
-}
-
-.fera-paragraph, .fera-rich-content p, .fera-rich-content li {
-  font-size: 17px;
-  font-weight: 300;
-  font-family: 'Open Sans';
-  line-height: 1.52;
-  color: black;
-  margin-bottom: 1.875rem;
-}
-@media (min-width: 700px) {
-  .fera-paragraph, .fera-rich-content p, .fera-rich-content li {
-    font-size: 19px;
-  }
-}
-@media (min-width: 1025px) {
-  .fera-paragraph, .fera-rich-content p, .fera-rich-content li {
-    font-size: 21px;
-  }
-}
-.fera-paragraph a, .fera-rich-content p a, .fera-rich-content li a {
-  text-decoration: underline;
-}
-.fera-paragraph > strong, .fera-rich-content p > strong, .fera-rich-content li > strong {
-  font-weight: bold;
-  color: #333333;
-}
-.fera-paragraph > span > strong, .fera-rich-content p > span > strong, .fera-rich-content li > span > strong {
-  font-weight: bold;
-}
-.fera-paragraph.-halloween > span, .fera-rich-content p.-halloween > span, .fera-rich-content li.-halloween > span, .fera-paragraph.-halloween > a, .fera-rich-content p.-halloween > a, .fera-rich-content li.-halloween > a {
-  color: #54246a;
-}
-.fera-paragraph.-andromeda > span, .fera-rich-content p.-andromeda > span, .fera-rich-content li.-andromeda > span, .fera-paragraph.-andromeda > a, .fera-rich-content p.-andromeda > a, .fera-rich-content li.-andromeda > a {
-  color: #733e97;
-}
-.fera-paragraph.-night > span, .fera-rich-content p.-night > span, .fera-rich-content li.-night > span, .fera-paragraph.-night > a, .fera-rich-content p.-night > a, .fera-rich-content li.-night > a {
-  color: #315aa9;
-}
-.fera-paragraph.-sky > span, .fera-rich-content p.-sky > span, .fera-rich-content li.-sky > span, .fera-paragraph.-sky > a, .fera-rich-content p.-sky > a, .fera-rich-content li.-sky > a {
-  color: #3186c7;
-}
-.fera-paragraph.-sunshine > span, .fera-rich-content p.-sunshine > span, .fera-rich-content li.-sunshine > span, .fera-paragraph.-sunshine > a, .fera-rich-content p.-sunshine > a, .fera-rich-content li.-sunshine > a {
-  color: #f3ac47;
-}
-.fera-paragraph.-pink > span, .fera-rich-content p.-pink > span, .fera-rich-content li.-pink > span, .fera-paragraph.-pink > a, .fera-rich-content p.-pink > a, .fera-rich-content li.-pink > a {
-  color: #da1e77;
-}
-.fera-paragraph.-salmon > span, .fera-paragraph > span, .fera-rich-content p > span, .fera-rich-content li > span, .fera-rich-content p.-salmon > span, .fera-rich-content p.fera-paragraph > span, .fera-rich-content li.-salmon > span, .fera-rich-content li.fera-paragraph > span, .fera-paragraph.-salmon > a, .fera-paragraph > a, .fera-rich-content p > a, .fera-rich-content li > a, .fera-rich-content p.-salmon > a, .fera-rich-content p.fera-paragraph > a, .fera-rich-content li.-salmon > a, .fera-rich-content li.fera-paragraph > a {
-  color: #e75a6a;
-}
-.fera-paragraph.-darkness > span, .fera-paragraph.fera-case > span, .fera-rich-content p.fera-case > span, .fera-rich-content li.fera-case > span, .fera-paragraph.fera-sidebar-nav > span, .fera-rich-content p.fera-sidebar-nav > span, .fera-rich-content li.fera-sidebar-nav > span, .fera-rich-content p.-darkness > span, .fera-rich-content p.fera-table > span, .fera-rich-content li.-darkness > span, .fera-rich-content li.fera-table > span, .fera-paragraph.fera-table > span, .fera-paragraph.-darkness > a, .fera-paragraph.fera-case > a, .fera-rich-content p.fera-case > a, .fera-rich-content li.fera-case > a, .fera-paragraph.fera-sidebar-nav > a, .fera-rich-content p.fera-sidebar-nav > a, .fera-rich-content li.fera-sidebar-nav > a, .fera-rich-content p.-darkness > a, .fera-rich-content p.fera-table > a, .fera-rich-content li.-darkness > a, .fera-rich-content li.fera-table > a, .fera-paragraph.fera-table > a {
-  color: #333333;
-}
-.fera-paragraph.-mellow > span, .fera-rich-content p.-mellow > span, .fera-rich-content li.-mellow > span, .fera-paragraph.-mellow > a, .fera-rich-content p.-mellow > a, .fera-rich-content li.-mellow > a {
-  color: #9e9e9e;
-}
-.fera-paragraph.-nature > span, .fera-rich-content p.-nature > span, .fera-rich-content li.-nature > span, .fera-paragraph.-nature > a, .fera-rich-content p.-nature > a, .fera-rich-content li.-nature > a {
-  color: #06d25a;
-}
-.fera-paragraph.-void > span, .fera-rich-content p.-void > span, .fera-rich-content li.-void > span, .fera-paragraph.-void > a, .fera-rich-content p.-void > a, .fera-rich-content li.-void > a {
-  color: #eeeeee;
-}
-.fera-paragraph.-baby > span, .fera-paragraph.fera-card > span, .fera-rich-content p.fera-card > span, .fera-rich-content li.fera-card > span, .fera-paragraph.fera-card-2 > span, .fera-rich-content p.fera-card-2 > span, .fera-rich-content li.fera-card-2 > span, .fera-paragraph.fera-card-wicon > span, .fera-rich-content p.fera-card-wicon > span, .fera-rich-content li.fera-card-wicon > span, .fera-paragraph.fera-form > span, .fera-rich-content p.fera-form > span, .fera-rich-content li.fera-form > span, .fera-rich-content p.-baby > span, .fera-rich-content li.-baby > span, .fera-paragraph.-baby > a, .fera-paragraph.fera-card > a, .fera-rich-content p.fera-card > a, .fera-rich-content li.fera-card > a, .fera-paragraph.fera-card-2 > a, .fera-rich-content p.fera-card-2 > a, .fera-rich-content li.fera-card-2 > a, .fera-paragraph.fera-card-wicon > a, .fera-rich-content p.fera-card-wicon > a, .fera-rich-content li.fera-card-wicon > a, .fera-paragraph.fera-form > a, .fera-rich-content p.fera-form > a, .fera-rich-content li.fera-form > a, .fera-rich-content p.-baby > a, .fera-rich-content li.-baby > a {
-  color: #27b9f5;
-}
-.fera-paragraph.-pumpkin > span, .fera-rich-content p.-pumpkin > span, .fera-rich-content li.-pumpkin > span, .fera-paragraph.-pumpkin > a, .fera-rich-content p.-pumpkin > a, .fera-rich-content li.-pumpkin > a {
-  color: #fc7700;
-}
-
-.fera-rich-content p img {
-  margin-bottom: 2.5rem;
-  max-width: 100%;
-  height: auto;
-}
-.fera-rich-content h2 {
-  font-size: 1.875rem;
-  font-weight: bold;
-  margin-bottom: 1.25rem;
-  font-family: "Lato", sans-serif;
-}
-.fera-rich-content h3 {
-  font-size: 1.375rem;
-  font-weight: bold;
-  margin-bottom: 1.25rem;
-  font-family: "Lato", sans-serif;
-}
-.fera-rich-content h4 {
-  font-size: 1.125rem;
-  font-weight: bold;
-  margin-bottom: 1.25rem;
-  font-family: "Lato", sans-serif;
-}
-.fera-rich-content ul, .fera-rich-content ol {
-  padding-left: 1.875rem;
-  margin-bottom: 1.875rem;
-}
-.fera-rich-content ul li {
-  list-style: square;
-}
-.fera-rich-content ol li {
-  list-style: decimal;
-}
-.fera-rich-content code {
-  font-family: monospace;
-}
-.fera-rich-content li {
-  margin-bottom: 0.625rem;
-}
-.fera-rich-content em {
-  font-style: italic;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.23);
-}
-.fera-rich-content blockquote {
-  border-left: 3px solid #733e97;
-  padding-left: 1.875rem;
-  font-weight: 300;
-  font-style: italic;
-}
-.fera-rich-content blockquote p {
-  font-size: 1.625rem;
-  line-height: 2.125rem;
-  color: #733e97;
-}
-.fera-rich-content.-halloween p > strong, .fera-rich-content.-halloween p > a {
-  color: #54246a;
-}
-.fera-rich-content.-halloween blockquote {
-  border-left: 3px solid #54246a;
-  color: #54246a;
-}
-.fera-rich-content.-andromeda p > strong, .fera-rich-content.-andromeda p > a {
-  color: #733e97;
-}
-.fera-rich-content.-andromeda blockquote {
-  border-left: 3px solid #733e97;
-  color: #733e97;
-}
-.fera-rich-content.-night p > strong, .fera-rich-content.-night p > a {
-  color: #315aa9;
-}
-.fera-rich-content.-night blockquote {
-  border-left: 3px solid #315aa9;
-  color: #315aa9;
-}
-.fera-rich-content.-sky p > strong, .fera-rich-content.-sky p > a {
-  color: #3186c7;
-}
-.fera-rich-content.-sky blockquote {
-  border-left: 3px solid #3186c7;
-  color: #3186c7;
-}
-.fera-rich-content.-sunshine p > strong, .fera-rich-content.-sunshine p > a {
-  color: #f3ac47;
-}
-.fera-rich-content.-sunshine blockquote {
-  border-left: 3px solid #f3ac47;
-  color: #f3ac47;
-}
-.fera-rich-content.-pink p > strong, .fera-rich-content.-pink p > a {
-  color: #da1e77;
-}
-.fera-rich-content.-pink blockquote {
-  border-left: 3px solid #da1e77;
-  color: #da1e77;
-}
-.fera-rich-content.-salmon p > strong, .fera-rich-content.fera-paragraph p > strong, .fera-rich-content p.fera-rich-content p > strong, .fera-rich-content li.fera-rich-content p > strong, .fera-rich-content.-salmon p > a, .fera-rich-content.fera-paragraph p > a, .fera-rich-content p.fera-rich-content p > a, .fera-rich-content li.fera-rich-content p > a {
-  color: #e75a6a;
-}
-.fera-rich-content.-salmon blockquote, .fera-rich-content.fera-paragraph blockquote, .fera-rich-content p.fera-rich-content blockquote, .fera-rich-content li.fera-rich-content blockquote {
-  border-left: 3px solid #e75a6a;
-  color: #e75a6a;
-}
-.fera-rich-content.-darkness p > strong, .fera-rich-content.fera-case p > strong, .fera-rich-content.fera-sidebar-nav p > strong, .fera-rich-content.fera-table p > strong, .fera-rich-content.-darkness p > a, .fera-rich-content.fera-case p > a, .fera-rich-content.fera-sidebar-nav p > a, .fera-rich-content.fera-table p > a {
-  color: #333333;
-}
-.fera-rich-content.-darkness blockquote, .fera-rich-content.fera-case blockquote, .fera-rich-content.fera-sidebar-nav blockquote, .fera-rich-content.fera-table blockquote {
-  border-left: 3px solid #333333;
-  color: #333333;
-}
-.fera-rich-content.-mellow p > strong, .fera-rich-content.-mellow p > a {
-  color: #9e9e9e;
-}
-.fera-rich-content.-mellow blockquote {
-  border-left: 3px solid #9e9e9e;
-  color: #9e9e9e;
-}
-.fera-rich-content.-nature p > strong, .fera-rich-content.-nature p > a {
-  color: #06d25a;
-}
-.fera-rich-content.-nature blockquote {
-  border-left: 3px solid #06d25a;
-  color: #06d25a;
-}
-.fera-rich-content.-void p > strong, .fera-rich-content.-void p > a {
-  color: #eeeeee;
-}
-.fera-rich-content.-void blockquote {
-  border-left: 3px solid #eeeeee;
-  color: #eeeeee;
-}
-.fera-rich-content.-baby p > strong, .fera-rich-content.fera-card p > strong, .fera-rich-content.fera-card-2 p > strong, .fera-rich-content.fera-card-wicon p > strong, .fera-rich-content.fera-form p > strong, .fera-rich-content.-baby p > a, .fera-rich-content.fera-card p > a, .fera-rich-content.fera-card-2 p > a, .fera-rich-content.fera-card-wicon p > a, .fera-rich-content.fera-form p > a {
-  color: #27b9f5;
-}
-.fera-rich-content.-baby blockquote, .fera-rich-content.fera-card blockquote, .fera-rich-content.fera-card-2 blockquote, .fera-rich-content.fera-card-wicon blockquote, .fera-rich-content.fera-form blockquote {
-  border-left: 3px solid #27b9f5;
-  color: #27b9f5;
-}
-.fera-rich-content.-pumpkin p > strong, .fera-rich-content.-pumpkin p > a {
-  color: #fc7700;
-}
-.fera-rich-content.-pumpkin blockquote {
-  border-left: 3px solid #fc7700;
-  color: #fc7700;
 }
 
 .table-container {
