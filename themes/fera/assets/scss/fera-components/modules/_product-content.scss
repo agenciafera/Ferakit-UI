@@ -64,25 +64,21 @@
   =============================*/
 
   @include theme {
+    .price{
+      color: $color;
+    }
 
-    .fera-product-content {
-      .price{
-        color: $color;
-      }
-
-      .product-variant{
-        .color-true{
-          li{
-            a{
-              &.active{
-                border: 2px solid $color;
-              }
+    .product-variant{
+      .color-true{
+        li{
+          a{
+            &.active{
+              border: 2px solid $color;
             }
           }
         }
       }
     }
-
   }
 
   /*=====  End of Theme  ======*/
