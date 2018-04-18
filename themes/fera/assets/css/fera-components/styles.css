@@ -2447,6 +2447,8 @@ html {
     padding: 0;
     background: transparent;
     pointer-events: auto;
+    width: auto;
+    height: auto;
   }
 }
 .fera-header .header-nav.-opened {
