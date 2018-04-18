@@ -605,7 +605,7 @@ html {
   text-align: center;
 }
 
-.-hidden {
+.-o-hidden {
   overflow: hidden;
 }
 
@@ -2440,6 +2440,7 @@ html {
     opacity: 1;
     padding: 0;
     background: transparent;
+    pointer-events: auto;
   }
 }
 .fera-header .header-nav.-opened {
