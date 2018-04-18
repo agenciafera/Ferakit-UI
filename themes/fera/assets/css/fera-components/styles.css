@@ -5723,7 +5723,7 @@ html {
   display: block;
   font-weight: 300;
 }
-.fera-topics .topic-content {
+.fera-topics .topic-content p {
   font-size: 15px;
   color: #9e9e9e;
   line-height: 1.6;
