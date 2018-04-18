@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: column nowrap;
   @include rem(padding, 15px);
+  position: relative;
 
   @media #{$tablet} {
     align-items: center;
@@ -17,9 +18,52 @@
       margin-bottom: 0;
     }
 
+    &.-opened{
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 9999;
+
+      img{
+        filter: grayscale(100%) brightness(0) invert(1);
+      }
+    }
+
   }
 
   .header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 1);
+    z-index: 999;
+    @include rem(padding, 150px 50px);
+    opacity: 0;
+    @include transition(opacity);
+    pointer-events: none;
+
+
+    @media #{$tablet} {
+      position: static;
+      display: block;
+      opacity: 1;
+      padding: 0;
+      background: transparent;
+    }
+
+    &.-opened {
+      opacity: 1;
+      pointer-events: auto;
+
+      li {
+        transform: translateY(0px)!important;
+        opacity: 1!important;
+      }
+
+    }
+
 
     ul {
       display: flex;
@@ -27,6 +71,7 @@
 
       @media #{$tablet} {
         flex-flow: row nowrap;
+        justify-content: flex-end;
       }
 
 
@@ -35,11 +80,34 @@
         color: map-get($colors, darkness);
         font-size: 19px;
         font-weight: 300;
+        @include transition(opacity, transform);
+
+
+        @media #{$only-smartphone} {
+          @for $i from 1 through 20 {
+            &:nth-child(#{$i}) {
+              transition-delay: $i * 50ms;
+              transform: translateY(50px * $i + $i );
+              opacity: 0;
+            }
+          }
+        }
+
+
+
 
         a {
           text-decoration: none;
-          color: color('mellow');
+          color: white;
           @include rem(font-size, 15px);
+          @include transition(opacity);
+          white-space: nowrap;
+          font-weight: bold;
+
+          @media #{$tablet} {
+            color: color('mellow');
+          }
+
         }
 
         &:not(:last-child) {
@@ -54,6 +122,110 @@
 
       }
 
+    }
+
+  }
+
+}
+
+.menu-mobile {
+  $barHeight: 2px;
+  $barWidth: 32px;
+  $barMargin: 7px;
+  border-radius: 0px;
+  background-color: transparent!important;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 30%;
+
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+
+  .icon {
+    position: relative;
+    width: $barWidth;
+    height: ($barHeight * 3) + ($barMargin * 2) + 1px;
+  }
+
+  &.-opened{
+    position: fixed;
+    z-index: 9999;
+    top: 40px;
+    right: 30px;
+
+    .bar{
+      background-color: white;
+    }
+
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(1), .bar:nth-child(3) {
+      top: $barHeight + $barMargin;
+      left: 0;
+    }
+
+    .bar:nth-child(1) {
+      transform: rotate(45deg);
+      transition-delay: 100ms;
+    }
+
+    .bar:nth-child(3) {
+      transform: rotate(-45deg);
+      transition-delay: 100ms;
+    }
+  }
+
+
+  .bar {
+    width: $barWidth;
+    height: $barHeight;
+    background-color: color('sky');
+    display: block;
+    position: absolute;
+    @include transition(opacity, transform, top, width, height);
+
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      top: $barHeight + $barMargin;
+      left: 0;
+    }
+
+    &:nth-child(3) {
+      top: ($barHeight + $barMargin) + ($barHeight + $barMargin);
+      left: 0;
+    }
+
+  }
+
+  &.-closed {
+
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(1), .bar:nth-child(3) {
+      top: $barHeight + $barMargin;
+      left: 0;
+    }
+
+    .bar:nth-child(1) {
+      transform: rotate(45deg);
+      transition-delay: 400ms;
+    }
+
+    .bar:nth-child(3) {
+      transform: rotate(-45deg);
+      transition-delay: 400ms;
     }
 
   }

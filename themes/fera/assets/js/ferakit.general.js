@@ -4,7 +4,11 @@ var general = (function() {
   var config = {
     selectors: {
       owl_carousel: $('.fera-slider'),
-      owl_thumbs: $('.fera-slider-thumbs')
+      owl_thumbs: $('.fera-slider-thumbs'),
+      menu: $('.menu-mobile'),
+      logo: $('.header-logo'),
+      nav: $('.header-nav'),
+      body: $('body')
     },
 
     classes: {
@@ -38,6 +42,14 @@ var general = (function() {
 
   function init() {
     carousel();
+    config.selectors.menu.on('click', menu);
+  }
+
+  function menu(){
+    $(this).toggleClass('-opened');
+    config.selectors.logo.toggleClass('-opened');
+    config.selectors.body.toggleClass('-hidden');
+    config.selectors.nav.toggleClass('-opened');
   }
 
   function carousel() {
