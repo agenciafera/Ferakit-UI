@@ -1,15 +1,23 @@
 .fera-header {
-  display: flex;
-  flex-flow: column nowrap;
   @include rem(padding, 15px);
   position: relative;
 
+  .grid-container{
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media #{$tablet} {
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+    }
+  }
+
   @media #{$tablet} {
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: row nowrap;
     border-bottom: 1px solid #f9f9f9;
   }
+
+
 
   .header-logo {
     @include rem(margin-bottom, 50px);

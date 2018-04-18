@@ -2387,16 +2387,22 @@ html {
 }
 
 .fera-header {
-  display: flex;
-  flex-flow: column nowrap;
   padding: 0.9375rem;
   position: relative;
 }
+.fera-header .grid-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
 @media (min-width: 700px) {
-  .fera-header {
+  .fera-header .grid-container {
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
+  }
+}
+@media (min-width: 700px) {
+  .fera-header {
     border-bottom: 1px solid #f9f9f9;
   }
 }
