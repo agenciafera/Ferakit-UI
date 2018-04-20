@@ -256,7 +256,21 @@
         border-color: $color;
         background: $color image-url("checkbox-on.png") center center no-repeat;
       }
+    }
 
+    .number-container{
+      .plus{
+        &:hover{
+          background: $color;
+          border-color: $color;
+        }
+      }
+      .minus{
+        &:hover{
+          background: $color;
+          border-color: $color;
+        }
+      }
     }
 
   }
