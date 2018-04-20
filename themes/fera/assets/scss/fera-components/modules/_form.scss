@@ -80,6 +80,7 @@
 
   .number-container{
     position: relative;
+    display: inline-block;
 
     .plus{
       width: 25px;
@@ -146,7 +147,12 @@
       margin: 0;
     }
 
-    width: 100%;
+    width: auto;
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+
     @include rem(min-width, 50px);
     @include rem(height, 50px);
     appearance: none;

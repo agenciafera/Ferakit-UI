@@ -2143,6 +2143,7 @@ html {
 }
 .fera-form .number-container {
   position: relative;
+  display: inline-block;
 }
 .fera-form .number-container .plus {
   width: 25px;
@@ -2194,7 +2195,7 @@ html {
 }
 .fera-form .form-number {
   -moz-appearance: textfield;
-  width: 100%;
+  width: auto;
   min-width: 3.125rem;
   height: 3.125rem;
   appearance: none;
@@ -2212,6 +2213,11 @@ html {
 .fera-form .form-number::-webkit-inner-spin-button, .fera-form .form-number::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+@media (min-width: 700px) {
+  .fera-form .form-number {
+    width: 100%;
+  }
 }
 .fera-form .form-number:-moz-placeholder {
   font-size: 1.125rem;
