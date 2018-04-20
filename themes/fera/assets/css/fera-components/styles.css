@@ -4967,6 +4967,7 @@ html {
 }
 .fera-pagination > div span, .fera-pagination > div a {
   display: inline-block;
+  border: 0;
 }
 .fera-pagination > div .pages {
   font-size: 0.75rem;
@@ -4995,8 +4996,9 @@ html {
   border: 1px solid #27b9f5;
   color: white;
 }
-.fera-pagination > div .nextpostslink {
+.fera-pagination > div .nextpostslink, .fera-pagination > div .previouspostslink {
   font-size: 1.25rem;
+  color: #9e9e9e;
 }
 .fera-pagination.-halloween .current {
   color: #54246a;
@@ -5006,6 +5008,9 @@ html {
   background: #54246a;
   border-color: #54246a;
 }
+.fera-pagination.-halloween .nextpostslink, .fera-pagination.-halloween .previouspostslink {
+  color: #54246a;
+}
 .fera-pagination.-andromeda .current {
   color: #733e97;
   border-color: #733e97;
@@ -5013,6 +5018,9 @@ html {
 .fera-pagination.-andromeda .page:hover {
   background: #733e97;
   border-color: #733e97;
+}
+.fera-pagination.-andromeda .nextpostslink, .fera-pagination.-andromeda .previouspostslink {
+  color: #733e97;
 }
 .fera-pagination.-night .current {
   color: #315aa9;
@@ -5022,6 +5030,9 @@ html {
   background: #315aa9;
   border-color: #315aa9;
 }
+.fera-pagination.-night .nextpostslink, .fera-pagination.-night .previouspostslink {
+  color: #315aa9;
+}
 .fera-pagination.-sky .current {
   color: #3186c7;
   border-color: #3186c7;
@@ -5029,6 +5040,9 @@ html {
 .fera-pagination.-sky .page:hover {
   background: #3186c7;
   border-color: #3186c7;
+}
+.fera-pagination.-sky .nextpostslink, .fera-pagination.-sky .previouspostslink {
+  color: #3186c7;
 }
 .fera-pagination.-sunshine .current {
   color: #f3ac47;
@@ -5038,6 +5052,9 @@ html {
   background: #f3ac47;
   border-color: #f3ac47;
 }
+.fera-pagination.-sunshine .nextpostslink, .fera-pagination.-sunshine .previouspostslink {
+  color: #f3ac47;
+}
 .fera-pagination.-pink .current {
   color: #da1e77;
   border-color: #da1e77;
@@ -5045,6 +5062,9 @@ html {
 .fera-pagination.-pink .page:hover {
   background: #da1e77;
   border-color: #da1e77;
+}
+.fera-pagination.-pink .nextpostslink, .fera-pagination.-pink .previouspostslink {
+  color: #da1e77;
 }
 .fera-pagination.-salmon .current, .fera-pagination.fera-paragraph .current, .fera-rich-content p.fera-pagination .current, .fera-rich-content li.fera-pagination .current {
   color: #e75a6a;
@@ -5054,6 +5074,9 @@ html {
   background: #e75a6a;
   border-color: #e75a6a;
 }
+.fera-pagination.-salmon .nextpostslink, .fera-pagination.fera-paragraph .nextpostslink, .fera-rich-content p.fera-pagination .nextpostslink, .fera-rich-content li.fera-pagination .nextpostslink, .fera-pagination.-salmon .previouspostslink, .fera-pagination.fera-paragraph .previouspostslink, .fera-rich-content p.fera-pagination .previouspostslink, .fera-rich-content li.fera-pagination .previouspostslink {
+  color: #e75a6a;
+}
 .fera-pagination.-darkness .current, .fera-pagination.fera-case .current, .fera-pagination.fera-sidebar-nav .current, .fera-pagination.fera-table .current {
   color: #333333;
   border-color: #333333;
@@ -5061,6 +5084,9 @@ html {
 .fera-pagination.-darkness .page:hover, .fera-pagination.fera-case .page:hover, .fera-pagination.fera-sidebar-nav .page:hover, .fera-pagination.fera-table .page:hover {
   background: #333333;
   border-color: #333333;
+}
+.fera-pagination.-darkness .nextpostslink, .fera-pagination.fera-case .nextpostslink, .fera-pagination.fera-sidebar-nav .nextpostslink, .fera-pagination.fera-table .nextpostslink, .fera-pagination.-darkness .previouspostslink, .fera-pagination.fera-case .previouspostslink, .fera-pagination.fera-sidebar-nav .previouspostslink, .fera-pagination.fera-table .previouspostslink {
+  color: #333333;
 }
 .fera-pagination.-mellow .current {
   color: #9e9e9e;
@@ -5070,6 +5096,9 @@ html {
   background: #9e9e9e;
   border-color: #9e9e9e;
 }
+.fera-pagination.-mellow .nextpostslink, .fera-pagination.-mellow .previouspostslink {
+  color: #9e9e9e;
+}
 .fera-pagination.-nature .current {
   color: #06d25a;
   border-color: #06d25a;
@@ -5077,6 +5106,9 @@ html {
 .fera-pagination.-nature .page:hover {
   background: #06d25a;
   border-color: #06d25a;
+}
+.fera-pagination.-nature .nextpostslink, .fera-pagination.-nature .previouspostslink {
+  color: #06d25a;
 }
 .fera-pagination.-void .current {
   color: #eeeeee;
@@ -5086,6 +5118,9 @@ html {
   background: #eeeeee;
   border-color: #eeeeee;
 }
+.fera-pagination.-void .nextpostslink, .fera-pagination.-void .previouspostslink {
+  color: #eeeeee;
+}
 .fera-pagination.-baby .current, .fera-pagination.fera-card .current, .fera-pagination.fera-form .current {
   color: #27b9f5;
   border-color: #27b9f5;
@@ -5094,6 +5129,9 @@ html {
   background: #27b9f5;
   border-color: #27b9f5;
 }
+.fera-pagination.-baby .nextpostslink, .fera-pagination.fera-card .nextpostslink, .fera-pagination.fera-form .nextpostslink, .fera-pagination.-baby .previouspostslink, .fera-pagination.fera-card .previouspostslink, .fera-pagination.fera-form .previouspostslink {
+  color: #27b9f5;
+}
 .fera-pagination.-pumpkin .current {
   color: #fc7700;
   border-color: #fc7700;
@@ -5101,6 +5139,9 @@ html {
 .fera-pagination.-pumpkin .page:hover {
   background: #fc7700;
   border-color: #fc7700;
+}
+.fera-pagination.-pumpkin .nextpostslink, .fera-pagination.-pumpkin .previouspostslink {
+  color: #fc7700;
 }
 
 .fera-paragraph, .fera-rich-content p, .fera-rich-content li {

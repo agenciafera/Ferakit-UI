@@ -4,6 +4,7 @@
 
     span, a{
       display: inline-block;
+      border: 0;
     }
 
     .pages{
@@ -37,8 +38,9 @@
       }
     }
 
-    .nextpostslink{
+    .nextpostslink, .previouspostslink{
       @include rem(font-size, 20px);
+      color: color('mellow');
     }
   }
 
@@ -53,6 +55,10 @@
         background: $color;
         border-color: $color;
       }
+    }
+
+    .nextpostslink, .previouspostslink{
+      color: $color;
     }
   }
 }
