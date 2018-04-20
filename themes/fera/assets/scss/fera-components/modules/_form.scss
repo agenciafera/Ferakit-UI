@@ -1,7 +1,7 @@
 .fera-form {
   @extend .-baby;
 
-  .form-input, .form-select, .form-checkbox, .form-radio {
+  .form-input, .form-select, .form-checkbox, .form-radio, .form-number {
     width: 100%;
     display: block;
     @include transition(box-shadow, border, background);
@@ -78,6 +78,103 @@
     border-radius: 9999px;
   }
 
+  .number-container{
+    position: relative;
+
+    .plus{
+      width: 25px;
+      padding: 2px 0 0 0px;
+      background: white;
+      position: absolute;
+      height: 25px;
+      box-sizing: border-box;
+      border: 2px solid #eee;
+      right: -26px;
+      font-size: 18px;
+      top: 0;
+      text-align: center;
+      line-height: 18px;
+      font-weight: bold;
+      cursor: pointer;
+
+      span{
+        user-select: none;
+      }
+
+      &:hover{
+        background: color('salmon');
+        color: #FFF;
+        border-color: color('salmon');
+      }
+    }
+
+    .minus{
+      width: 25px;
+      padding: 2px 0 0 0;
+      background: white;
+      position: absolute;
+      height: 25px;
+      box-sizing: border-box;
+      border: 2px solid #eee;
+      right: -26px;
+      font-size: 22px;
+      top: 25px;
+      line-height: 15px;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+
+      span{
+        user-select: none;
+      }
+
+      &:hover{
+        background: color('salmon');
+        color: #FFF;
+        border-color: color('salmon');
+      }
+    }
+  }
+
+  .form-number{
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button
+    {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    @include rem(width, 50px);
+    @include rem(height, 50px);
+    appearance: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    border: 2px solid map-get($colors, void);
+    color: map-get($colors, darkness);
+    font-weight: 300;
+    @include rem(font-size, 18px);
+    text-align: center;
+
+    @include input-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+
+    &.-small {
+      @include rem(font-size, 16px);
+      @include rem(padding, 9px 15px);
+    }
+
+    &:focus{
+      outline: 0;
+    }
+  }
+
   textarea.form-input {
     @include rem(height, 100px);
   }
@@ -130,7 +227,7 @@
 
   @include theme {
 
-    .form-input, .form-select, .form-checkbox, .form-radio {
+    .form-input, .form-select, .form-checkbox, .form-radio, .form-number {
 
       &:hover, &:focus {
         box-shadow: 2px 2px 18px 1px rgba($color, 0.15);

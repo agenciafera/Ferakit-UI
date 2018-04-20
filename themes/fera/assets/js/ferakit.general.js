@@ -8,7 +8,8 @@ var general = (function() {
       menu: $('.menu-mobile'),
       logo: $('.header-logo'),
       nav: $('.header-nav'),
-      body: $('body')
+      body: $('body'),
+      number_container: $('.number-container')
     },
 
     classes: {
@@ -43,6 +44,7 @@ var general = (function() {
   function init() {
     carousel();
     config.selectors.menu.on('click', menu);
+    customInputNumber();
   }
 
   function menu(){
@@ -65,6 +67,40 @@ var general = (function() {
         }).on('changed.owl.carousel', function (e) {
          config.selectors.owl_carousel.trigger('to.owl.carousel', [e.item.index, 500, true]);
       });;
+    });
+  }
+
+  function customInputNumber(){
+    config.selectors.number_container.each(function() {
+      var el = $(this),
+        input = el.find('input[type="number"]'),
+        plus = el.find('.plus'),
+        minus = el.find('.minus'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+      plus.click(function() {
+        var actualVal = parseFloat(input.val());
+        if (actualVal >= max) {
+          var newVal = actualVal;
+        } else {
+          var newVal = actualVal + 1;
+        }
+        el.find("input").val(newVal);
+        el.find("input").trigger("change");
+      });
+
+      minus.click(function() {
+        var actualVal = parseFloat(input.val());
+        if (actualVal <= min) {
+          var newVal = actualVal;
+        } else {
+          var newVal = actualVal - 1;
+        }
+        el.find("input").val(newVal);
+        el.find("input").trigger("change");
+      });
+
     });
   }
 
