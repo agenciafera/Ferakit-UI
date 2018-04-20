@@ -2194,7 +2194,8 @@ html {
 }
 .fera-form .form-number {
   -moz-appearance: textfield;
-  width: 3.125rem;
+  width: 100%;
+  min-width: 3.125rem;
   height: 3.125rem;
   appearance: none;
   border-top-right-radius: 0;

@@ -146,7 +146,8 @@
       margin: 0;
     }
 
-    @include rem(width, 50px);
+    width: 100%;
+    @include rem(min-width, 50px);
     @include rem(height, 50px);
     appearance: none;
     border-top-right-radius: 0;
