@@ -2146,18 +2146,18 @@ html {
   display: inline-block;
 }
 .fera-form .number-container .plus {
-  width: 25px;
-  padding: 2px 0 0 0px;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  padding: 0.125rem 0 0 0;
+  right: -1.625rem;
+  font-size: 1.125rem;
+  top: 0rem;
+  line-height: 1.125rem;
   background: white;
   position: absolute;
-  height: 25px;
   box-sizing: border-box;
   border: 2px solid #eee;
-  right: -26px;
-  font-size: 18px;
-  top: 0;
   text-align: center;
-  line-height: 18px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -2170,17 +2170,17 @@ html {
   border-color: #e75a6a;
 }
 .fera-form .number-container .minus {
-  width: 25px;
-  padding: 2px 0 0 0;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  padding: 0.125rem 0 0 0;
+  right: -1.625rem;
+  font-size: 1.375rem;
+  top: 1.5625rem;
+  line-height: 0.9375rem;
   background: white;
   position: absolute;
-  height: 25px;
   box-sizing: border-box;
   border: 2px solid #eee;
-  right: -26px;
-  font-size: 22px;
-  top: 25px;
-  line-height: 15px;
   text-align: center;
   font-weight: bold;
   cursor: pointer;

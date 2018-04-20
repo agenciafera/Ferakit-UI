@@ -83,18 +83,18 @@
     display: inline-block;
 
     .plus{
-      width: 25px;
-      padding: 2px 0 0 0px;
+      @include rem(width, 25px);
+      @include rem(height, 25px);
+      @include rem(padding, 2px 0 0 0);
+      @include rem(right, -26px);
+      @include rem(font-size, 18px);
+      @include rem(top, 0px);
+      @include rem(line-height, 18px);
       background: white;
       position: absolute;
-      height: 25px;
       box-sizing: border-box;
       border: 2px solid #eee;
-      right: -26px;
-      font-size: 18px;
-      top: 0;
       text-align: center;
-      line-height: 18px;
       font-weight: bold;
       cursor: pointer;
 
@@ -110,17 +110,19 @@
     }
 
     .minus{
-      width: 25px;
-      padding: 2px 0 0 0;
+      @include rem(width, 25px);
+      @include rem(height, 25px);
+      @include rem(padding, 2px 0 0 0);
+      @include rem(right, -26px);
+      @include rem(font-size, 22px);
+      @include rem(top, 25px);
+      @include rem(line-height, 15px);
+
       background: white;
       position: absolute;
-      height: 25px;
       box-sizing: border-box;
       border: 2px solid #eee;
-      right: -26px;
-      font-size: 22px;
-      top: 25px;
-      line-height: 15px;
+
       text-align: center;
       font-weight: bold;
       cursor: pointer;
