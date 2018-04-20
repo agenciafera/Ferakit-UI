@@ -1,0 +1,61 @@
+.fera-pagination{
+  > div{
+    @include rem(padding, 10px 0);
+
+    span, a{
+      display: inline-block;
+    }
+
+    .pages{
+      @include rem(font-size, 12px);
+      font-weight: bold;
+      text-transform: uppercase;
+      @include rem(margin, 0 15px 0 0);
+    }
+
+    .current{
+      @include rem(font-size, 12px);
+      font-weight: bold;
+      color: color('baby');
+      @include rem(padding, 12px 20px);
+      border: 1px solid color('baby');
+      @include rem(margin, 0 5px 0 0);
+    }
+
+    .page{
+      @include rem(font-size, 12px);
+      font-weight: bold;
+      color: color('mellow');
+      @include rem(padding, 12px 20px);
+      border: 1px solid color('mellow');
+      @include rem(margin, 0 5px 0 0);
+
+      &:hover{
+        background: color('baby');
+        border: 1px solid color('baby');
+        color: white;
+      }
+    }
+
+    .nextpostslink{
+      @include rem(font-size, 20px);
+    }
+  }
+
+  @include theme {
+    .current{
+      color: $color;
+      border-color: $color;
+    }
+
+    .page{
+      color: $color;
+      border-color: $color;
+
+      &:hover{
+        background: $color;
+        border-color: $color;
+      }
+    }
+  }
+}

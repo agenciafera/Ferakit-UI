@@ -4962,6 +4962,199 @@ html {
   font-family: "Open Sans";
 }
 
+.fera-pagination > div {
+  padding: 0.625rem 0;
+}
+.fera-pagination > div span, .fera-pagination > div a {
+  display: inline-block;
+}
+.fera-pagination > div .pages {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0.9375rem 0 0;
+}
+.fera-pagination > div .current {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #27b9f5;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #27b9f5;
+  margin: 0 0.3125rem 0 0;
+}
+.fera-pagination > div .page {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #9e9e9e;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #9e9e9e;
+  margin: 0 0.3125rem 0 0;
+}
+.fera-pagination > div .page:hover {
+  background: #27b9f5;
+  border: 1px solid #27b9f5;
+  color: white;
+}
+.fera-pagination > div .nextpostslink {
+  font-size: 1.25rem;
+}
+.fera-pagination.-halloween .current {
+  color: #54246a;
+  border-color: #54246a;
+}
+.fera-pagination.-halloween .page {
+  color: #54246a;
+  border-color: #54246a;
+}
+.fera-pagination.-halloween .page:hover {
+  background: #54246a;
+  border-color: #54246a;
+}
+.fera-pagination.-andromeda .current {
+  color: #733e97;
+  border-color: #733e97;
+}
+.fera-pagination.-andromeda .page {
+  color: #733e97;
+  border-color: #733e97;
+}
+.fera-pagination.-andromeda .page:hover {
+  background: #733e97;
+  border-color: #733e97;
+}
+.fera-pagination.-night .current {
+  color: #315aa9;
+  border-color: #315aa9;
+}
+.fera-pagination.-night .page {
+  color: #315aa9;
+  border-color: #315aa9;
+}
+.fera-pagination.-night .page:hover {
+  background: #315aa9;
+  border-color: #315aa9;
+}
+.fera-pagination.-sky .current {
+  color: #3186c7;
+  border-color: #3186c7;
+}
+.fera-pagination.-sky .page {
+  color: #3186c7;
+  border-color: #3186c7;
+}
+.fera-pagination.-sky .page:hover {
+  background: #3186c7;
+  border-color: #3186c7;
+}
+.fera-pagination.-sunshine .current {
+  color: #f3ac47;
+  border-color: #f3ac47;
+}
+.fera-pagination.-sunshine .page {
+  color: #f3ac47;
+  border-color: #f3ac47;
+}
+.fera-pagination.-sunshine .page:hover {
+  background: #f3ac47;
+  border-color: #f3ac47;
+}
+.fera-pagination.-pink .current {
+  color: #da1e77;
+  border-color: #da1e77;
+}
+.fera-pagination.-pink .page {
+  color: #da1e77;
+  border-color: #da1e77;
+}
+.fera-pagination.-pink .page:hover {
+  background: #da1e77;
+  border-color: #da1e77;
+}
+.fera-pagination.-salmon .current, .fera-pagination.fera-paragraph .current, .fera-rich-content p.fera-pagination .current, .fera-rich-content li.fera-pagination .current {
+  color: #e75a6a;
+  border-color: #e75a6a;
+}
+.fera-pagination.-salmon .page, .fera-pagination.fera-paragraph .page, .fera-rich-content p.fera-pagination .page, .fera-rich-content li.fera-pagination .page {
+  color: #e75a6a;
+  border-color: #e75a6a;
+}
+.fera-pagination.-salmon .page:hover, .fera-pagination.fera-paragraph .page:hover, .fera-rich-content p.fera-pagination .page:hover, .fera-rich-content li.fera-pagination .page:hover {
+  background: #e75a6a;
+  border-color: #e75a6a;
+}
+.fera-pagination.-darkness .current, .fera-pagination.fera-case .current, .fera-pagination.fera-sidebar-nav .current, .fera-pagination.fera-table .current {
+  color: #333333;
+  border-color: #333333;
+}
+.fera-pagination.-darkness .page, .fera-pagination.fera-case .page, .fera-pagination.fera-sidebar-nav .page, .fera-pagination.fera-table .page {
+  color: #333333;
+  border-color: #333333;
+}
+.fera-pagination.-darkness .page:hover, .fera-pagination.fera-case .page:hover, .fera-pagination.fera-sidebar-nav .page:hover, .fera-pagination.fera-table .page:hover {
+  background: #333333;
+  border-color: #333333;
+}
+.fera-pagination.-mellow .current {
+  color: #9e9e9e;
+  border-color: #9e9e9e;
+}
+.fera-pagination.-mellow .page {
+  color: #9e9e9e;
+  border-color: #9e9e9e;
+}
+.fera-pagination.-mellow .page:hover {
+  background: #9e9e9e;
+  border-color: #9e9e9e;
+}
+.fera-pagination.-nature .current {
+  color: #06d25a;
+  border-color: #06d25a;
+}
+.fera-pagination.-nature .page {
+  color: #06d25a;
+  border-color: #06d25a;
+}
+.fera-pagination.-nature .page:hover {
+  background: #06d25a;
+  border-color: #06d25a;
+}
+.fera-pagination.-void .current {
+  color: #eeeeee;
+  border-color: #eeeeee;
+}
+.fera-pagination.-void .page {
+  color: #eeeeee;
+  border-color: #eeeeee;
+}
+.fera-pagination.-void .page:hover {
+  background: #eeeeee;
+  border-color: #eeeeee;
+}
+.fera-pagination.-baby .current, .fera-pagination.fera-card .current, .fera-pagination.fera-form .current {
+  color: #27b9f5;
+  border-color: #27b9f5;
+}
+.fera-pagination.-baby .page, .fera-pagination.fera-card .page, .fera-pagination.fera-form .page {
+  color: #27b9f5;
+  border-color: #27b9f5;
+}
+.fera-pagination.-baby .page:hover, .fera-pagination.fera-card .page:hover, .fera-pagination.fera-form .page:hover {
+  background: #27b9f5;
+  border-color: #27b9f5;
+}
+.fera-pagination.-pumpkin .current {
+  color: #fc7700;
+  border-color: #fc7700;
+}
+.fera-pagination.-pumpkin .page {
+  color: #fc7700;
+  border-color: #fc7700;
+}
+.fera-pagination.-pumpkin .page:hover {
+  background: #fc7700;
+  border-color: #fc7700;
+}
+
 .fera-paragraph, .fera-rich-content p, .fera-rich-content li {
   font-size: 17px;
   font-weight: 300;
