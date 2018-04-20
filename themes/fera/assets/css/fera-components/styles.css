@@ -5002,19 +5002,11 @@ html {
   color: #54246a;
   border-color: #54246a;
 }
-.fera-pagination.-halloween .page {
-  color: #54246a;
-  border-color: #54246a;
-}
 .fera-pagination.-halloween .page:hover {
   background: #54246a;
   border-color: #54246a;
 }
 .fera-pagination.-andromeda .current {
-  color: #733e97;
-  border-color: #733e97;
-}
-.fera-pagination.-andromeda .page {
   color: #733e97;
   border-color: #733e97;
 }
@@ -5026,19 +5018,11 @@ html {
   color: #315aa9;
   border-color: #315aa9;
 }
-.fera-pagination.-night .page {
-  color: #315aa9;
-  border-color: #315aa9;
-}
 .fera-pagination.-night .page:hover {
   background: #315aa9;
   border-color: #315aa9;
 }
 .fera-pagination.-sky .current {
-  color: #3186c7;
-  border-color: #3186c7;
-}
-.fera-pagination.-sky .page {
   color: #3186c7;
   border-color: #3186c7;
 }
@@ -5050,19 +5034,11 @@ html {
   color: #f3ac47;
   border-color: #f3ac47;
 }
-.fera-pagination.-sunshine .page {
-  color: #f3ac47;
-  border-color: #f3ac47;
-}
 .fera-pagination.-sunshine .page:hover {
   background: #f3ac47;
   border-color: #f3ac47;
 }
 .fera-pagination.-pink .current {
-  color: #da1e77;
-  border-color: #da1e77;
-}
-.fera-pagination.-pink .page {
   color: #da1e77;
   border-color: #da1e77;
 }
@@ -5074,19 +5050,11 @@ html {
   color: #e75a6a;
   border-color: #e75a6a;
 }
-.fera-pagination.-salmon .page, .fera-pagination.fera-paragraph .page, .fera-rich-content p.fera-pagination .page, .fera-rich-content li.fera-pagination .page {
-  color: #e75a6a;
-  border-color: #e75a6a;
-}
 .fera-pagination.-salmon .page:hover, .fera-pagination.fera-paragraph .page:hover, .fera-rich-content p.fera-pagination .page:hover, .fera-rich-content li.fera-pagination .page:hover {
   background: #e75a6a;
   border-color: #e75a6a;
 }
 .fera-pagination.-darkness .current, .fera-pagination.fera-case .current, .fera-pagination.fera-sidebar-nav .current, .fera-pagination.fera-table .current {
-  color: #333333;
-  border-color: #333333;
-}
-.fera-pagination.-darkness .page, .fera-pagination.fera-case .page, .fera-pagination.fera-sidebar-nav .page, .fera-pagination.fera-table .page {
   color: #333333;
   border-color: #333333;
 }
@@ -5098,19 +5066,11 @@ html {
   color: #9e9e9e;
   border-color: #9e9e9e;
 }
-.fera-pagination.-mellow .page {
-  color: #9e9e9e;
-  border-color: #9e9e9e;
-}
 .fera-pagination.-mellow .page:hover {
   background: #9e9e9e;
   border-color: #9e9e9e;
 }
 .fera-pagination.-nature .current {
-  color: #06d25a;
-  border-color: #06d25a;
-}
-.fera-pagination.-nature .page {
   color: #06d25a;
   border-color: #06d25a;
 }
@@ -5122,10 +5082,6 @@ html {
   color: #eeeeee;
   border-color: #eeeeee;
 }
-.fera-pagination.-void .page {
-  color: #eeeeee;
-  border-color: #eeeeee;
-}
 .fera-pagination.-void .page:hover {
   background: #eeeeee;
   border-color: #eeeeee;
@@ -5134,19 +5090,11 @@ html {
   color: #27b9f5;
   border-color: #27b9f5;
 }
-.fera-pagination.-baby .page, .fera-pagination.fera-card .page, .fera-pagination.fera-form .page {
-  color: #27b9f5;
-  border-color: #27b9f5;
-}
 .fera-pagination.-baby .page:hover, .fera-pagination.fera-card .page:hover, .fera-pagination.fera-form .page:hover {
   background: #27b9f5;
   border-color: #27b9f5;
 }
 .fera-pagination.-pumpkin .current {
-  color: #fc7700;
-  border-color: #fc7700;
-}
-.fera-pagination.-pumpkin .page {
   color: #fc7700;
   border-color: #fc7700;
 }
