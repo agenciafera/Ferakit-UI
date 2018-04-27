@@ -9,6 +9,6 @@
   @include rem(font-size, 25px);
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "oswald";
+  font-family: $secondary;
   @include rem(margin-bottom, 20px);
 }

@@ -5,7 +5,7 @@
 
     a {
       @include rem(font-size, 32px);
-      font-weight: 700;
+      font-weight: 900;
       @include transition(background);
 
       &:hover {

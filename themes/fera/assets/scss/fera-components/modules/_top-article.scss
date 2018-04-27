@@ -1,6 +1,6 @@
 .fera-top-article {
   @include rem(max-width, 800px);
-  font-family: "Open Sans";
+  font-family: $primary;
   color: map-get($colors, darkness);
 
   .article-intro {

@@ -2040,7 +2040,7 @@ html {
 }
 
 .fera-secondary-font p {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.625rem;
   margin-bottom: 0.625rem;
   text-transform: uppercase;
@@ -2084,7 +2084,7 @@ html {
 }
 .fera-form .form-label {
   font-size: 1.25rem;
-  font-family: "Open Sans";
+  font-family: "Muli", sans-serif;
   font-weight: 600;
   margin-bottom: 0.9375rem;
   display: block;
@@ -2121,7 +2121,7 @@ html {
 .fera-form .form-select {
   padding-right: 6.25rem;
   border: 2px solid #eeeeee;
-  font-family: "Open Sans";
+  font-family: "Muli", sans-serif;
   appearance: none;
   font-weight: 300;
   background-color: #fff;
@@ -2904,7 +2904,7 @@ html {
 }
 .fera-horizontal-list > .item > .item-title {
   font-size: 16px;
-  font-family: "Open Sans";
+  font-family: "Muli", sans-serif;
   font-weight: 700;
 }
 .fera-horizontal-list > .item > .item-title::before {
@@ -4944,7 +4944,7 @@ html {
 }
 .fera-inside-menu > .menu-item a {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   transition-property: background;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0, 0.81, 0, 0.98);
@@ -4965,7 +4965,7 @@ html {
 }
 
 [class*="fera-"] {
-  font-family: "Open Sans";
+  font-family: "Muli", sans-serif;
 }
 
 .fera-pagination > div {
@@ -5153,7 +5153,7 @@ html {
 .fera-paragraph, .fera-rich-content p, .fera-rich-content li {
   font-size: 17px;
   font-weight: 300;
-  font-family: 'Open Sans';
+  font-family: "Muli", sans-serif;
   line-height: 1.52;
   color: black;
   margin-bottom: 1.875rem;
@@ -6214,7 +6214,7 @@ html {
   font-size: 1.5625rem;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "oswald";
+  font-family: "Oswald", sans-serif;
   margin-bottom: 1.25rem;
 }
 
@@ -6281,7 +6281,7 @@ html {
   }
 }
 .fera-title.-title-3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -6291,13 +6291,13 @@ html {
   font-weight: bold;
 }
 .fera-title.-title-5 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.1875rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 .fera-title.-title-6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.0625rem;
   font-weight: bold;
 }
@@ -6307,12 +6307,12 @@ html {
 }
 .fera-title.-title-8 {
   font-size: 2.1875rem;
-  font-family: "'Noto Serif', serif;";
+  font-family: "Noto Serif", serif;
 }
 
 .fera-top-article {
   max-width: 50rem;
-  font-family: "Open Sans";
+  font-family: "Muli", sans-serif;
   color: #333333;
 }
 .fera-top-article .article-intro {
@@ -6360,7 +6360,7 @@ html {
   content: "";
   color: #bbbbbb;
   font-size: 14px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Muli", sans-serif;
   margin-bottom: 15px;
   display: block;
   font-weight: 300;

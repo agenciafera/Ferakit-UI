@@ -27,7 +27,7 @@
   }
 
   &.-title-3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: $secondary;
     @include rem(font-size, 30px);
     font-weight: bold;
     text-transform: uppercase;
@@ -39,14 +39,14 @@
   }
 
   &.-title-5 {
-    font-family: 'Oswald', sans-serif;
+    font-family: $secondary;
     @include rem(font-size, 19px);
     font-weight: bold;
     text-transform: uppercase;
   }
 
   &.-title-6 {
-    font-family: 'Oswald', sans-serif;
+    font-family: $secondary;
     @include rem(font-size, 17px);
     font-weight: bold;
   }
