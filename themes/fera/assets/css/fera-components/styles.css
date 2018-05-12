@@ -2084,7 +2084,6 @@ html {
 }
 .fera-form .form-label {
   font-size: 1.25rem;
-  font-family: "Muli", sans-serif;
   font-weight: 600;
   margin-bottom: 0.9375rem;
   display: block;
@@ -2121,7 +2120,6 @@ html {
 .fera-form .form-select {
   padding-right: 6.25rem;
   border: 2px solid #eeeeee;
-  font-family: "Muli", sans-serif;
   appearance: none;
   font-weight: 300;
   background-color: #fff;
@@ -2904,7 +2902,6 @@ html {
 }
 .fera-horizontal-list > .item > .item-title {
   font-size: 16px;
-  font-family: "Muli", sans-serif;
   font-weight: 700;
 }
 .fera-horizontal-list > .item > .item-title::before {
@@ -5153,7 +5150,6 @@ html {
 .fera-paragraph, .fera-rich-content p, .fera-rich-content li {
   font-size: 17px;
   font-weight: 300;
-  font-family: "Muli", sans-serif;
   line-height: 1.52;
   color: black;
   margin-bottom: 1.875rem;
@@ -6312,7 +6308,6 @@ html {
 
 .fera-top-article {
   max-width: 50rem;
-  font-family: "Muli", sans-serif;
   color: #333333;
 }
 .fera-top-article .article-intro {
@@ -6360,7 +6355,6 @@ html {
   content: "";
   color: #bbbbbb;
   font-size: 14px;
-  font-family: "Muli", sans-serif;
   margin-bottom: 15px;
   display: block;
   font-weight: 300;
