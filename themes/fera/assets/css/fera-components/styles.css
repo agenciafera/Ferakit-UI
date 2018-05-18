@@ -2597,6 +2597,9 @@ html {
   display: flex;
   flex-flow: column nowrap;
 }
+.fera-header .grid-container .layout-group {
+  width: 100%;
+}
 @media (min-width: 700px) {
   .fera-header .grid-container {
     align-items: center;
