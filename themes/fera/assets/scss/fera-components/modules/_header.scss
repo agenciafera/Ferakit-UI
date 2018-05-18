@@ -6,6 +6,10 @@
     display: flex;
     flex-flow: column nowrap;
 
+    .layout-group{
+      width: 100%;
+    }
+
     @media #{$tablet} {
       align-items: center;
       justify-content: space-between;
