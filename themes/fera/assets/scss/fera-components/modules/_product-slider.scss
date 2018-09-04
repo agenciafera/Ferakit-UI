@@ -1,4 +1,4 @@
-.fera-product-slider {
+.fera-product-slider, .fera-slider {
 
   .owl-carousel .owl-item{
     img{
@@ -58,6 +58,21 @@
     }
   }
 
+  .owl-dots{
+    text-align: center;
+    button.owl-dot{
+      display: inline-block;
+      @include rem(width, 15px);
+      @include rem(height, 15px);
+      border-radius: 100%;
+      opacity: 0.5;
+
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+
 
   /*=============================
   =            Theme            =
@@ -76,6 +91,16 @@
         &:hover{
           background-color: $color;
           color: #FFF;
+        }
+      }
+    }
+
+    .owl-dots{
+      button.owl-dot{
+        background-color: $color;
+
+        &:hover{
+          opacity: 0.5;
         }
       }
     }

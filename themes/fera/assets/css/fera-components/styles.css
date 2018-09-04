@@ -601,14 +601,6 @@ html {
   background-color: #fc7700 !important;
 }
 
-.-t-center {
-  text-align: center;
-}
-
-.-o-hidden {
-  overflow: hidden;
-}
-
 /*===============================
 =            Modules            =
 ===============================*/
@@ -5553,25 +5545,25 @@ html {
   background: #fc7700 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
 }
 
-.fera-product-slider {
+.fera-product-slider, .fera-slider {
   /*=============================
   =            Theme            =
   =============================*/
   /*=====  End of Theme  ======*/
 }
-.fera-product-slider .owl-carousel .owl-item img {
+.fera-product-slider .owl-carousel .owl-item img, .fera-slider .owl-carousel .owl-item img {
   max-width: auto;
 }
-.fera-product-slider .fera-slider {
+.fera-product-slider .fera-slider, .fera-slider .fera-slider {
   margin-bottom: -15px;
 }
-.fera-product-slider .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider .fera-slider-thumbs .owl-item.active.center, .fera-slider .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #733e97;
 }
-.fera-product-slider .owl-thumb-item {
+.fera-product-slider .owl-thumb-item, .fera-slider .owl-thumb-item {
   margin-right: 1px;
 }
-.fera-product-slider .owl-nav button.owl-prev, .fera-product-slider .owl-nav button.owl-next {
+.fera-product-slider .owl-nav button.owl-prev, .fera-product-slider .owl-nav button.owl-next, .fera-slider .owl-nav button.owl-prev, .fera-slider .owl-nav button.owl-next {
   font-size: 1.25rem;
   color: #733e97;
   display: block;
@@ -5586,154 +5578,245 @@ html {
   transition: .3s linear;
   position: absolute;
 }
-.fera-product-slider .owl-nav button.owl-prev:hover, .fera-product-slider .owl-nav button.owl-next:hover {
+.fera-product-slider .owl-nav button.owl-prev:hover, .fera-product-slider .owl-nav button.owl-next:hover, .fera-slider .owl-nav button.owl-prev:hover, .fera-slider .owl-nav button.owl-next:hover {
   cursor: pointer;
   color: #FFF;
   background-color: #733e97;
   box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 2px 5px rgba(0, 0, 0, 0.4);
 }
-.fera-product-slider .owl-nav button.owl-prev span, .fera-product-slider .owl-nav button.owl-next span {
+.fera-product-slider .owl-nav button.owl-prev span, .fera-product-slider .owl-nav button.owl-next span, .fera-slider .owl-nav button.owl-prev span, .fera-slider .owl-nav button.owl-next span {
   top: 2px;
   position: absolute;
   left: 15px;
 }
-.fera-product-slider .owl-nav button.owl-prev {
+.fera-product-slider .owl-nav button.owl-prev, .fera-slider .owl-nav button.owl-prev {
   top: 50%;
   left: 10px;
 }
-.fera-product-slider .owl-nav button.owl-next {
+.fera-product-slider .owl-nav button.owl-next, .fera-slider .owl-nav button.owl-next {
   top: 50%;
   right: 10px;
 }
-.fera-product-slider.-halloween .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider .owl-dots, .fera-slider .owl-dots {
+  text-align: center;
+}
+.fera-product-slider .owl-dots button.owl-dot, .fera-slider .owl-dots button.owl-dot {
+  display: inline-block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+.fera-product-slider .owl-dots button.owl-dot.active, .fera-slider .owl-dots button.owl-dot.active {
+  opacity: 1;
+}
+.fera-product-slider.-halloween .fera-slider-thumbs .owl-item.active.center, .fera-slider.-halloween .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #54246a;
 }
-.fera-product-slider.-halloween .owl-nav button.owl-prev, .fera-product-slider.-halloween .owl-nav button.owl-next {
+.fera-product-slider.-halloween .owl-nav button.owl-prev, .fera-product-slider.-halloween .owl-nav button.owl-next, .fera-slider.-halloween .owl-nav button.owl-prev, .fera-slider.-halloween .owl-nav button.owl-next {
   color: #54246a;
 }
-.fera-product-slider.-halloween .owl-nav button.owl-prev:hover, .fera-product-slider.-halloween .owl-nav button.owl-next:hover {
+.fera-product-slider.-halloween .owl-nav button.owl-prev:hover, .fera-product-slider.-halloween .owl-nav button.owl-next:hover, .fera-slider.-halloween .owl-nav button.owl-prev:hover, .fera-slider.-halloween .owl-nav button.owl-next:hover {
   background-color: #54246a;
   color: #FFF;
 }
-.fera-product-slider.-andromeda .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-halloween .owl-dots button.owl-dot, .fera-slider.-halloween .owl-dots button.owl-dot {
+  background-color: #54246a;
+}
+.fera-product-slider.-halloween .owl-dots button.owl-dot:hover, .fera-slider.-halloween .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-andromeda .fera-slider-thumbs .owl-item.active.center, .fera-slider.-andromeda .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #733e97;
 }
-.fera-product-slider.-andromeda .owl-nav button.owl-prev, .fera-product-slider.-andromeda .owl-nav button.owl-next {
+.fera-product-slider.-andromeda .owl-nav button.owl-prev, .fera-product-slider.-andromeda .owl-nav button.owl-next, .fera-slider.-andromeda .owl-nav button.owl-prev, .fera-slider.-andromeda .owl-nav button.owl-next {
   color: #733e97;
 }
-.fera-product-slider.-andromeda .owl-nav button.owl-prev:hover, .fera-product-slider.-andromeda .owl-nav button.owl-next:hover {
+.fera-product-slider.-andromeda .owl-nav button.owl-prev:hover, .fera-product-slider.-andromeda .owl-nav button.owl-next:hover, .fera-slider.-andromeda .owl-nav button.owl-prev:hover, .fera-slider.-andromeda .owl-nav button.owl-next:hover {
   background-color: #733e97;
   color: #FFF;
 }
-.fera-product-slider.-night .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-andromeda .owl-dots button.owl-dot, .fera-slider.-andromeda .owl-dots button.owl-dot {
+  background-color: #733e97;
+}
+.fera-product-slider.-andromeda .owl-dots button.owl-dot:hover, .fera-slider.-andromeda .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-night .fera-slider-thumbs .owl-item.active.center, .fera-slider.-night .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #315aa9;
 }
-.fera-product-slider.-night .owl-nav button.owl-prev, .fera-product-slider.-night .owl-nav button.owl-next {
+.fera-product-slider.-night .owl-nav button.owl-prev, .fera-product-slider.-night .owl-nav button.owl-next, .fera-slider.-night .owl-nav button.owl-prev, .fera-slider.-night .owl-nav button.owl-next {
   color: #315aa9;
 }
-.fera-product-slider.-night .owl-nav button.owl-prev:hover, .fera-product-slider.-night .owl-nav button.owl-next:hover {
+.fera-product-slider.-night .owl-nav button.owl-prev:hover, .fera-product-slider.-night .owl-nav button.owl-next:hover, .fera-slider.-night .owl-nav button.owl-prev:hover, .fera-slider.-night .owl-nav button.owl-next:hover {
   background-color: #315aa9;
   color: #FFF;
 }
-.fera-product-slider.-sky .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-night .owl-dots button.owl-dot, .fera-slider.-night .owl-dots button.owl-dot {
+  background-color: #315aa9;
+}
+.fera-product-slider.-night .owl-dots button.owl-dot:hover, .fera-slider.-night .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-sky .fera-slider-thumbs .owl-item.active.center, .fera-slider.-sky .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #3186c7;
 }
-.fera-product-slider.-sky .owl-nav button.owl-prev, .fera-product-slider.-sky .owl-nav button.owl-next {
+.fera-product-slider.-sky .owl-nav button.owl-prev, .fera-product-slider.-sky .owl-nav button.owl-next, .fera-slider.-sky .owl-nav button.owl-prev, .fera-slider.-sky .owl-nav button.owl-next {
   color: #3186c7;
 }
-.fera-product-slider.-sky .owl-nav button.owl-prev:hover, .fera-product-slider.-sky .owl-nav button.owl-next:hover {
+.fera-product-slider.-sky .owl-nav button.owl-prev:hover, .fera-product-slider.-sky .owl-nav button.owl-next:hover, .fera-slider.-sky .owl-nav button.owl-prev:hover, .fera-slider.-sky .owl-nav button.owl-next:hover {
   background-color: #3186c7;
   color: #FFF;
 }
-.fera-product-slider.-sunshine .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-sky .owl-dots button.owl-dot, .fera-slider.-sky .owl-dots button.owl-dot {
+  background-color: #3186c7;
+}
+.fera-product-slider.-sky .owl-dots button.owl-dot:hover, .fera-slider.-sky .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-sunshine .fera-slider-thumbs .owl-item.active.center, .fera-slider.-sunshine .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #f3ac47;
 }
-.fera-product-slider.-sunshine .owl-nav button.owl-prev, .fera-product-slider.-sunshine .owl-nav button.owl-next {
+.fera-product-slider.-sunshine .owl-nav button.owl-prev, .fera-product-slider.-sunshine .owl-nav button.owl-next, .fera-slider.-sunshine .owl-nav button.owl-prev, .fera-slider.-sunshine .owl-nav button.owl-next {
   color: #f3ac47;
 }
-.fera-product-slider.-sunshine .owl-nav button.owl-prev:hover, .fera-product-slider.-sunshine .owl-nav button.owl-next:hover {
+.fera-product-slider.-sunshine .owl-nav button.owl-prev:hover, .fera-product-slider.-sunshine .owl-nav button.owl-next:hover, .fera-slider.-sunshine .owl-nav button.owl-prev:hover, .fera-slider.-sunshine .owl-nav button.owl-next:hover {
   background-color: #f3ac47;
   color: #FFF;
 }
-.fera-product-slider.-pink .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-sunshine .owl-dots button.owl-dot, .fera-slider.-sunshine .owl-dots button.owl-dot {
+  background-color: #f3ac47;
+}
+.fera-product-slider.-sunshine .owl-dots button.owl-dot:hover, .fera-slider.-sunshine .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-pink .fera-slider-thumbs .owl-item.active.center, .fera-slider.-pink .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #da1e77;
 }
-.fera-product-slider.-pink .owl-nav button.owl-prev, .fera-product-slider.-pink .owl-nav button.owl-next {
+.fera-product-slider.-pink .owl-nav button.owl-prev, .fera-product-slider.-pink .owl-nav button.owl-next, .fera-slider.-pink .owl-nav button.owl-prev, .fera-slider.-pink .owl-nav button.owl-next {
   color: #da1e77;
 }
-.fera-product-slider.-pink .owl-nav button.owl-prev:hover, .fera-product-slider.-pink .owl-nav button.owl-next:hover {
+.fera-product-slider.-pink .owl-nav button.owl-prev:hover, .fera-product-slider.-pink .owl-nav button.owl-next:hover, .fera-slider.-pink .owl-nav button.owl-prev:hover, .fera-slider.-pink .owl-nav button.owl-next:hover {
   background-color: #da1e77;
   color: #FFF;
 }
-.fera-product-slider.-salmon .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-paragraph .fera-slider-thumbs .owl-item.active.center, .fera-rich-content p.fera-product-slider .fera-slider-thumbs .owl-item.active.center, .fera-rich-content li.fera-product-slider .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-pink .owl-dots button.owl-dot, .fera-slider.-pink .owl-dots button.owl-dot {
+  background-color: #da1e77;
+}
+.fera-product-slider.-pink .owl-dots button.owl-dot:hover, .fera-slider.-pink .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-salmon .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-paragraph .fera-slider-thumbs .owl-item.active.center, .fera-rich-content p.fera-product-slider .fera-slider-thumbs .owl-item.active.center, .fera-rich-content li.fera-product-slider .fera-slider-thumbs .owl-item.active.center, .fera-slider.-salmon .fera-slider-thumbs .owl-item.active.center, .fera-slider.fera-paragraph .fera-slider-thumbs .owl-item.active.center, .fera-rich-content p.fera-slider .fera-slider-thumbs .owl-item.active.center, .fera-rich-content li.fera-slider .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #e75a6a;
 }
-.fera-product-slider.-salmon .owl-nav button.owl-prev, .fera-product-slider.fera-paragraph .owl-nav button.owl-prev, .fera-rich-content p.fera-product-slider .owl-nav button.owl-prev, .fera-rich-content li.fera-product-slider .owl-nav button.owl-prev, .fera-product-slider.-salmon .owl-nav button.owl-next, .fera-product-slider.fera-paragraph .owl-nav button.owl-next, .fera-rich-content p.fera-product-slider .owl-nav button.owl-next, .fera-rich-content li.fera-product-slider .owl-nav button.owl-next {
+.fera-product-slider.-salmon .owl-nav button.owl-prev, .fera-product-slider.fera-paragraph .owl-nav button.owl-prev, .fera-rich-content p.fera-product-slider .owl-nav button.owl-prev, .fera-rich-content li.fera-product-slider .owl-nav button.owl-prev, .fera-product-slider.-salmon .owl-nav button.owl-next, .fera-product-slider.fera-paragraph .owl-nav button.owl-next, .fera-rich-content p.fera-product-slider .owl-nav button.owl-next, .fera-rich-content li.fera-product-slider .owl-nav button.owl-next, .fera-slider.-salmon .owl-nav button.owl-prev, .fera-slider.fera-paragraph .owl-nav button.owl-prev, .fera-rich-content p.fera-slider .owl-nav button.owl-prev, .fera-rich-content li.fera-slider .owl-nav button.owl-prev, .fera-slider.-salmon .owl-nav button.owl-next, .fera-slider.fera-paragraph .owl-nav button.owl-next, .fera-rich-content p.fera-slider .owl-nav button.owl-next, .fera-rich-content li.fera-slider .owl-nav button.owl-next {
   color: #e75a6a;
 }
-.fera-product-slider.-salmon .owl-nav button.owl-prev:hover, .fera-product-slider.fera-paragraph .owl-nav button.owl-prev:hover, .fera-rich-content p.fera-product-slider .owl-nav button.owl-prev:hover, .fera-rich-content li.fera-product-slider .owl-nav button.owl-prev:hover, .fera-product-slider.-salmon .owl-nav button.owl-next:hover, .fera-product-slider.fera-paragraph .owl-nav button.owl-next:hover, .fera-rich-content p.fera-product-slider .owl-nav button.owl-next:hover, .fera-rich-content li.fera-product-slider .owl-nav button.owl-next:hover {
+.fera-product-slider.-salmon .owl-nav button.owl-prev:hover, .fera-product-slider.fera-paragraph .owl-nav button.owl-prev:hover, .fera-rich-content p.fera-product-slider .owl-nav button.owl-prev:hover, .fera-rich-content li.fera-product-slider .owl-nav button.owl-prev:hover, .fera-product-slider.-salmon .owl-nav button.owl-next:hover, .fera-product-slider.fera-paragraph .owl-nav button.owl-next:hover, .fera-rich-content p.fera-product-slider .owl-nav button.owl-next:hover, .fera-rich-content li.fera-product-slider .owl-nav button.owl-next:hover, .fera-slider.-salmon .owl-nav button.owl-prev:hover, .fera-slider.fera-paragraph .owl-nav button.owl-prev:hover, .fera-rich-content p.fera-slider .owl-nav button.owl-prev:hover, .fera-rich-content li.fera-slider .owl-nav button.owl-prev:hover, .fera-slider.-salmon .owl-nav button.owl-next:hover, .fera-slider.fera-paragraph .owl-nav button.owl-next:hover, .fera-rich-content p.fera-slider .owl-nav button.owl-next:hover, .fera-rich-content li.fera-slider .owl-nav button.owl-next:hover {
   background-color: #e75a6a;
   color: #FFF;
 }
-.fera-product-slider.-darkness .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-case .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-sidebar-nav .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-table .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-salmon .owl-dots button.owl-dot, .fera-product-slider.fera-paragraph .owl-dots button.owl-dot, .fera-rich-content p.fera-product-slider .owl-dots button.owl-dot, .fera-rich-content li.fera-product-slider .owl-dots button.owl-dot, .fera-slider.-salmon .owl-dots button.owl-dot, .fera-slider.fera-paragraph .owl-dots button.owl-dot, .fera-rich-content p.fera-slider .owl-dots button.owl-dot, .fera-rich-content li.fera-slider .owl-dots button.owl-dot {
+  background-color: #e75a6a;
+}
+.fera-product-slider.-salmon .owl-dots button.owl-dot:hover, .fera-product-slider.fera-paragraph .owl-dots button.owl-dot:hover, .fera-rich-content p.fera-product-slider .owl-dots button.owl-dot:hover, .fera-rich-content li.fera-product-slider .owl-dots button.owl-dot:hover, .fera-slider.-salmon .owl-dots button.owl-dot:hover, .fera-slider.fera-paragraph .owl-dots button.owl-dot:hover, .fera-rich-content p.fera-slider .owl-dots button.owl-dot:hover, .fera-rich-content li.fera-slider .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-darkness .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-case .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-sidebar-nav .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-table .fera-slider-thumbs .owl-item.active.center, .fera-slider.-darkness .fera-slider-thumbs .owl-item.active.center, .fera-slider.fera-case .fera-slider-thumbs .owl-item.active.center, .fera-slider.fera-sidebar-nav .fera-slider-thumbs .owl-item.active.center, .fera-slider.fera-table .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #333333;
 }
-.fera-product-slider.-darkness .owl-nav button.owl-prev, .fera-product-slider.fera-case .owl-nav button.owl-prev, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-prev, .fera-product-slider.fera-table .owl-nav button.owl-prev, .fera-product-slider.-darkness .owl-nav button.owl-next, .fera-product-slider.fera-case .owl-nav button.owl-next, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-next, .fera-product-slider.fera-table .owl-nav button.owl-next {
+.fera-product-slider.-darkness .owl-nav button.owl-prev, .fera-product-slider.fera-case .owl-nav button.owl-prev, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-prev, .fera-product-slider.fera-table .owl-nav button.owl-prev, .fera-product-slider.-darkness .owl-nav button.owl-next, .fera-product-slider.fera-case .owl-nav button.owl-next, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-next, .fera-product-slider.fera-table .owl-nav button.owl-next, .fera-slider.-darkness .owl-nav button.owl-prev, .fera-slider.fera-case .owl-nav button.owl-prev, .fera-slider.fera-sidebar-nav .owl-nav button.owl-prev, .fera-slider.fera-table .owl-nav button.owl-prev, .fera-slider.-darkness .owl-nav button.owl-next, .fera-slider.fera-case .owl-nav button.owl-next, .fera-slider.fera-sidebar-nav .owl-nav button.owl-next, .fera-slider.fera-table .owl-nav button.owl-next {
   color: #333333;
 }
-.fera-product-slider.-darkness .owl-nav button.owl-prev:hover, .fera-product-slider.fera-case .owl-nav button.owl-prev:hover, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-prev:hover, .fera-product-slider.fera-table .owl-nav button.owl-prev:hover, .fera-product-slider.-darkness .owl-nav button.owl-next:hover, .fera-product-slider.fera-case .owl-nav button.owl-next:hover, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-next:hover, .fera-product-slider.fera-table .owl-nav button.owl-next:hover {
+.fera-product-slider.-darkness .owl-nav button.owl-prev:hover, .fera-product-slider.fera-case .owl-nav button.owl-prev:hover, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-prev:hover, .fera-product-slider.fera-table .owl-nav button.owl-prev:hover, .fera-product-slider.-darkness .owl-nav button.owl-next:hover, .fera-product-slider.fera-case .owl-nav button.owl-next:hover, .fera-product-slider.fera-sidebar-nav .owl-nav button.owl-next:hover, .fera-product-slider.fera-table .owl-nav button.owl-next:hover, .fera-slider.-darkness .owl-nav button.owl-prev:hover, .fera-slider.fera-case .owl-nav button.owl-prev:hover, .fera-slider.fera-sidebar-nav .owl-nav button.owl-prev:hover, .fera-slider.fera-table .owl-nav button.owl-prev:hover, .fera-slider.-darkness .owl-nav button.owl-next:hover, .fera-slider.fera-case .owl-nav button.owl-next:hover, .fera-slider.fera-sidebar-nav .owl-nav button.owl-next:hover, .fera-slider.fera-table .owl-nav button.owl-next:hover {
   background-color: #333333;
   color: #FFF;
 }
-.fera-product-slider.-mellow .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-darkness .owl-dots button.owl-dot, .fera-product-slider.fera-case .owl-dots button.owl-dot, .fera-product-slider.fera-sidebar-nav .owl-dots button.owl-dot, .fera-product-slider.fera-table .owl-dots button.owl-dot, .fera-slider.-darkness .owl-dots button.owl-dot, .fera-slider.fera-case .owl-dots button.owl-dot, .fera-slider.fera-sidebar-nav .owl-dots button.owl-dot, .fera-slider.fera-table .owl-dots button.owl-dot {
+  background-color: #333333;
+}
+.fera-product-slider.-darkness .owl-dots button.owl-dot:hover, .fera-product-slider.fera-case .owl-dots button.owl-dot:hover, .fera-product-slider.fera-sidebar-nav .owl-dots button.owl-dot:hover, .fera-product-slider.fera-table .owl-dots button.owl-dot:hover, .fera-slider.-darkness .owl-dots button.owl-dot:hover, .fera-slider.fera-case .owl-dots button.owl-dot:hover, .fera-slider.fera-sidebar-nav .owl-dots button.owl-dot:hover, .fera-slider.fera-table .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-mellow .fera-slider-thumbs .owl-item.active.center, .fera-slider.-mellow .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #9e9e9e;
 }
-.fera-product-slider.-mellow .owl-nav button.owl-prev, .fera-product-slider.-mellow .owl-nav button.owl-next {
+.fera-product-slider.-mellow .owl-nav button.owl-prev, .fera-product-slider.-mellow .owl-nav button.owl-next, .fera-slider.-mellow .owl-nav button.owl-prev, .fera-slider.-mellow .owl-nav button.owl-next {
   color: #9e9e9e;
 }
-.fera-product-slider.-mellow .owl-nav button.owl-prev:hover, .fera-product-slider.-mellow .owl-nav button.owl-next:hover {
+.fera-product-slider.-mellow .owl-nav button.owl-prev:hover, .fera-product-slider.-mellow .owl-nav button.owl-next:hover, .fera-slider.-mellow .owl-nav button.owl-prev:hover, .fera-slider.-mellow .owl-nav button.owl-next:hover {
   background-color: #9e9e9e;
   color: #FFF;
 }
-.fera-product-slider.-nature .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-mellow .owl-dots button.owl-dot, .fera-slider.-mellow .owl-dots button.owl-dot {
+  background-color: #9e9e9e;
+}
+.fera-product-slider.-mellow .owl-dots button.owl-dot:hover, .fera-slider.-mellow .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-nature .fera-slider-thumbs .owl-item.active.center, .fera-slider.-nature .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #06d25a;
 }
-.fera-product-slider.-nature .owl-nav button.owl-prev, .fera-product-slider.-nature .owl-nav button.owl-next {
+.fera-product-slider.-nature .owl-nav button.owl-prev, .fera-product-slider.-nature .owl-nav button.owl-next, .fera-slider.-nature .owl-nav button.owl-prev, .fera-slider.-nature .owl-nav button.owl-next {
   color: #06d25a;
 }
-.fera-product-slider.-nature .owl-nav button.owl-prev:hover, .fera-product-slider.-nature .owl-nav button.owl-next:hover {
+.fera-product-slider.-nature .owl-nav button.owl-prev:hover, .fera-product-slider.-nature .owl-nav button.owl-next:hover, .fera-slider.-nature .owl-nav button.owl-prev:hover, .fera-slider.-nature .owl-nav button.owl-next:hover {
   background-color: #06d25a;
   color: #FFF;
 }
-.fera-product-slider.-void .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-nature .owl-dots button.owl-dot, .fera-slider.-nature .owl-dots button.owl-dot {
+  background-color: #06d25a;
+}
+.fera-product-slider.-nature .owl-dots button.owl-dot:hover, .fera-slider.-nature .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-void .fera-slider-thumbs .owl-item.active.center, .fera-slider.-void .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #eeeeee;
 }
-.fera-product-slider.-void .owl-nav button.owl-prev, .fera-product-slider.-void .owl-nav button.owl-next {
+.fera-product-slider.-void .owl-nav button.owl-prev, .fera-product-slider.-void .owl-nav button.owl-next, .fera-slider.-void .owl-nav button.owl-prev, .fera-slider.-void .owl-nav button.owl-next {
   color: #eeeeee;
 }
-.fera-product-slider.-void .owl-nav button.owl-prev:hover, .fera-product-slider.-void .owl-nav button.owl-next:hover {
+.fera-product-slider.-void .owl-nav button.owl-prev:hover, .fera-product-slider.-void .owl-nav button.owl-next:hover, .fera-slider.-void .owl-nav button.owl-prev:hover, .fera-slider.-void .owl-nav button.owl-next:hover {
   background-color: #eeeeee;
   color: #FFF;
 }
-.fera-product-slider.-baby .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-card .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-form .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-void .owl-dots button.owl-dot, .fera-slider.-void .owl-dots button.owl-dot {
+  background-color: #eeeeee;
+}
+.fera-product-slider.-void .owl-dots button.owl-dot:hover, .fera-slider.-void .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-baby .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-card .fera-slider-thumbs .owl-item.active.center, .fera-product-slider.fera-form .fera-slider-thumbs .owl-item.active.center, .fera-slider.-baby .fera-slider-thumbs .owl-item.active.center, .fera-slider.fera-card .fera-slider-thumbs .owl-item.active.center, .fera-slider.fera-form .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #27b9f5;
 }
-.fera-product-slider.-baby .owl-nav button.owl-prev, .fera-product-slider.fera-card .owl-nav button.owl-prev, .fera-product-slider.fera-form .owl-nav button.owl-prev, .fera-product-slider.-baby .owl-nav button.owl-next, .fera-product-slider.fera-card .owl-nav button.owl-next, .fera-product-slider.fera-form .owl-nav button.owl-next {
+.fera-product-slider.-baby .owl-nav button.owl-prev, .fera-product-slider.fera-card .owl-nav button.owl-prev, .fera-product-slider.fera-form .owl-nav button.owl-prev, .fera-product-slider.-baby .owl-nav button.owl-next, .fera-product-slider.fera-card .owl-nav button.owl-next, .fera-product-slider.fera-form .owl-nav button.owl-next, .fera-slider.-baby .owl-nav button.owl-prev, .fera-slider.fera-card .owl-nav button.owl-prev, .fera-slider.fera-form .owl-nav button.owl-prev, .fera-slider.-baby .owl-nav button.owl-next, .fera-slider.fera-card .owl-nav button.owl-next, .fera-slider.fera-form .owl-nav button.owl-next {
   color: #27b9f5;
 }
-.fera-product-slider.-baby .owl-nav button.owl-prev:hover, .fera-product-slider.fera-card .owl-nav button.owl-prev:hover, .fera-product-slider.fera-form .owl-nav button.owl-prev:hover, .fera-product-slider.-baby .owl-nav button.owl-next:hover, .fera-product-slider.fera-card .owl-nav button.owl-next:hover, .fera-product-slider.fera-form .owl-nav button.owl-next:hover {
+.fera-product-slider.-baby .owl-nav button.owl-prev:hover, .fera-product-slider.fera-card .owl-nav button.owl-prev:hover, .fera-product-slider.fera-form .owl-nav button.owl-prev:hover, .fera-product-slider.-baby .owl-nav button.owl-next:hover, .fera-product-slider.fera-card .owl-nav button.owl-next:hover, .fera-product-slider.fera-form .owl-nav button.owl-next:hover, .fera-slider.-baby .owl-nav button.owl-prev:hover, .fera-slider.fera-card .owl-nav button.owl-prev:hover, .fera-slider.fera-form .owl-nav button.owl-prev:hover, .fera-slider.-baby .owl-nav button.owl-next:hover, .fera-slider.fera-card .owl-nav button.owl-next:hover, .fera-slider.fera-form .owl-nav button.owl-next:hover {
   background-color: #27b9f5;
   color: #FFF;
 }
-.fera-product-slider.-pumpkin .fera-slider-thumbs .owl-item.active.center {
+.fera-product-slider.-baby .owl-dots button.owl-dot, .fera-product-slider.fera-card .owl-dots button.owl-dot, .fera-product-slider.fera-form .owl-dots button.owl-dot, .fera-slider.-baby .owl-dots button.owl-dot, .fera-slider.fera-card .owl-dots button.owl-dot, .fera-slider.fera-form .owl-dots button.owl-dot {
+  background-color: #27b9f5;
+}
+.fera-product-slider.-baby .owl-dots button.owl-dot:hover, .fera-product-slider.fera-card .owl-dots button.owl-dot:hover, .fera-product-slider.fera-form .owl-dots button.owl-dot:hover, .fera-slider.-baby .owl-dots button.owl-dot:hover, .fera-slider.fera-card .owl-dots button.owl-dot:hover, .fera-slider.fera-form .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
+}
+.fera-product-slider.-pumpkin .fera-slider-thumbs .owl-item.active.center, .fera-slider.-pumpkin .fera-slider-thumbs .owl-item.active.center {
   border: 3px solid #fc7700;
 }
-.fera-product-slider.-pumpkin .owl-nav button.owl-prev, .fera-product-slider.-pumpkin .owl-nav button.owl-next {
+.fera-product-slider.-pumpkin .owl-nav button.owl-prev, .fera-product-slider.-pumpkin .owl-nav button.owl-next, .fera-slider.-pumpkin .owl-nav button.owl-prev, .fera-slider.-pumpkin .owl-nav button.owl-next {
   color: #fc7700;
 }
-.fera-product-slider.-pumpkin .owl-nav button.owl-prev:hover, .fera-product-slider.-pumpkin .owl-nav button.owl-next:hover {
+.fera-product-slider.-pumpkin .owl-nav button.owl-prev:hover, .fera-product-slider.-pumpkin .owl-nav button.owl-next:hover, .fera-slider.-pumpkin .owl-nav button.owl-prev:hover, .fera-slider.-pumpkin .owl-nav button.owl-next:hover {
   background-color: #fc7700;
   color: #FFF;
+}
+.fera-product-slider.-pumpkin .owl-dots button.owl-dot, .fera-slider.-pumpkin .owl-dots button.owl-dot {
+  background-color: #fc7700;
+}
+.fera-product-slider.-pumpkin .owl-dots button.owl-dot:hover, .fera-slider.-pumpkin .owl-dots button.owl-dot:hover {
+  opacity: 0.5;
 }
 
 .fera-rich-content p img {

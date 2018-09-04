@@ -22,6 +22,12 @@ var general = (function() {
         items: 1,
         nav: true
       },
+      slider: {
+        loop: false,
+        items: 1,
+        nav: true,
+        dots: true
+      },
       thumbs: {
         loop:false,
         nav:false,
