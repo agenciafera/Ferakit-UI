@@ -44,7 +44,15 @@
     width: 100%;
     font-weight: 300;
 
-    @include input-placeholder {
+    &::-webkit-input-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+    &::-moz-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+    &:-ms-input-placeholder {
       @include rem(font-size, 18px);
       color: map-get($colors, mellow);
     }
@@ -167,10 +175,20 @@
     @include rem(font-size, 18px);
     text-align: center;
 
-    @include input-placeholder {
+
+    &::-webkit-input-placeholder {
       @include rem(font-size, 18px);
       color: map-get($colors, mellow);
     }
+    &::-moz-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+    &:-ms-input-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+
 
     &.-small {
       @include rem(font-size, 16px);
