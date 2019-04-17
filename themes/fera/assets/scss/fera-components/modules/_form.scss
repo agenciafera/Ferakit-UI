@@ -73,7 +73,7 @@
     @include rem(height, 50px);
     appearance: none;
     border: 2px solid map-get($colors, void);
-    background: #fff image-url("checkbox-off.png") center center no-repeat;
+    background: #fff url("../images/checkbox-off.png") center center no-repeat;
   }
 
   .form-radio {
@@ -209,7 +209,7 @@
 
     &::after {
       content: "";
-      background-image: image-url("select-icon.svg");
+      background-image: url("../images/select-icon.svg");
       @include rem(width, 28px);
       @include rem(height, 15px);
       background-size: 100% auto;
@@ -279,7 +279,7 @@
 
       &:checked {
         border-color: $color;
-        background: $color image-url("checkbox-on.png") center center no-repeat;
+        background: $color url("../images/checkbox-on.png") center center no-repeat;
       }
     }
 
