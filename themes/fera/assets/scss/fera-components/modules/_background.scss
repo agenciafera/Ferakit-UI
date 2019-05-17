@@ -1,0 +1,5 @@
+.-background{
+    @include theme {
+        background: $color;
+    }
+}
