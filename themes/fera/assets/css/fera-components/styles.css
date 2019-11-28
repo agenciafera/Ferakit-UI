@@ -1955,6 +1955,46 @@ html {
   cursor: pointer;
 }
 
+.-background.-halloween {
+  background: #54246a;
+}
+.-background.-andromeda {
+  background: #733e97;
+}
+.-background.-night {
+  background: #315aa9;
+}
+.-background.-sky {
+  background: #3186c7;
+}
+.-background.-sunshine {
+  background: #f3ac47;
+}
+.-background.-pink {
+  background: #da1e77;
+}
+.-background.-salmon, .-background.fera-paragraph, .fera-rich-content p.-background, .fera-rich-content li.-background {
+  background: #e75a6a;
+}
+.-background.-darkness, .-background.fera-case, .-background.fera-sidebar-nav, .-background.fera-table {
+  background: #333333;
+}
+.-background.-mellow {
+  background: #9e9e9e;
+}
+.-background.-nature {
+  background: #06d25a;
+}
+.-background.-void {
+  background: #eeeeee;
+}
+.-background.-baby, .-background.fera-card, .-background.fera-form {
+  background: #27b9f5;
+}
+.-background.-pumpkin {
+  background: #fc7700;
+}
+
 .fera-breadcrumbs a, .fera-breadcrumbs span {
   font-size: 12px;
   color: #9e9e9e;
@@ -3250,7 +3290,7 @@ html {
   height: 3.125rem;
   appearance: none;
   border: 2px solid #eeeeee;
-  background: #fff url('../../images/checkbox-off.png?1502744298') center center no-repeat;
+  background: #fff url("../images/checkbox-off.png") center center no-repeat;
 }
 .fera-form .form-radio {
   width: 1.875rem;
@@ -3364,7 +3404,7 @@ html {
 }
 .fera-form .select-container::after {
   content: "";
-  background-image: url('../../images/select-icon.svg?1502744298');
+  background-image: url("../images/select-icon.svg");
   width: 1.75rem;
   height: 0.9375rem;
   background-size: 100% auto;
@@ -3406,7 +3446,7 @@ html {
 }
 .fera-form.-halloween .form-checkbox:checked {
   border-color: #54246a;
-  background: #54246a url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #54246a url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-halloween .number-container .plus:hover {
   background: #54246a;
@@ -3430,7 +3470,7 @@ html {
 }
 .fera-form.-andromeda .form-checkbox:checked {
   border-color: #733e97;
-  background: #733e97 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #733e97 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-andromeda .number-container .plus:hover {
   background: #733e97;
@@ -3454,7 +3494,7 @@ html {
 }
 .fera-form.-night .form-checkbox:checked {
   border-color: #315aa9;
-  background: #315aa9 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #315aa9 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-night .number-container .plus:hover {
   background: #315aa9;
@@ -3478,7 +3518,7 @@ html {
 }
 .fera-form.-sky .form-checkbox:checked {
   border-color: #3186c7;
-  background: #3186c7 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #3186c7 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-sky .number-container .plus:hover {
   background: #3186c7;
@@ -3502,7 +3542,7 @@ html {
 }
 .fera-form.-sunshine .form-checkbox:checked {
   border-color: #f3ac47;
-  background: #f3ac47 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #f3ac47 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-sunshine .number-container .plus:hover {
   background: #f3ac47;
@@ -3526,7 +3566,7 @@ html {
 }
 .fera-form.-pink .form-checkbox:checked {
   border-color: #da1e77;
-  background: #da1e77 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #da1e77 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-pink .number-container .plus:hover {
   background: #da1e77;
@@ -3550,7 +3590,7 @@ html {
 }
 .fera-form.-salmon .form-checkbox:checked, .fera-form.fera-paragraph .form-checkbox:checked, .fera-rich-content p.fera-form .form-checkbox:checked, .fera-rich-content li.fera-form .form-checkbox:checked {
   border-color: #e75a6a;
-  background: #e75a6a url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #e75a6a url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-salmon .number-container .plus:hover, .fera-form.fera-paragraph .number-container .plus:hover, .fera-rich-content p.fera-form .number-container .plus:hover, .fera-rich-content li.fera-form .number-container .plus:hover {
   background: #e75a6a;
@@ -3574,7 +3614,7 @@ html {
 }
 .fera-form.-darkness .form-checkbox:checked, .fera-form.fera-case .form-checkbox:checked, .fera-form.fera-sidebar-nav .form-checkbox:checked, .fera-form.fera-table .form-checkbox:checked {
   border-color: #333333;
-  background: #333333 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #333333 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-darkness .number-container .plus:hover, .fera-form.fera-case .number-container .plus:hover, .fera-form.fera-sidebar-nav .number-container .plus:hover, .fera-form.fera-table .number-container .plus:hover {
   background: #333333;
@@ -3598,7 +3638,7 @@ html {
 }
 .fera-form.-mellow .form-checkbox:checked {
   border-color: #9e9e9e;
-  background: #9e9e9e url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #9e9e9e url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-mellow .number-container .plus:hover {
   background: #9e9e9e;
@@ -3622,7 +3662,7 @@ html {
 }
 .fera-form.-nature .form-checkbox:checked {
   border-color: #06d25a;
-  background: #06d25a url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #06d25a url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-nature .number-container .plus:hover {
   background: #06d25a;
@@ -3646,7 +3686,7 @@ html {
 }
 .fera-form.-void .form-checkbox:checked {
   border-color: #eeeeee;
-  background: #eeeeee url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #eeeeee url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-void .number-container .plus:hover {
   background: #eeeeee;
@@ -3670,7 +3710,7 @@ html {
 }
 .fera-form.-baby .form-checkbox:checked, .fera-form.fera-card .form-checkbox:checked, .fera-form .form-checkbox:checked {
   border-color: #27b9f5;
-  background: #27b9f5 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #27b9f5 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-baby .number-container .plus:hover, .fera-form.fera-card .number-container .plus:hover, .fera-form .number-container .plus:hover {
   background: #27b9f5;
@@ -3694,7 +3734,7 @@ html {
 }
 .fera-form.-pumpkin .form-checkbox:checked {
   border-color: #fc7700;
-  background: #fc7700 url('../../images/checkbox-on.png?1502744298') center center no-repeat;
+  background: #fc7700 url("../images/checkbox-on.png") center center no-repeat;
 }
 .fera-form.-pumpkin .number-container .plus:hover {
   background: #fc7700;
@@ -3716,14 +3756,14 @@ html {
 .fera-header .grid-container .layout-group {
   width: 100%;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .fera-header .grid-container {
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .fera-header {
     border-bottom: 1px solid #f9f9f9;
   }
@@ -3731,7 +3771,7 @@ html {
 .fera-header .header-logo {
   margin-bottom: 3.125rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .fera-header .header-logo {
     margin-bottom: 0;
   }
@@ -3761,7 +3801,7 @@ html {
   will-change: opacity;
   pointer-events: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .fera-header .header-nav {
     position: static;
     display: block;
@@ -3785,7 +3825,7 @@ html {
   display: flex;
   flex-flow: column nowrap;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .fera-header .header-nav ul {
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -3914,7 +3954,7 @@ html {
   white-space: nowrap;
   font-weight: bold;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .fera-header .header-nav ul li a {
     color: #9e9e9e;
   }
@@ -3922,7 +3962,7 @@ html {
 .fera-header .header-nav ul li:not(:last-child) {
   margin-bottom: 3.125rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .fera-header .header-nav ul li:not(:last-child) {
     margin-bottom: 0;
     margin-right: 3.125rem;
@@ -3937,7 +3977,7 @@ html {
   right: 0;
   top: 30%;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .menu-mobile {
     display: none;
   }
@@ -4073,6 +4113,7 @@ html {
 
 @font-face {
   font-family: 'icons';
+  font-display: swap;
   src: url('../../fonts/icons.ttf?1502744298') format("truetype"), url('../../fonts/icons.woff?1502744298') format("woff"), url('../../fonts/icons.svg?1502744298#icons') format("svg");
   font-weight: normal;
   font-style: normal;
