@@ -1,0 +1,73 @@
+
+.fera-primary-font{
+  @include rem(margin-bottom, 30px);
+
+  p {
+    @include rem(font-size, 26px);
+    @include rem(margin-bottom, 10px);
+    color: color('black');
+
+    .light {
+      font-weight: 100;
+    }
+
+    .semibold {
+      font-weight: 400;
+    }
+
+    .extrabold {
+      font-weight: 900;
+    }
+
+  }
+
+}
+
+.fera-secondary-font {
+  @include rem(margin-bottom, 30px);
+
+  p {
+    font-family: $secondary;
+    @include rem(font-size, 26px);
+    @include rem(margin-bottom, 10px);
+    color: color('black');
+
+    .light {
+      font-weight: 100;
+    }
+
+    .semibold {
+      font-weight: 400;
+    }
+
+    .extrabold {
+      font-weight: 900;
+    }
+
+  }
+
+}
+
+.fera-serif-font {
+
+  p {
+    font-family: $serif;
+    @include rem(font-size, 26px);
+    @include rem(margin-bottom, 10px);
+    color: color('black');
+
+    .light {
+      font-weight: 100;
+    }
+
+    .semibold {
+      font-weight: 400;
+    }
+
+    .extrabold {
+      font-weight: 900;
+    }
+
+  }
+
+}

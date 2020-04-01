@@ -1,0 +1,150 @@
+.fera-btn {
+  @include rem(font-size, 16px);
+  @include rem(padding, 17px 35px);
+  background-color: #2b86cb;
+  border-radius: 5px;
+  background-color: map-get($colors, sky);
+  display: inline-block;
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+  transition: all 100ms ease;
+  text-decoration: none;
+  border: 0;
+  will-change: background, transform, color, border;
+
+  &:hover {
+    background-color: lighten(map-get($colors, sky), 10%);
+  }
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  i {
+    font-size: 150%;
+    vertical-align: sub;
+  }
+
+}
+
+/*=============================
+=            Sizes            =
+=============================*/
+
+.fera-btn.-small {
+
+  @media #{$tablet} {
+    font-size: 13.5px;
+    @include rem(padding, 9px 45px);
+  }
+
+}
+
+.fera-btn.-big {
+  font-size: 22.5px;
+  @include rem(padding, 25px 75px);
+}
+
+/*=====  End of Sizes  ======*/
+
+/*==================================
+=            Variations            =
+==================================*/
+
+.fera-btn.-pill {
+  @include rem(font-size, 16px);
+  padding: 9.5px 20px;
+  border-radius: 999px;
+}
+
+.fera-btn.-action {
+  @include rem(font-size, 22px);
+  font-weight: bold;
+  @include rem(padding, 17px 40px);
+}
+
+.fera-btn.-action.-big {
+  @include rem(font-size, 24px);
+  text-transform: uppercase;
+  font-weight: bold;
+  @include rem(padding, 26px 90px);
+}
+
+.fera-btn.-full{
+  width: 100%;
+  text-align: center;
+}
+
+/*=====  End of Variations  ======*/
+
+
+/*=============================
+=            Icons            =
+=============================*/
+
+.fera-btn.-icon-left {
+
+  i {
+    @include rem(margin-right, 20px);
+  }
+}
+
+.fera-btn.-icon-right {
+
+  i {
+    @include rem(margin-left, 20px);
+  }
+
+}
+
+.fera-btn.-icon-top {
+
+  i {
+    display: block;
+    text-align: center;
+    @include rem(margin-bottom, 20px);
+  }
+
+}
+
+/*=====  End of Icons  ======*/
+
+
+/*==============================
+=            Colors            =
+==============================*/
+
+@each $name, $map in $colors {
+
+  .fera-btn.-#{$name} {
+    background-color: map-get($colors, $name);
+
+    @if (lightness(map-get($colors, $name)) > 70) {
+      color: #000000; // Lighter backgorund, return dark color
+    } @else {
+      color: #ffffff; // Darker background, return light color
+    }
+
+    &.-action {
+
+      &:hover {
+        margin-top:-3px;
+        position: relative;
+        background-color: lighten(map-get($colors, $name), 5%);
+        border-bottom: 3px solid darken(map-get($colors, $name), 20%);
+      }
+
+    }
+
+    &:hover {
+      background-color: lighten(map-get($colors, $name), 10%);
+    }
+
+  }
+
+}
+
+// /*=====  End of Colors  ======*/
+

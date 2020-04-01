@@ -33,7 +33,7 @@ var general = (function() {
         loop:false,
         nav:false,
         dots: false,
-        center:false,
+        center:true,
         responsive:{
           0:{
             items:3

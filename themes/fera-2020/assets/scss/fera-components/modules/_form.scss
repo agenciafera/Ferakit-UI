@@ -1,0 +1,308 @@
+.fera-form {
+
+  .form-input, .form-select, .form-checkbox, .form-radio, .form-number {
+    width: 100%;
+    display: block;
+    @include transition(box-shadow, border, background);
+    box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0);
+    border: 1px solid map-get($colors, cloudy);
+    border-radius: 5px;
+    font-weight: 300;
+    color: darken(map-get($colors, cloudy), 50%);
+
+    &:hover, &:focus {
+      box-shadow: 2px 2px 18px 1px rgba(black, 0.15);
+    }
+
+  }
+
+  .form-input, .form-select {
+    @include rem(padding, 15px 15px);
+    @include rem(font-size, 18px);
+
+    &.-small {
+      @include rem(font-size, 16px);
+      @include rem(padding, 9px 15px);
+    }
+
+  }
+
+  .form-label {
+    @include rem(font-size, 20px);
+    font-weight: 600;
+    @include rem(margin-bottom, 15px);
+    display: block;
+    @include transition(color);
+
+    &.-small {
+      @include rem(font-size, 15px);
+    }
+
+  }
+
+  .form-input {
+    &::-webkit-input-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, cloudy)
+    }
+    &::-moz-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, cloudy);
+    }
+    &:-ms-input-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, cloudy);
+    }
+
+  }
+
+  .form-select {
+    @include rem(padding-right, 100px);
+    appearance: none;
+    background-color: #fff;
+  }
+
+  .form-checkbox {
+    @include rem(width, 50px);
+    @include rem(height, 50px);
+    appearance: none;
+    background: #fff url("../images/checkbox-off.png") center center no-repeat;
+  }
+
+  .form-radio {
+    @include rem(width, 30px);
+    @include rem(height, 30px);
+    appearance: none;
+    border-radius: 9999px;
+    border: 1px solid map-get($colors, cloudy);
+  }
+
+  .number-container{
+    position: relative;
+    display: inline-block;
+
+    .plus{
+      @include rem(width, 25px);
+      @include rem(height, 25px);
+      @include rem(padding, 2px 0 0 0);
+      @include rem(right, -26px);
+      @include rem(font-size, 18px);
+      @include rem(top, 0px);
+      @include rem(line-height, 18px);
+      background: white;
+      position: absolute;
+      box-sizing: border-box;
+      border: 1px solid map-get($colors, cloudy);
+      text-align: center;
+      font-weight: 300;
+      cursor: pointer;
+
+      span{
+        user-select: none;
+        color: darken(map-get($colors, cloudy), 50%);
+        line-height: 1.2;
+      }
+
+      &:hover{
+        background: color('salmon');
+        color: #FFF;
+        border-color: color('salmon');
+      }
+    }
+
+    .minus{
+      @include rem(width, 25px);
+      @include rem(height, 25px);
+      @include rem(padding, 2px 0 0 0);
+      @include rem(right, -26px);
+      @include rem(font-size, 22px);
+      @include rem(top, 25px);
+      @include rem(line-height, 15px);
+      background: white;
+      position: absolute;
+      box-sizing: border-box;
+      border: 1px solid color('cloudy');
+      text-align: center;
+      font-weight: 300;
+      cursor: pointer;
+
+      span{
+        user-select: none;
+        color: darken(map-get($colors, cloudy), 50%);
+        line-height: 1;
+        padding-left: 2px;
+      }
+
+      &:hover{
+        background: color('salmon');
+        color: #FFF;
+        border-color: color('salmon');
+      }
+    }
+  }
+
+  .form-number{
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button
+    {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    width: auto;
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+
+    @include rem(min-width, 50px);
+    @include rem(height, 50px);
+    appearance: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    border: 1px solid map-get($colors, void);
+    color: darken(map-get($colors, cloudy), 50%);
+    font-weight: 300;
+    @include rem(font-size, 18px);
+    text-align: center;
+
+
+    &::-webkit-input-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+    &::-moz-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+    &:-ms-input-placeholder {
+      @include rem(font-size, 18px);
+      color: map-get($colors, mellow);
+    }
+
+
+    &.-small {
+      @include rem(font-size, 16px);
+      @include rem(padding, 9px 15px);
+    }
+
+    &:focus{
+      outline: 0;
+    }
+  }
+
+  textarea.form-input {
+    @include rem(height, 100px);
+  }
+
+  .select-container {
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../images/select-icon.svg");
+      @include rem(width, 28px);
+      @include rem(height, 15px);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 10;
+      position: absolute;
+      @include align('vertical');
+      @include rem(right, 20px);
+      filter: invert(100%);
+      pointer-events: none;
+    }
+
+    &:hover {
+
+      &::after {
+        filter: invert(0%)!important;
+      }
+
+    }
+
+    &.-small{
+      &::after {
+        @include rem(width, 18px);
+        @include rem(height, 15px);
+        top: 60%;
+        right: 15px;
+      }
+
+      .form-select{
+        @include rem(padding,10px 50px 10px 15px);
+      }
+    }
+
+  }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    .form-input, .form-select, .form-checkbox, .form-radio, .form-number {
+
+      &:hover, &:focus {
+        box-shadow: 2px 2px 18px 1px rgba($color, 0.15);
+        border-color: $color;
+      }
+
+    }
+
+    .form-select {
+
+      &:hover {
+        background-color: $color;
+        color: white;
+      }
+
+    }
+
+    .form-radio:checked {
+      border-color: $color;
+      background: $color;
+    }
+
+    .form-checkbox {
+
+      &:checked {
+        border-color: $color;
+        background: $color url("../images/checkbox-on.png") center center no-repeat;
+      }
+    }
+
+    .number-container{
+      .plus{
+        &:hover{
+          background: $color;
+          border-color: $color;
+          span{
+            color: #FFF;
+          }
+        }
+      }
+      .minus{
+        &:hover{
+          background: $color;
+          border-color: $color;
+          span{
+            color: #FFF;
+          }
+        }
+      }
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
+
+}

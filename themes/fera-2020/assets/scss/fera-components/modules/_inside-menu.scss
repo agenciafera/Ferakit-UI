@@ -1,0 +1,20 @@
+.fera-inside-menu {
+
+  > .menu-item {
+    @include rem(margin-bottom, 25px);
+
+    a {
+      @include rem(font-size, 32px);
+      font-weight: 900;
+      @include transition(background);
+
+      &:hover {
+        background: $fera-rainbow;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+  }
+
+}

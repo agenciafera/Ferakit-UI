@@ -1,0 +1,119 @@
+.fera-product-slider, .fera-slider {
+
+  .owl-carousel .owl-item{
+    img{
+      max-width: auto;
+    }
+  }
+
+  .fera-slider{
+    margin-bottom: -15px;
+  }
+
+  .fera-slider-thumbs .owl-item.active.center{
+   border: 3px solid color('andromeda');
+  }
+
+  .owl-thumb-item{
+    margin-right: 1px;
+  }
+
+  .owl-nav{
+    button.owl-prev, button.owl-next{
+      @include rem(font-size, 20px);
+      color: color('andromeda');
+      display: block;
+      width: 36px;
+      height: 36px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 100%;
+      box-sizing: border-box;
+      box-shadow: inset 0 -1px 3px transparent, 0 1px 10px transparent;
+      transition: .3s linear;
+      position: absolute;
+
+      &:hover{
+        cursor: pointer;
+        color: #FFF;
+        background-color: color('andromeda');
+        box-shadow: inset 0 1px 2px rgba(255,255,255,.3), 0 2px 5px rgba(0,0,0,.4);
+      }
+
+      span{
+        top: 2px;
+        position: absolute;
+        left: 15px;
+      }
+    }
+
+    button.owl-prev{
+      top: 50%;
+      left: 10px;
+    }
+    button.owl-next{
+      top: 50%;
+      right: 10px;
+    }
+  }
+
+  .owl-dots{
+    text-align: center;
+    @include rem(margin-top, 20px);
+    button.owl-dot{
+      display: inline-block;
+      @include rem(width, 15px);
+      @include rem(height, 15px);
+      border-radius: 100%;
+      opacity: 0.5;
+      @include rem(margin-right, 10px);
+      background-color: color('andromeda');
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    .fera-slider-thumbs .owl-item.active.center{
+      border: 3px solid $color;
+    }
+
+    .owl-nav{
+      button.owl-prev, button.owl-next{
+        color: $color;
+
+        &:hover{
+          background-color: $color;
+          color: #FFF;
+        }
+      }
+    }
+
+    .owl-dots{
+      button.owl-dot{
+        background-color: $color;
+
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
+
+}

@@ -1,0 +1,330 @@
+[class*="fera-card"] {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  @include transition(transform, box-shadow);
+
+  &:hover {
+    transform: scale(0.98);
+  }
+
+  .card-background {
+    @include transition(opacity);
+  }
+
+  > .card-body > .card-text {
+    font-size: 13px;
+    line-height: 1.50;
+  }
+
+}
+
+.fera-card {
+  box-shadow: 3px 3px 15px 0px rgba(black, .1);
+  @extend .-baby;
+
+  &:hover {
+
+    > .card-highlight > .card-background {
+      opacity: 0.15;
+    }
+
+  }
+
+  > .card-highlight {
+    position: relative;
+    overflow: hidden;
+
+    > .card-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    > .card-icon {
+      @include align;
+      max-width: 90%;
+      height: auto;
+      z-index: 10;
+      color: white;
+      @include rem(font-size, 100px);
+      padding: 15%;
+    }
+
+  }
+
+  > .card-body {
+    @include rem(padding, 30px);
+
+    > .card-title {
+      @extend %title-1;
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    > .card-text {
+      color: color('mellow');
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    > .card-highlight {
+      background-color: $color;
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
+  /*==================================
+  =            Variations            =
+  ==================================*/
+
+  &.-horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &.-image-bg {
+    @extend .-baby;
+
+    &:hover {
+
+      > .card-background {
+        opacity: 0.05;
+      }
+
+    }
+
+    > .card-background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      opacity: .15;
+    }
+
+    > .card-body {
+      @include rem(padding, 50px 35px);
+      position: relative;
+      z-index: 10;
+      color: white;
+
+      > .card-title {
+        @extend %title-2;
+      }
+
+      > .card-text{
+        color: white;
+      }
+    }
+
+    @include theme {
+      background-color: $color;
+    }
+
+  }
+
+
+  &.-wicon {
+    @extend .-baby;
+    display: flex;
+
+    .card-icon{
+      @include rem(padding, 50px 0 0 20px);
+    }
+
+    &:hover {
+      > .card-background {
+        opacity: 0.05;
+      }
+
+    }
+
+    > .card-background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      opacity: .15;
+    }
+
+    > .card-body {
+      @include rem(padding, 50px 20px);
+      position: relative;
+      z-index: 10;
+      color: white;
+
+      > .card-title {
+        @extend %title-2;
+      }
+
+      > .card-text{
+        color: white;
+      }
+
+    }
+
+    @include theme {
+      background-color: $color;
+    }
+  }
+
+  &.-product{
+    border-radius: 0;
+    box-shadow: none;
+
+    > .card-image{
+      img{
+        display: block;
+      }
+    }
+
+    > .card-body{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      transition: all 350ms cubic-bezier(.68,-.55,.265,1.55);
+      transition-delay: 100ms;
+
+      > .card-category{
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        color: #777;
+        position: absolute;
+        transition: all 350ms cubic-bezier(.68,-.55,.265,1.55);
+        transition-delay: 100ms;
+        top: 30px;
+      }
+
+      >.card-title{
+        color: #333;
+        position: absolute;
+        transition: all 350ms cubic-bezier(.68,-.55,.265,1.55);
+        transition-delay: 100ms;
+        top: 50px;
+      }
+
+      >.card-price{
+        position: absolute;
+        bottom: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all 350ms cubic-bezier(.68,-.55,.265,1.55);
+        transition-delay: 100ms;
+      }
+    }
+
+    > .card-itens{
+      > .bg-overlay{
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+        background-color: rgba(color('andromeda'), 0.8);
+        transition: all .5s cubic-bezier(.39,.575,.5649999999999999,1);
+        transform: scale(0);
+        border-radius: 100%;
+        transform: translateZ(0);
+      }
+
+      .onsale{
+        min-height: 0;
+        min-width: 3.236em;
+        padding: 35px 20px 5px 25px;
+        font-size: 9px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 10px;
+        position: absolute;
+        text-align: center;
+        top: -10px;
+        right: -38px;
+        left: auto;
+        margin: 0;
+        z-index: 2;
+        border-radius: 0;
+        background-color: white;
+        color: color('andromeda');
+        transform: rotate(45deg);
+        text-transform: uppercase;
+      }
+    }
+
+    &:hover{
+      transform: scale(1);
+
+      > .card-itens{
+        > .bg-overlay{
+          right: 0;
+          bottom: 0;
+          transform: scale(20);
+          transition-delay: 1ms;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      > .card-body{
+        > .card-category{
+          color: white;
+          transition-delay: 100ms;
+          top: 40px;
+        }
+        >.card-title{
+          color: white;
+          transition-delay: 100ms;
+          top: 60px;
+        }
+        >.card-price{
+          color: white;
+          transition-delay: 100ms;
+          bottom: 40px;
+        }
+      }
+    }
+
+
+    @include theme {
+      > .card-itens{
+        > .bg-overlay{
+          background-color: rgba($color, 0.8);;
+        }
+
+        > .onsale{
+          color: $color;
+        }
+      }
+    }
+
+
+  }
+
+  /*=====  End of Variations  ======*/
+
+}

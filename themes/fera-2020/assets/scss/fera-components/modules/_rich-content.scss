@@ -1,0 +1,87 @@
+.fera-rich-content {
+
+  p {
+    @extend .fera-paragraph;
+    img{
+      @include rem(margin-bottom, 40px);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  h2{
+    @include rem(font-size, 30px);
+    font-weight: bold;
+    @include rem(margin-bottom, 20px);
+    font-family: "Lato", sans-serif;
+  }
+
+  h3{
+    @include rem(font-size, 22px);
+    font-weight: bold;
+    @include rem(margin-bottom, 20px);
+    font-family: "Lato", sans-serif;
+  }
+
+  h4{
+    @include rem(font-size, 18px);
+    font-weight: bold;
+    @include rem(margin-bottom, 20px);
+    font-family: "Lato", sans-serif;
+  }
+
+  ul, ol{
+    @include rem(padding-left, 30px);
+    @include rem(margin-bottom, 30px);
+  }
+
+  ul li{
+    list-style: square;
+  }
+
+  ol li{
+    list-style: decimal;
+  }
+  code{
+    font-family: monospace;
+  }
+
+  li {
+    @extend .fera-paragraph;
+    @include rem(margin-bottom, 10px);
+  }
+
+  em{
+    font-style: italic;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.23);
+  }
+
+  blockquote{
+    border-left: 3px solid color('andromeda');
+    @include rem(padding-left, 30px);
+    font-weight: 300;
+    font-style: italic;
+
+    p{
+      @include rem(font-size, 26px);
+      @include rem(line-height, 34px);
+      color: color('andromeda');
+    }
+  }
+
+  @include theme {
+
+    p{
+      > strong, > a {
+        color: $color;
+      }
+    }
+
+    blockquote{
+      border-left: 3px solid $color;
+      color: $color;
+    }
+
+  }
+
+}

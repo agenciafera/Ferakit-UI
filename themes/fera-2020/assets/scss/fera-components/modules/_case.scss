@@ -1,0 +1,190 @@
+.fera-case {
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  @extend .-darkness;
+  @include rem(max-width, 840px);
+  margin: 0 auto;
+  @include transition(transform, box-shadow);
+  position: relative;
+
+  @media #{$only-smartphone} {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  @media #{$tablet} {
+    @include rem(height, 580px);
+    flex-flow: row nowrap;
+  }
+
+  .case-info + .case-image {
+
+    @media #{$only-smartphone} {
+      display: none !important;
+    }
+
+  }
+
+  > .case-column {
+    flex: none;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+
+    @media #{$tablet} {
+      flex: none;
+      width: 50%;
+    }
+
+    > * {
+      flex: 1 1 50%;
+    }
+
+  }
+
+  .case-column:nth-of-type(1) {
+
+    @media #{$tablet} {
+      border-radius: 20px 0px 0px 20px;
+      overflow: hidden;
+    }
+
+  }
+
+  .case-column:nth-of-type(2) {
+
+    @media #{$tablet} {
+      border-radius: 0px 20px 20px 0px;
+      overflow: hidden;
+    }
+
+  }
+
+  .case-info {
+    @include rem(padding, 50px 40px);
+    background-color: #fff;
+    @include transition(background, color);
+  }
+
+  .case-feature {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include rem(padding, 20px 40px);
+    color: white;
+  }
+
+  .case-image-feature {
+    @include rem(margin-top, 30px);
+    position: absolute;
+    @include rem(bottom, 60px);
+    z-index: 10;
+
+    @media #{$tablet} {
+      left: 50%;
+      width: 57%;
+    }
+
+  }
+
+  .case-feature-result {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    @include rem(padding, 20px 40px);
+    z-index: 20;
+    text-align: center;
+
+    strong {
+      @include rem(font-size, 33px);
+      font-weight: 800;
+      display: block;
+    }
+
+  }
+
+  .case-image {
+    object-fit: cover;
+    object-position: center center;
+    @include transition(opacity);
+    display: block;
+  }
+
+  .case-title {
+    font-size: 23px;
+    line-height: 1.22;
+    font-weight: 600;
+    @include rem(margin-bottom, 25px);
+  }
+
+  .case-intro {
+    font-size: 13px;
+    line-height: 1.46;
+  }
+
+  .case-tags {
+    display: flex;
+    flex-flow: row wrap;
+    @include rem(margin-top, 25px);
+
+    > li {
+      background-color: #000;
+      color: white;
+      @include rem(padding, 10px);
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-size: 11px;
+      @include rem(margin-bottom, 10px);
+      @include transition(background, color);
+
+      &:not(:last-child) {
+        @include rem(margin-right, 10px);
+      }
+
+    }
+
+  }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    .case-tags {
+
+      li {
+
+        @for $i from 1 through 5 {
+
+          &:nth-child(#{$i}) {
+            $color: lighten($color, ($i - 1) * 10%);
+            $color: saturate($color, ($i - 1) * 5%);
+            background-color: $color;
+
+            @if (lightness($color) > 75) {
+              color: #000000; // Lighter backgorund, return dark color
+            } @else {
+              color: #ffffff; // Darker background, return light color
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
+
+}

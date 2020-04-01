@@ -1,0 +1,40 @@
+.fera-paragraph {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.52;
+  color: black;
+  @include rem(margin-bottom, 30px);
+  @extend .-salmon;
+
+  @media #{$tablet} {
+    font-size: 19px;
+  }
+
+  @media #{$desktop} {
+    font-size: 21px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  > strong {
+    font-weight: bold;
+    color: color('darkness');
+  }
+
+  > span{
+    > strong{
+      font-weight: bold;
+    }
+  }
+
+  @include theme {
+
+    > span, > a {
+      color: $color;
+    }
+
+  }
+
+}

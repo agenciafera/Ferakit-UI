@@ -1,0 +1,15 @@
+.fera-color {
+
+  @include theme {
+    color: $color!important;
+  }
+
+}
+
+.fera-bgcolor {
+
+  @include theme {
+    background-color: $color!important;
+  }
+
+}

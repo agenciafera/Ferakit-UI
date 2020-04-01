@@ -1,0 +1,60 @@
+.fera-title {
+
+  @include theme {
+    color: $color;
+  }
+
+  &.-secondary{
+    font-family: $secondary;
+  }
+
+  &.-serif{
+    font-family: $serif;
+  }
+
+  &.-title-1 {
+    @include rem(font-size, 40px);
+    font-weight: bold;
+
+    @media #{$tablet} {
+      @include rem(font-size, 52px);
+    }
+  }
+
+  &.-title-2 {
+    @include rem(font-size, 28px);
+    font-weight: normal;
+
+    @media #{$tablet} {
+      @include rem(font-size, 32px);
+    }
+  }
+
+  &.-title-3 {
+    @include rem(font-size, 24px);
+    font-weight: bold;
+  }
+
+  &.-title-4 {
+    @include rem(font-size, 22px);
+    font-weight: bold;
+  }
+
+  &.-title-5 {
+    @include rem(font-size, 19px);
+    font-weight: bold;
+  }
+
+  &.-title-6 {
+    @include rem(font-size, 17px);
+    font-weight: bold;
+  }
+  /* titulo no style guide */
+
+  &.-title-7 {
+    font-size: 13px;
+    color: color('mellow');
+    margin-bottom: 20px;
+  }
+
+}

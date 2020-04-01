@@ -1,40 +1,44 @@
 {
-  "name": "fera-guideline",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "dependencies": {
+    "fera-guideline": "git+https://github.com/agenciafera/Ferakit-UI.git"
+  },
+  "devDependencies": {
+    "@fancyapps/fancybox": "git+https://github.com/fancyapps/fancybox.git",
+    "browserlist": "^1.0.1",
+    "css-loader": "^2.1.1",
+    "del": "^4.1.1",
+    "fera-guideline": "git+https://github.com/agenciafera/Ferakit-UI.git",
     "ferakit-frontend": "git+https://github.com/agenciafera/Ferakit-Frontend.git",
-    "gulp": "*",
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "*",
-    "gulp-clean-css": "^2.0.11",
-    "gulp-coffee": "*",
+    "gulp-clean-css": "^4.2.0",
     "gulp-compass": "*",
     "gulp-concat": "*",
+    "gulp-css-image-dimensions": "^1.1.5",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-include": "^2.4.1",
     "gulp-livereload": "*",
-    "gulp-rename": "^1.2.2",
-    "gulp-sassbeautify": "*",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "*",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sassbeautify": "^0.1.0",
     "gulp-sourcemaps": "*",
-    "gulp-uglify": "*",
+    "gulp-uglify-es": "^1.0.4",
     "gulp-util": "*",
     "gulp-watch": "*",
     "help": "^3.0.2",
-    "owl.carousel": "^2.3.3",
-    "owl.carousel2.thumbs": "git+https://github.com/gijsroge/OwlCarousel2-Thumbs.git",
-    "slick-carousel": "^1.8.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://agenciafera@github.com/agenciafera/Ferakit-UI.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/agenciafera/Ferakit-UI/issues"
-  },
-  "homepage": "https://github.com/agenciafera/Ferakit-UI#readme"
+    "jquery": "^3.4.1",
+    "jquery-countdown": "^2.2.0",
+    "jquery-mask-plugin": "1.14.15",
+    "notifyjs-browser": "^0.4.2",
+    "owl.carousel": "^2.3.2",
+    "sass-globbing": "^1.0.0-alpha1",
+    "simple-lightbox": "^2.1.0",
+    "webfontloader": "^1.6.28",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^3.3.2"
+  }
 }

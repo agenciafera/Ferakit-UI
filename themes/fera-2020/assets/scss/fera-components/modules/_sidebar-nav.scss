@@ -1,0 +1,75 @@
+.fera-sidebar-nav {
+    @include rem(max-width, 300px);
+    @extend .-darkness;
+    // box-shadow: 3px 0px 3px 0px rgba(black, 0.1);
+
+    > .nav-links {
+
+        > .item {
+            border-left: 4px solid transparent;
+            @include transition(border, color, background, opacity);
+            color: black;
+            opacity: .5;
+
+            &:hover {
+                background-color: darken(white, 5%);
+                opacity: 1;
+            }
+
+            &.-active {
+                border-left: 4px solid black;
+                background-color: darken(white, 10%);
+                opacity: 1;
+            }
+
+            > .link {
+                text-transform: uppercase;
+                text-decoration: none;
+                @include rem(font-size, 13px);
+                color: inherit;
+                @include rem(padding, 22.5px 25px);
+                display: block;
+
+                i {
+                    @include rem(margin-right, 15px);
+                    display: inline-block;
+                    vertical-align: sub;
+                    color: inherit;
+                    font-size: 170%;
+                }
+
+            }
+
+        }
+
+    }
+
+    /*=============================
+    =            Theme            =
+    =============================*/
+
+    @include theme {
+
+      > .nav-links {
+
+          > .item {
+            color: $color;
+
+            &:hover {
+                background-color: rgba($color, 0.025);
+            }
+
+            &.-active {
+                background-color: rgba($color, .05);
+                border-color: $color;
+            }
+
+          }
+
+      }
+
+    }
+
+    /*=====  End of Theme  ======*/
+
+}

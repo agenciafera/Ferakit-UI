@@ -1,0 +1,9 @@
+.fera-list {
+  list-style: square;
+
+  > li {
+    @include rem(font-size, 21px);
+    @include rem(margin-bottom, 15px);
+  }
+
+}

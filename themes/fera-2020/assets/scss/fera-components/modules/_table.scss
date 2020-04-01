@@ -1,0 +1,66 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.fera-table {
+  width: 100%;
+  @include responsive-property(font-size, $s: 12, $t: 13, $d: 14);
+  @extend .-darkness;
+
+  tr {
+    border-bottom: 1px solid #ededed;
+  }
+
+  .table-highlight {
+    color: white;
+  }
+
+  .table-text-highlight {
+    font-weight: bold;
+  }
+
+  thead {
+
+    th {
+      background-color: #fcfbfb;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include rem(padding, 20px 25px);
+      white-space: nowrap;
+      color: #7f7f7f;
+    }
+
+  }
+
+  tbody {
+
+    td {
+      color: #7f7f7f;
+      @include rem(padding, 14px 25px);
+      background-color: white;
+    }
+
+  }
+
+  /*=============================
+  =            Theme            =
+  =============================*/
+
+  @include theme {
+
+    .table-highlight {
+      background-color: $color;
+      color: white;
+    }
+
+    .table-text-highlight {
+      color: $color;
+      font-weight: bold;
+    }
+
+  }
+
+  /*=====  End of Theme  ======*/
+
+
+}

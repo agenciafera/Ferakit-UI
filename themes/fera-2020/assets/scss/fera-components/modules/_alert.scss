@@ -1,0 +1,73 @@
+.fera-alert {
+  border: 1px solid black;
+  display: flex;
+  @include rem(margin, 40px 0);
+  justify-content: space-between;
+  align-items: center;
+
+  @include theme {
+    border-color: $color;
+
+    > .alert-icon {
+      background-color: $color;
+      // color: contrast-color($color);
+      color: white;
+    }
+
+    > .alert-text > strong {
+      color: $color;
+    }
+
+    > .alert-button {
+      color: $color;
+    }
+
+  }
+
+  strong {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  > .alert-icon {
+    content: "";
+    background-color: #000;
+    @include rem(padding, 15px);
+    @include rem(font-size, 30px);
+    display: block;
+    color: white;
+
+    @media #{$tablet} {
+      @include rem(padding, 30px);
+    }
+
+  }
+
+  > .alert-text {
+    font-size: 13px;
+    color: #7c7c7c;
+    @include rem(padding, 15px);
+    flex: 1;
+
+    @media #{$tablet} {
+      font-size: 15px;
+      @include rem(padding, 30px);
+    }
+
+    @media #{$desktop} {
+      font-size: 18px;
+    }
+
+
+  }
+
+  > .alert-button {
+    @include rem(padding-right, 25px);
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+}
