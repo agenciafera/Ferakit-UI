@@ -1,6 +1,6 @@
 .fera-btn {
-  @include rem(font-size, 16px);
-  @include rem(padding, 17px 35px);
+  @include rem(font-size, 13px);
+  @include rem(padding, 15px 30px);
   background-color: #2b86cb;
   border-radius: 5px;
   background-color: map-get($colors, sky);
