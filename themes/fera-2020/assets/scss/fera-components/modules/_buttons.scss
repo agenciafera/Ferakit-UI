@@ -27,6 +27,58 @@
     vertical-align: sub;
   }
 
+  &.-link{
+    background: transparent;
+    @include rem(font-size, 16px);
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    padding: 0;
+    &:hover{
+      background: transparent;
+      opacity: 0.6;
+    }
+
+    &::after{
+      content: "";
+      background-image: url('../images/arrow-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 55px;
+      height: 19px;
+      display: block;
+      position: absolute;
+      top: -1px;
+      right: -64px;
+    }
+  }
+
+  &.-link-back{
+    background: transparent;
+    @include rem(font-size, 16px);
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    padding: 0;
+    @include rem(padding-left, 65px);
+    &:hover{
+      background: transparent;
+      opacity: 0.6;
+    }
+
+    &::after{
+      content: "";
+      background-image: url('../images/arrow-bg-back.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include rem(width, 55px);
+      @include rem(height, 19px);
+      @include rem(top, -1px);
+      @include rem(left, 0);
+      display: block;
+      position: absolute;
+    }
+  }
 }
 
 /*=============================
@@ -142,6 +194,28 @@
       background-color: lighten(map-get($colors, $name), 10%);
     }
 
+  }
+
+  .fera-btn.-link.-#{$name} {
+    color: map-get($colors, $name);
+    background: transparent;
+  }
+
+  .fera-btn.-link-back.-#{$name} {
+    color: map-get($colors, $name);
+    background: transparent;
+  }
+
+  .fera-btn.-link.-link-#{$name} {
+    &::after{
+      background-color: map-get($colors, $name);
+    }
+  }
+
+  .fera-btn.-link-back.-link-#{$name} {
+    &::after{
+      background-color: map-get($colors, $name);
+    }
   }
 
 }
