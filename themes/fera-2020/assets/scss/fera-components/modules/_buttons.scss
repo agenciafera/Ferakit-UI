@@ -182,7 +182,7 @@
     &.-action {
 
       &:hover {
-        margin-top:-3px;
+        top:-3px;
         position: relative;
         background-color: lighten(map-get($colors, $name), 5%);
         border-bottom: 3px solid darken(map-get($colors, $name), 20%);
