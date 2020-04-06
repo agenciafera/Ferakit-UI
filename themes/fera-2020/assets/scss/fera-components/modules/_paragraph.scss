@@ -30,6 +30,7 @@
   }
 
   @include theme {
+    color: $color;
 
     > span, > a {
       color: $color;
