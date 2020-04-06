@@ -1,13 +1,19 @@
 {
-  "dependencies": {
-    "fera-guideline": "git+https://github.com/agenciafera/Ferakit-UI.git"
+  "name": "ferakit-ui",
+  "version": "1.0.0",
+  "description": "Tema para design system da Fera",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agenciafera/Ferakit-UI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agenciafera/Ferakit-UI/issues"
   },
   "devDependencies": {
     "@fancyapps/fancybox": "git+https://github.com/fancyapps/fancybox.git",
     "browserlist": "^1.0.1",
     "css-loader": "^2.1.1",
     "del": "^4.1.1",
-    "fera-guideline": "git+https://github.com/agenciafera/Ferakit-UI.git",
     "ferakit-frontend": "git+https://github.com/agenciafera/Ferakit-Frontend.git",
     "font-awesome": "^4.7.0",
     "gulp": "^4.0.2",
