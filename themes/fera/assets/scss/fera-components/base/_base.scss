@@ -20,14 +20,6 @@ body {
   counter-reset: title;
 }
 
-// html {
-//   @include viewport-unit(font-size, 9, 320, "vw");
-
-//   @media #{$tablet} {
-//     @include viewport-unit(font-size, 13, 1024, "vw");
-//   }
-// }
-
 
 .fera-module{
   @include rem(margin-bottom, 60px);

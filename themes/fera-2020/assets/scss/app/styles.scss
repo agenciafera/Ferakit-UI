@@ -21,6 +21,19 @@ img {
   height: auto;
 }
 
+html{
+  font-size: 12px;
+
+  @media #{$tablet} {
+    font-size: 14px;
+  }
+
+  @media #{$desktop} {
+    font-size: 16px;
+  }
+
+}
+
 body {
   overflow-x: hidden;
   max-width: 1280px;

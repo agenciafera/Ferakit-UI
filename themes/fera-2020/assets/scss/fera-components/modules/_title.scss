@@ -12,6 +12,15 @@
     font-family: $serif;
   }
 
+  &.-large-title {
+    @include rem(font-size, 50px);
+    font-weight: bold;
+
+    @media #{$tablet} {
+      font-size: 58px;
+    }
+  }
+
   &.-title-1 {
     @include rem(font-size, 40px);
     font-weight: bold;
