@@ -4,7 +4,6 @@
   line-height: 1.52;
   color: black;
   @include rem(margin-bottom, 30px);
-  @extend .-salmon;
 
   @media #{$tablet} {
     font-size: 19px;
