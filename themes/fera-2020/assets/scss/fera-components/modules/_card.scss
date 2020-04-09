@@ -44,12 +44,16 @@
 
     > .card-icon {
       @include align;
-      max-width: 100px;
+      max-width: 90%;
       height: auto;
       z-index: 10;
       color: white;
       @include rem(font-size, 100px);
       padding: 15%;
+
+      img{
+        max-width: 100px;
+      }
     }
 
   }
