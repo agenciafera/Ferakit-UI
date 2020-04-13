@@ -1,5 +1,5 @@
 .fera-btn {
-  @include rem(font-size, 14px);
+  @include rem(font-size, 18px);
   @include rem(padding, 15px 30px);
   background-color: #2b86cb;
   border-radius: 5px;
@@ -12,6 +12,12 @@
   text-decoration: none;
   border: 0;
   will-change: background, transform, color, border;
+
+
+  @media #{$tablet} {
+    @include rem(font-size, 14px);
+  }
+
 
   &:hover {
     background-color: lighten(map-get($colors, sky), 10%);
