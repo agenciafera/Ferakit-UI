@@ -28,6 +28,7 @@
       @include rem(padding, 20px 25px);
       white-space: nowrap;
       color: #7f7f7f;
+      vertical-align: middle;
     }
 
   }
@@ -38,6 +39,7 @@
       color: #7f7f7f;
       @include rem(padding, 14px 25px);
       background-color: white;
+      vertical-align: middle;
     }
 
   }

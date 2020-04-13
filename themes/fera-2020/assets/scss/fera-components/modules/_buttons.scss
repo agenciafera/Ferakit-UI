@@ -153,8 +153,11 @@
 
 .fera-btn.-small {
 
+  @include rem(font-size, 11px);
+  @include rem(padding, 7px 25px);
+
   @media #{$tablet} {
-    font-size: 13.5px;
+    @include rem(font-size, 13.5px);
     @include rem(padding, 9px 45px);
   }
 
