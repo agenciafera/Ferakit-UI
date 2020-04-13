@@ -3,6 +3,7 @@
   overflow: hidden;
   position: relative;
   @include transition(transform, box-shadow);
+  text-decoration: none;
 
   &:hover {
     transform: scale(0.98);
@@ -21,6 +22,8 @@
 
 .fera-card {
   box-shadow: 3px 3px 15px 0px rgba(black, .1);
+  text-decoration: none;
+
   @extend .-baby;
 
   &:hover {
@@ -88,6 +91,10 @@
       background-color: $color;
     }
 
+    > .card-body > .card-title{
+        color: $color;
+    }
+
   }
 
   /*=====  End of Theme  ======*/
@@ -103,7 +110,7 @@
 
     .card-body{
       position: relative;
-      padding-top: 30px;
+      padding-top: 40px;
     }
 
     .card-date{
