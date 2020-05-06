@@ -391,3 +391,38 @@
   /*=====  End of Variations  ======*/
 
 }
+
+
+/********* TYPE 2 **************/
+
+.fera-card {
+  &.-type-2{
+    border-radius: 0;
+    box-shadow: none;
+
+    &:hover{
+      transform: none;
+      opacity: 0.8;
+    }
+
+    >.card-image{
+      img{
+        border-radius: 4px;
+        width: 100%;
+        height: auto;
+        @include rem(margin-bottom, 20px);
+      }
+    }
+
+    >.card-body{
+      padding: 0;
+
+      >.card-title{
+        text-transform: none;
+        margin-bottom: 5px;
+        line-height: 1.3;
+        font-weight: 500;
+      }
+    }
+  }
+}
