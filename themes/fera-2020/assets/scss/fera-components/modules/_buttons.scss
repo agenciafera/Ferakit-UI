@@ -181,13 +181,13 @@
 }
 
 .fera-btn.-action {
-  @include rem(font-size, 22px);
+  @include rem(font-size, 18px);
   font-weight: 600;
   @include rem(padding, 17px 40px);
 }
 
 .fera-btn.-action.-big {
-  @include rem(font-size, 24px);
+  @include rem(font-size, 22px);
   text-transform: uppercase;
   font-weight: bold;
   @include rem(padding, 26px 90px);
