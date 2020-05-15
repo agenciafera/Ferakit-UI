@@ -5,6 +5,10 @@
   color: black;
   @include rem(margin-bottom, 30px);
 
+  @media #{$widescreen} {
+    font-size: 19px;
+  }
+
   a {
     text-decoration: underline;
   }
