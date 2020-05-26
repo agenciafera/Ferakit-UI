@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/agenciafera/Ferakit-UI.git"
   },
+  "private": true,
   "bugs": {
     "url": "https://github.com/agenciafera/Ferakit-UI/issues"
   },
