@@ -37,7 +37,7 @@
     "gulp-util": "*",
     "gulp-watch": "*",
     "help": "^3.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-countdown": "^2.2.0",
     "jquery-mask-plugin": "1.14.15",
     "notifyjs-browser": "^0.4.2",
