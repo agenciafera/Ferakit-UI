@@ -46,6 +46,6 @@
     "simple-lightbox": "^2.1.0",
     "webfontloader": "^1.6.28",
     "webpack": "^4.0.1",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.12"
   }
 }
